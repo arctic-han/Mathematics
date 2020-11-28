@@ -2,4 +2,110 @@
 %	SECTION 1.1
 %----------------------------------------------------------------------------------------
 
-\section{The Integral.}
+\section{The Riemann-Stieltjes Integral.}
+
+\begin{definition}
+    Let $[a,b]$ be an interval. A \textbf{partition} of $[a,b]$ is a set of
+    points  $P=\{x_0,x_1, \dots, x_n\}$ such that $a=x_0<x_1< \dots <x_n=b$, and
+    we write $\Delta{x_i}=x_i-x_{i-1}$. Now let  $f:[a,b] \rightarrow \R$ be a bounded 
+    realvalued function, and for each partition $P$ of  $[a,b]$ let
+    $M_i=\sup{f}$ and  $m_i=\inf_{f}$ for all  $x_{i-1} \leq x \leq x_i$. We
+    define the \textbf{upper Riemann sum} and the \textbf{lower Riemmann sum} to
+    of  $f$ with respect to be:
+       \begin{align}
+           U(f,P) &= \sum_{i=1}^{n}{M_i\Delta{x_i}} \\
+           L(f,P) &= \sum_{i=1}^{n}{m_i\Delta{x_i}}
+       \end{align}   
+    respectively. We also define the \textbf{upper Riemann integral} and the
+    \textbf{lower Riemann integral} of $f$ over  $[a,b]$ to be: 
+       \begin{align}
+           \bar{\int_{a}^{b}}{f(x)}dx=\inf{U(f,P)} \\
+           \bbar{\int_{a}^{b}}{f(x)}dx=\sup{L(f,P)}
+       \end{align}
+    Respectively.
+    
+    If $\bar{\int_{a}^{b}}{f}=\bbar{\int_{a}^{b}}{f}$, then we say that  $f$ is
+    \textbf{Riemann integrable} on  $[a,b]$, and we its value the
+    \textbf{Riemann integral}, and denote it to be: 
+        \begin{equation}
+            \int_{a}^{b}{f(x)}dx=bar{\int_{a}^{b}}{f(x)}dx=\bbar{\int_{a}^{b}}{f(x)}dx
+        \end{equation} 
+\end{definition}
+
+\begin{lemma}\label{6.1.1}
+    $\bar{\int_{a}^{b}}{f}$,and  $\bbar{\int_{a}^{b}}{f}$ are defined for every
+    bounded realvalued function $f$ over  $[a,b]$.
+\end{lemma}
+\begin{proof}
+    Let $f$ be bounded on  $[a,b]$, then there are  $m$ and  $M$ such that  $m
+    \leq f \leq M$ for all  $a \leq x \leq b$. Now let  $P$ be a partition of
+    $[a,b]$. Since  $\inf{f} \leq \sup{f}$, we have that $m \leq m_i=\inf{f}
+    \leq M_i=\sup{f} \leq M$, thus  $m(b-a) \leq L(f,P) \leq U(f,P) \leq
+    M(b-a)$, hence $L$ and  $U$ form a bounded set, and we are done.
+\end{proof}
+\begin{corollary}
+    $L(f,P) \leq U(f,P )$ for every bounded function $f$.
+\end{corollary}
+
+Now the question of the integrability of $f$ is a very delicate matter, and
+requires a closer scrutiny on the concepts of upper and lower sums. Infact, it
+turns out that the Riemann integral is a consequence of a more general class of
+integrals. Developng this more general situation will allow us to discern facts
+about the Riemann integral.
+
+\begin{definition}
+    Let $\alpha$ be a bounded monontonically increasing function on  $[a,b]$,
+    and let  $P$ be a partition of  $[a,b]$ and let
+    $\Delta{\alpha_i}=\alpha(x_i)-\alpha(x_{i-1})$. For any realvalued, bounded
+    function on  $[a,b]$, defined the \textbf{upper sum} and the \textbf{lower
+    sum} of $f$ with respect to  $P$ and  $\alpha$ to be: 
+        \begin{align}
+            U(f,P,\alpha) &= \sum_{i=1}^{n}{M_i\Delta{\alpha_i}} \\		
+            L(f,P,\alpha) &= \sum_{i=1}^{n}{m_i\Delta{\alpha_i}}
+        \end{align}
+        Where $M_i=\sup{f}$ and  $m_i=\inf{f}$ for all  $x_{i-1} \leq x \leq
+        x_i$, and again, define the \textbf{upper integral} and  \textbf{lower
+        integral} of $f$ with respect to  $\alpha$ on  $[a,b]$ to be:
+            \begin{align}
+                \bar{\int_{a}^{b}}{f(x)}d\alpha=\inf{U(f,P,\alpha)} \\
+                \bbar{\int_{a}^{b}}{f(x)}d\alpha=\sup{L(f,P,\alpha)}	
+            \end{align}
+            If $\bar{\int_{a}^{b}}{f}d\alpha=\bbar{\int_{a}^{b}}{f}d\alpha$, we
+            call the value:
+                \begin{equation}
+                    \int_{a}^{b}{f(x)}d\alpha=bar{\int_{a}^{b}}{f(x)}d\alpha=\bbar{\int_{a}^{b}}{f(x)}d\alpha
+                \end{equation}
+            the \textbf{Riemann-Stieltjes integral} of $f$ with respect to  $f$
+            on  $[a,b]$. If such an integra exists, we say that  $f$ is
+            \textbf{integrable} with respect to  $\alpaha$ on  $[a,b]$.
+\end{definition}
+
+\begin{example}
+    Let $\alpha(x)=\alpha$, be defined over  $[a,b]$. Then  $\alpha$ is
+    monontonically increasing, and our definititions reduces to those for the
+    Riemann integral. Here  $U(f,P,x)=U(f,P)$ and  $L(f,P,x)=L(F,P)$.
+\end{example} 
+
+We are now in a position to investigate the properties of integrability, in the
+Riemann-Stieltjes sense.
+
+\begin{definition}
+    Let $a,b]$ be an interval, and let  $P$ and  $Q$ be partitions of  $[a,b]$.
+    We say that  $Q$ is a \textbf{refinment} of $P$ if  $P \susbeteq Q$, and we
+    also say that $Q$ is \textbf{finer} than  $P$. Now if neither  $P$ nor  $Q$
+    is a refinment of the other, we say that the two partitions are
+    \textbf{noncomparable}.
+\end{definition}
+
+\begin{lemma}\label{6.1.2}
+    Let $P$ and  $Q$ be partitions of and interval $[a,b]$, then  $P \cup Q$ is
+    a partition of  $[a,b]$, and is a refinment of both  $P$ and  $Q$.
+\end{lemma}
+\begin{proof}
+    If $P$ is a refinment of  $Q$, or viceversa, then we are done; so suppose
+    that  $P$ and  $Q$ are noncomparable. Let  $P=\{x_0,x_1, \dots, x_n\}$ and
+    $Q=\{y_0,y_1, \dots, y_m\}$ with $a=x_0<x_1< \dots x_n=b$ and $a=y_0<y_1<
+    \dots y_m=b$. Then $P \cup Q=\{x_0,y_0,x_1,y_1, \dots, x_n,y_m\}$ and
+    $a=x_0=y_0 < x_1,y_1 < \dots <x_n=y_m=b$, thus $P \cup Q$ is a partition of
+    $[a,b]$, that it is a refinment of  $P$ and  $Q$ follows trivially.
+\end{proof}

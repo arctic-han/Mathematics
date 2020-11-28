@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1606181463 "Analysis.tex" "Analysis.pdf" "Analysis" 1606181463
+["pdflatex"] 1606599914 "Analysis.tex" "Analysis.pdf" "Analysis" 1606599914
   "/etc/texmf/web2c/texmf.cnf" 1604064585 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -220,9 +220,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1596975543 38841 5237427e4d3283e7b009b6a8b45dfdcd ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1604064816 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1604064823 1156109 3d7119fb332ffed2b4ab40dce9b9b203 ""
-  "Analysis.aux" 1606169416 11163 9110f3edae4a20e225f2e50cd74f57ca "pdflatex"
-  "Analysis.out" 1606169416 2278 a53407a234e1208234fa04bab54f66af "pdflatex"
-  "Analysis.tex" 1606169436 2380 2e78d6c08bf9c2a7e3f76c498cf3d99e ""
+  "Analysis.aux" 1606599649 11212 3adc524b0cf381fc4218cb102079ae8d "pdflatex"
+  "Analysis.out" 1606599649 2287 ac8720a403ee376505e76545b4f58bd7 "pdflatex"
+  "Analysis.tex" 1606597503 2420 ea0b82c11bf94701d1c4b6cf9d3f870a ""
   "Chapters/Chapter1/Section1/section1.tex" 1604360659 5793 7a621893960f0a644e326e1bbd389d98 ""
   "Chapters/Chapter1/Section2/section2.tex" 1604281220 3131 5da965271068afed970c2d2dcb64983a ""
   "Chapters/Chapter1/Section3/section3.tex" 1604336065 4631 a4de1ebf15b2d49f2ed7bfd7c8022521 ""
@@ -256,13 +256,13 @@
   "Chapters/Chapter6/Section5/section5.tex" 1605196962 2629 a8efca6b76ee198f7d05f8c3f58c2aa1 ""
   "Chapters/Chapter6/Section6/section6.tex" 1605198486 3290 2518cf28978cab7adafba364dad907fe ""
   "Chapters/Chapter6/chapter6.tex" 1605197028 547 03d4fd397f1e2ab255bd2e255648bc5b ""
-  "Chapters/Chapter7/Section1/section1.tex" 1606169064 219 08b4181b9a82a681acd481b0d0178d56 ""
-  "Chapters/Chapter7/chapter7.tex" 1605198732 312 e13ef5554a4c634f4c8106c21fae8376 ""
+  "Chapters/Chapter7/Section1/section1.tex" 1606599913 5476 a8641f8cba9fcbd9dea890466c6339e1 ""
+  "Chapters/Chapter7/chapter7.tex" 1606596766 303 28dfbbef099cd42046f174ed676aa788 ""
   "Figures/diagonalizationArray.png" 1604419919 517787 c502feb5262eba15ca38712a280bddf2 ""
   "Library/Fonts/BlackboardBold.tex" 1598311731 744 e62bfb97c3b0ebe0a2353762b95933da ""
   "Library/Fonts/MathCalligraphy.tex" 1598311731 791 fe7a518c060a9035d50e4618c12ce65f ""
   (generated)
+  "Analysis.pdf"
   "Analysis.log"
   "Analysis.out"
-  "Analysis.pdf"
   "Analysis.aux"
