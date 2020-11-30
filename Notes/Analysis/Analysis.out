@@ -16,22 +16,26 @@
 \BOOKMARK [1][-]{section.3.3}{Cauchy Sequences}{chapter.3}% 16
 \BOOKMARK [1][-]{section.3.4}{Upper and Loweer Limits.}{chapter.3}% 17
 \BOOKMARK [1][-]{section.3.5}{Special Sequences}{chapter.3}% 18
-\BOOKMARK [0][-]{chapter.4}{Continuity}{}% 19
-\BOOKMARK [1][-]{section.4.1}{Limits of Functions.}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.2}{Continuous Functions.}{chapter.4}% 21
-\BOOKMARK [1][-]{section.4.3}{Continuity and Compactness.}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.4}{Continuity and Connectedness.}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.5}{Discontinuities.}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.6}{Monotonic Functions.}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.7}{Infinite Limits and Limits at Infinity.}{chapter.4}% 26
-\BOOKMARK [0][-]{chapter.5}{Differentiation}{}% 27
-\BOOKMARK [1][-]{section.5.1}{The Derivative of Real valued Functions.}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.2}{Mean Value Theorems.}{chapter.5}% 29
-\BOOKMARK [1][-]{section.5.3}{The Continuity of Derivatives.}{chapter.5}% 30
-\BOOKMARK [1][-]{section.5.4}{L'Hosptal's Rule.}{chapter.5}% 31
-\BOOKMARK [1][-]{section.5.5}{Taylor's Theorem.}{chapter.5}% 32
-\BOOKMARK [1][-]{section.5.6}{Derivatives of vector valued functions.}{chapter.5}% 33
-\BOOKMARK [0][-]{chapter.6}{Integration}{}% 34
-\BOOKMARK [1][-]{section.6.1}{The Riemann-Stieltjes Integral.}{chapter.6}% 35
-\BOOKMARK [1][-]{section.6.2}{Properties of the Integral.}{chapter.6}% 36
-\BOOKMARK [1][-]{section.6.3}{Integration and Differentiation.}{chapter.6}% 37
+\BOOKMARK [0][-]{chapter.4}{Series.}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Convergent Series.}{chapter.4}% 20
+\BOOKMARK [0][-]{chapter.5}{Continuity}{}% 21
+\BOOKMARK [1][-]{section.5.1}{Limits of Functions.}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.2}{Continuous Functions.}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.3}{Continuity and Compactness.}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.4}{Continuity and Connectedness.}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.5}{Discontinuities.}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.6}{Monotonic Functions.}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.7}{Infinite Limits and Limits at Infinity.}{chapter.5}% 28
+\BOOKMARK [0][-]{chapter.6}{Differentiation}{}% 29
+\BOOKMARK [1][-]{section.6.1}{The Derivative of Real valued Functions.}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.2}{Mean Value Theorems.}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.3}{The Continuity of Derivatives.}{chapter.6}% 32
+\BOOKMARK [1][-]{section.6.4}{L'Hosptal's Rule.}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.5}{Taylor's Theorem.}{chapter.6}% 34
+\BOOKMARK [1][-]{section.6.6}{Derivatives of vector valued functions.}{chapter.6}% 35
+\BOOKMARK [0][-]{chapter.7}{Integration}{}% 36
+\BOOKMARK [1][-]{section.7.1}{The Riemann-Stieltjes Integral.}{chapter.7}% 37
+\BOOKMARK [1][-]{section.7.2}{Properties of the Integral.}{chapter.7}% 38
+\BOOKMARK [1][-]{section.7.3}{Integration and Differentiation.}{chapter.7}% 39
+\BOOKMARK [1][-]{section.7.4}{Integration of Vector Valued Functions.}{chapter.7}% 40
+\BOOKMARK [1][-]{section.7.5}{Rectifiable Curves.}{chapter.7}% 41

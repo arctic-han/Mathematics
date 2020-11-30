@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  30 NOV 2020 11:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  30 NOV 2020 13:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -727,7 +727,7 @@ and I'll forget about whatever was undefined.
 ]
 Chapter 2.
 (./Chapters/Chapter2/Section1/section1.tex
-<Figures/diagonalizationArray.png, id=288, 2042.5911pt x 1577.4132pt>
+<Figures/diagonalizationArray.png, id=300, 2042.5911pt x 1577.4132pt>
 File: Figures/diagonalizationArray.png Graphic file (type png)
 <use Figures/diagonalizationArray.png>
 Package pdftex.def Info: Figures/diagonalizationArray.png  used on input line 55.
@@ -1059,11 +1059,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-)) (./Chapters/Chapter5/chapter5.tex [26]
+)) (./Chapters/Chapter4/chapter4.tex [26]
 Chapter 4.
-(./Chapters/Chapter5/Section1/section1.tex [27
+(./Chapters/Chapter4/Section1/section1.tex)) (./Chapters/Chapter5/chapter5.tex [27
+
+] [28
 
 ]
+Chapter 5.
+(./Chapters/Chapter5/Section1/section1.tex [29]
 ./Chapters/Chapter5/Section1/section1.tex:96: Missing $ inserted.
 <inserted text> 
                 $
@@ -1118,7 +1122,7 @@ l.99 ...lim{f}}=\frac{1}{A}, provided that $A \neq
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-) (./Chapters/Chapter5/Section2/section2.tex [28] [29]) (./Chapters/Chapter5/Section3/section3.tex
+) (./Chapters/Chapter5/Section2/section2.tex [30] [31]) (./Chapters/Chapter5/Section3/section3.tex
 ./Chapters/Chapter5/Section3/section3.tex:68: Undefined control sequence.
 l.68     Now let $J(p)=\{q \in X:d_X(p,q)<\pghi
                                                (p)\}$. Clearly,  $p \in J(p)...
@@ -1128,7 +1132,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[30]
+[32]
 ./Chapters/Chapter5/Section3/section3.tex:118: Undefined control sequence.
 l.118     $f(t)=(\cos{t},\sing
                               {t})$ for  $0 \leq t<2\pi$. Then  $f$ is a con...
@@ -1138,7 +1142,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) (./Chapters/Chapter5/Section4/section4.tex [31]) (./Chapters/Chapter5/Section5/section5.tex [32]) (./Chapters/Chapter5/Section6/section6.tex
+) (./Chapters/Chapter5/Section4/section4.tex [33]) (./Chapters/Chapter5/Section5/section5.tex [34]) (./Chapters/Chapter5/Section6/section6.tex
 
 ./Chapters/Chapter5/Section6/section6.tex:19: LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -1151,7 +1155,7 @@ l.19 ...       \begin{enumerate}[label=(\arabic*)]
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) (./Chapters/Chapter5/Section7/section7.tex [33]
+) (./Chapters/Chapter5/Section7/section7.tex [35]
 
 ./Chapters/Chapter5/Section7/section7.tex:33: LaTeX Error: \begin{enumerate} on input line 25 ended by \end{enumer te}.
 
@@ -1203,11 +1207,11 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-)) (./Chapters/Chapter6/chapter6.tex [34]
-Chapter 5.
-(./Chapters/Chapter6/Section1/section1.tex [35
+)) (./Chapters/Chapter6/chapter6.tex [36]
+Chapter 6.
+(./Chapters/Chapter6/Section1/section1.tex [37
 
-]) (./Chapters/Chapter6/Section2/section2.tex [36]) (./Chapters/Chapter6/Section3/section3.tex) (./Chapters/Chapter6/Section4/section4.tex [37]) (./Chapters/Chapter6/Section5/section5.tex
+]) (./Chapters/Chapter6/Section2/section2.tex [38]) (./Chapters/Chapter6/Section3/section3.tex) (./Chapters/Chapter6/Section4/section4.tex [39]) (./Chapters/Chapter6/Section5/section5.tex
 ./Chapters/Chapter6/Section5/section5.tex:37: Undefined control sequence.
 l.37 ...eorem, since $g'(\alpha)=0$, then  $g''(\x
                                                   _2)=0$ for $x_2 \in (\alph...
@@ -1238,16 +1242,16 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) (./Chapters/Chapter6/Section6/section6.tex [38])) (./Chapters/Chapter7/chapter7.tex [39] [40
+) (./Chapters/Chapter6/Section6/section6.tex [40])) (./Chapters/Chapter7/chapter7.tex [41] [42
 
 ]
-Chapter 6.
+Chapter 7.
 (./Chapters/Chapter7/Section1/section1.tex
 Overfull \hbox (7.47719pt too wide) in paragraph at lines 8--15
 []\OT1/cmr/bx/n/12 Definition. []\OT1/cmr/m/n/12 Let $[\OML/cmm/m/it/12 a; b\OT1/cmr/m/n/12 ]$ be an in-ter-val. A \OT1/cmr/bx/n/12 par-ti-tion \OT1/cmr/m/n/12 of $[\OML/cmm/m/it/12 a; b\OT1/cmr/m/n/12 ]$ is a set of points $\OML/cmm/m/it/12 P \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 x[]; x[]; [] ; x[]\OMS/cmsy/m/n/12 g$
  []
 
-[41]
+[43]
 ./Chapters/Chapter7/Section1/section1.tex:94: Undefined control sequence.
 l.94 ...\textbf{refinment} of $P$ if  $P \susbeteq
                                                    Q$, and we
@@ -1257,7 +1261,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[42]
+[44]
 ./Chapters/Chapter7/Section1/section1.tex:173: Undefined control sequence.
 l.173     ${\int}{f}-L(f,P_1,\apha
                                   )<\frac{\epsilon}{2}$. Take $P=P_1 \cup P_...
@@ -1267,7 +1271,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[43]
+[45]
 ./Chapters/Chapter7/Section1/section1.tex:249: Undefined control sequence.
 <recently read> \apha 
                       
@@ -1279,7 +1283,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[44]) (./Chapters/Chapter7/Section2/section2.tex [45]
+[46]) (./Chapters/Chapter7/Section2/section2.tex [47]
 Overfull \hbox (37.22983pt too wide) detected at line 93
 \OML/cmm/m/it/12 U\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f; P; [] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 L\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f; P; [] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^T \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 U\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f; P[]; []\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 U\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f; P[]; []\OT1/cmr/m/n/12 )) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 L\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f; P[]; []\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 L\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f; P[]; []\OT1/cmr/m/n/12 )) \OML/cmm/m/it/12 < ^^O
  []
@@ -1287,35 +1291,51 @@ Overfull \hbox (37.22983pt too wide) detected at line 93
 
 LaTeX Warning: Command \d invalid in math mode on input line 97.
 
-[46] [47]) (./Chapters/Chapter7/Section3/section3.tex)) [48]
+[48] [49]) (./Chapters/Chapter7/Section3/section3.tex
+./Chapters/Chapter7/Section3/section3.tex:21: Undefined control sequence.
+l.21 ...r $a \leq t \leq b$. Thus if  $ x_0-\detla
+                                                  <s \leq
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[50]) (./Chapters/Chapter7/Section4/section4.tex [51]) (./Chapters/Chapter7/Section5/section5.tex)) [52]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
  (./Analysis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
-Package rerunfilecheck Info: File `Analysis.out' has not changed.
-(rerunfilecheck)             Checksum: 3A173216161C394FDE83CCEE6D192624;2440.
 
+
+Package rerunfilecheck Warning: File `Analysis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Analysis.out':
+(rerunfilecheck)             Before: 729F23BC440D11EEB942D252262DFB9D;2635
+(rerunfilecheck)             After:  93EC9C872DC4637A2FB44AE40E4079EE;2700.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
  ) 
 Here is how much of TeX's memory you used:
- 29755 strings out of 482854
- 698063 string characters out of 5956880
- 1048506 words of memory out of 5000000
- 44031 multiletter control sequences out of 15000+600000
+ 29803 strings out of 482854
+ 698966 string characters out of 5956880
+ 1048816 words of memory out of 5000000
+ 44044 multiletter control sequences out of 15000+600000
  545777 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  68i,10n,98p,734b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{theorem.3.3.2} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Analysis.pdf (48 pages, 808185 bytes).
+Output written on Analysis.pdf (52 pages, 819397 bytes).
 PDF statistics:
- 876 PDF objects out of 1000 (max. 8388607)
- 799 compressed objects within 8 object streams
- 409 named destinations out of 1000 (max. 500000)
- 314 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 927 PDF objects out of 1000 (max. 8388607)
+ 845 compressed objects within 9 object streams
+ 431 named destinations out of 1000 (max. 500000)
+ 338 words of extra memory for PDF output out of 10000 (max. 10000000)
 
