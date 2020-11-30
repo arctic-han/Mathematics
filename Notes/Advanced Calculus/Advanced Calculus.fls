@@ -439,6 +439,8 @@ INPUT ./figures/partitionOfAnInterval.png
 INPUT figures/partitionOfACurve.png
 INPUT ./figures/partitionOfACurve.png
 INPUT ./figures/partitionOfACurve.png
+INPUT Chapters/Chapter5/Section2/section2.tex
+INPUT Chapters/Chapter5/Section2/section2.tex
 INPUT Advanced Calculus.aux
 INPUT ./Advanced Calculus.out
 INPUT ./Advanced Calculus.out

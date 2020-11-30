@@ -1,0 +1,124 @@
+%---------------------------------------------------------------------------------------%	SECTION 4.1
+%---------------------------------------------------------------------------------------
+
+
+\section{Riemann Sums.}
+
+\begin{definition}
+    Let $f:[a,b] \righarrow \R$. We define the \textbf{Riemann sum} of  $F$ with
+    respect to some partition  $P$ of  $[a,b]$ to be a sum of the form:
+        \begin{equation}
+            \sum_{i=1}^{n}{f(t_i)(x_i-t_i-1)}		
+        \end{equation} 
+        where $t_i \in [x_{i-1},x_i]$. Now we say that the Riemann sums of $f$
+        with respect to  $P$ \textbf{converges} to a point $I(f)$ as  $||P||
+        \rightarrow 0$ if and only if for  $\epsilon>0$, there is a partition
+        $P_{\epsilon}$ of $[a,b]$ such that:
+            \begin{equation*}
+                |\sum_{i=1}^{n}{f(t_i)(x_i-t_i-1)}-I(f)|<\epsilon		
+             \end{equation*} 
+        whenever $P_{\epsilon} \subseteq P$, and we write:
+            \begin{equation}
+                I(f)=\lim_{||P|| \rightarrow 0}{\sum_{i=1}^{n}{f(t_i)(x_i-t_i-1)}}
+            \end{equation} 
+\end{definition}
+
+\begin{theorem}\label{5.2.1}
+    Let $a,b \in \R$ with  $a<b$, and suppose that  $f:[a,b] \rightarrow \R$ is
+    a bounded realvalued function. Then  $f$ is Riemann integrable if on
+    $[a,b]$ if and only if  $I(f)$ exists, moreover:
+        \begin{equation}
+            I(f)=\int_{a}^{b}{f(x) dx}		
+        \end{equation} 
+\end{theorem}
+\begin{proof}
+    Suppose that $f$ is integrable on  $[a,b]$, and let $\epsilon>0$. Then there
+    is a partition $P_{\epsilon}$ of  $[a,b]$ such that
+    $L(f,P_{\epsilon})>\int{f}+\epsilon$ and
+    $U(f,P_{\epsilon})<\int{f}+\epsilon$. By the approximation property, we have
+    that  $\int{f}=\sup{L}=\inf{U}$. Now for any partiton $P$ finer than
+    $P_{\epsilon}$, we have $L(f,P)>L(f,P_{\epsilon})$ and
+    $U(f,P)<U(f,P_{\epsilon})$, thus let  $t_i \in [x_{i-1},x_i]$
+        \begin{equation*}
+             \int_{a}^{b}{f dx}-\epsilon<L(f,P) \leq \sum{f(t_i)(x_i-x_{i-1})} \leq U(f,P)<\int_{a}^{b}{f dx}+\epsilon
+        \end{equation*}
+    Then we get:
+        \begin{equation*}
+            |\sum{f(t_i)(x_i-x_{i-1})}-\int_{a}^{b}{f dx}|<\epsilon
+        \end{equation*}
+        so $I(f)=\int{f}$ exists.
+
+    Conversely suppose that the Riemann sums of $f$ converges to $I(f)$.
+    THen for every  $\epsilon>0$, there is a partition  $P_{\epsilon}$ such 
+    that $|\sum{f(t_i)(x_i-x_{i-1})}-I(f)|<$ whenever $P_{\epsilon}
+    \subseteq P$. Now for each $M_i$ and  $m_i$, there are  $u_i,v_i \in
+    [x_{i-1},x_i]$ such that $M_j \geq f(u_i)>M_i-\epsilon$ and  $m_i \leq
+    f(v_j)<m_i+\epsilon$. Then $f(u_i)-f(v_i)>M_i-m_i-2\epsilon$ hence: 
+        \begin{align*}
+            U(f,P)-L(f,P) &= \sum_{i=1}^{n}{(M_i-m_i)(x_i-x_{i-1})} \\
+                &<= \sum{(f(u_i)-f(v_i))(x_i-x_{i-1})}+2\epsilon(b-a) \\
+                &<\sum{(f(u_i)-f(v_i))(x_i-x_{i-1})}-I(f) \\
+                &+I(f)-\sum{(f(u_i)-f(v_i))(x_i-x_{i-1})}+2\epsilon(b-a) \\
+                &<(2+2(b-a))\epsilon
+        \end{align*}
+        Thus, $f$ is Riemann integrable and  $I(f)=\int{f}$.
+\end{proof}
+
+\begin{theorem}[Linearity]\label{5.2.2}
+    If $f$ and  $g$ are integrable on an interval  $[a,b]$, and  $\alpha \in
+    \R$, then $f+g$ and  $\alpha f$ are integrable, and:
+        \begin{enumerate}[label=(\arabic*)]
+            \item $\int_{a}^{b}{f+g dx}=\int_{a}^{b}{f dx}+\int_{a}^{b}{g dx}$
+
+            \item $\int_{a}^{b}{\alpha f dx}=\alpha\int_{a}^{b}{f dx}$ 
+        \end{enumerate}
+\end{theorem}
+\begin{proof}
+    Let $\epsilon>0$ and let $P_{\epsilon}$ be a partition of  $[a,b]$, and for
+    any partition  $P$ finer than  $P_{\epsilon}$, an  $t_i \in [x_{i-1},x_]$,
+    we have:
+        \begin{equation*}
+            |\sum{f(t_i)(x_i-x_{i-1})}-\int_{a}^{b}{f dx}|<\epsilon           
+        \end{equation*}
+    and
+        \begin{equation*}
+            |\sum{g(t_i)(x_i-x_{i-1})}-\int_{a}^{b}{g dx}|<\epsilon
+        \end{equation*}
+    Then, adding the inequalities, we have by the triangle inequality:
+        \begin{equation*}
+            |\sum{(f(t_i)+g(t_i))(x_i-x_{i-1})}-\int_{a}^{b}{f
+            dx}-\int_{a}^{b}{g dx}|<2\epsilon
+        \end{equation*}
+    So $I(f+g)$ exists, anf  $I(f+g)=I(f)+I(g)$.
+
+    The second equality is just part $(1)$ applied $\alpha$ times.
+\end{proof}
+
+\begin{theorem}\label{5.2.3}
+    If $f$ is integrable on  $[a,b]$, then  $f$ is integrable on each sub
+    interval of  $[a,b]$, moreover, if  $a<c<b$, then:
+        \begin{equation}
+            \int_{a}^{b}{f dx}=\int_{a}^{c}{f dx}+\int_{c}^{b}{f dx}
+        \end{equation}
+\end{theorem}
+\begin{proof}
+    Assume that $a<b$, given  $\epsilon>0$, there is a partition  $P$ of
+    $[a,b]$ such that  $U(f,P)-L(f,P)<\epsilon$. Then choose  $P'=P \cup
+    \{c,d\}$, then let  $P_1=P' \cap [c,d]$ where $c<d$ and  $[c,d] \subseq
+    [a,b]$. Then $U(f,P_1)-L(f,P_1) \leq U(f,P')-L(f,P') \leq U(f,P)-L(f,P)$.
+    Since $f$ is integrable on  $P$, we have that it is integrable over  $ P_1$,
+    that is, it is integrable on $[c,d]$.
+
+    Moreover let  $P$ be a partition of  $[a,b]$, and let  $ P_0=P \cup \{c\}$,
+    and let $ P_1=P_0 \cap [a,c]$ and $ P_2=P_0 \cap [c,b]$. Then $ P_0=P_1 \cup
+    P_2$. Now we have that $U(f,P) \geq
+    U(f,P_0)=U(f,P_0)+U(f,P_1) \geq
+    \bar{\int_{a}^{c}}{f}+\bar{\int_{c}^{b}}{f}$, doing the same for lower
+    sums, we get
+        \begin{equation*}
+            \bbar{\int_{a}^{c}}{f}+\bbar{\int_{c}^{b}}{f} \leq
+            \int_{a}^{b}{f} \leq
+            \bar{\int_{a}^{c}}{f}+\bar{\int_{c}^{b}}{f}
+        \end{equation*}
+    Which establishes the equality.
+\end{proof}
