@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  30 NOV 2020 09:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  30 NOV 2020 11:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -727,7 +727,7 @@ and I'll forget about whatever was undefined.
 ]
 Chapter 2.
 (./Chapters/Chapter2/Section1/section1.tex
-<Figures/diagonalizationArray.png, id=284, 2042.5911pt x 1577.4132pt>
+<Figures/diagonalizationArray.png, id=288, 2042.5911pt x 1577.4132pt>
 File: Figures/diagonalizationArray.png Graphic file (type png)
 <use Figures/diagonalizationArray.png>
 Package pdftex.def Info: Figures/diagonalizationArray.png  used on input line 55.
@@ -1279,14 +1279,22 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[44]) (./Chapters/Chapter7/Section2/section2.tex [45])) [46]
+[44]) (./Chapters/Chapter7/Section2/section2.tex [45]
+Overfull \hbox (37.22983pt too wide) detected at line 93
+\OML/cmm/m/it/12 U\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f; P; [] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 L\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f; P; [] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^T \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 U\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f; P[]; []\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 U\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f; P[]; []\OT1/cmr/m/n/12 )) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 L\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f; P[]; []\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 L\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f; P[]; []\OT1/cmr/m/n/12 )) \OML/cmm/m/it/12 < ^^O
+ []
+
+
+LaTeX Warning: Command \d invalid in math mode on input line 97.
+
+[46] [47]) (./Chapters/Chapter7/Section3/section3.tex)) [48]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
  (./Analysis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
 Package rerunfilecheck Info: File `Analysis.out' has not changed.
-(rerunfilecheck)             Checksum: 9155B16618A8F74F0E1EBB858580B016;2361.
+(rerunfilecheck)             Checksum: 3A173216161C394FDE83CCEE6D192624;2440.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1294,20 +1302,20 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
  ) 
 Here is how much of TeX's memory you used:
- 29728 strings out of 482854
- 697697 string characters out of 5956880
- 1048359 words of memory out of 5000000
- 44025 multiletter control sequences out of 15000+600000
+ 29755 strings out of 482854
+ 698063 string characters out of 5956880
+ 1048506 words of memory out of 5000000
+ 44031 multiletter control sequences out of 15000+600000
  545777 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  68i,10n,98p,734b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{theorem.3.3.2} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Analysis.pdf (46 pages, 798235 bytes).
+Output written on Analysis.pdf (48 pages, 808185 bytes).
 PDF statistics:
- 841 PDF objects out of 1000 (max. 8388607)
- 766 compressed objects within 8 object streams
- 391 named destinations out of 1000 (max. 500000)
- 306 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 876 PDF objects out of 1000 (max. 8388607)
+ 799 compressed objects within 8 object streams
+ 409 named destinations out of 1000 (max. 500000)
+ 314 words of extra memory for PDF output out of 10000 (max. 10000000)
 

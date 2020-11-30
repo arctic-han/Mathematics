@@ -421,6 +421,8 @@ INPUT Chapters/Chapter7/Section1/section1.tex
 INPUT Chapters/Chapter7/Section1/section1.tex
 INPUT Chapters/Chapter7/Section2/section2.tex
 INPUT Chapters/Chapter7/Section2/section2.tex
+INPUT Chapters/Chapter7/Section3/section3.tex
+INPUT Chapters/Chapter7/Section3/section3.tex
 INPUT Analysis.aux
 INPUT ./Analysis.out
 INPUT ./Analysis.out
