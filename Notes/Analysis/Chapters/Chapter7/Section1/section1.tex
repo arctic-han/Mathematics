@@ -234,9 +234,12 @@ Riemann-Stieltjes sense.
     which is guaranteed by the intermediate value theorem.
 
     Now suppose without loss of generality that $f$ is monoton increasing, then
-    $M_f(x_i)$ and  $m_i=f(x_{i-1})$  by the extreme value theorem, Then
-    $U(f,P,\alpha)-L(f,P,\alpha)=\frac{\alpha(b)-\alpha(a)}{n}\sum{f(x_i)-f(x_{ii-1})}=
-    \frac{\alpha(b)-\alpha(a)}{n}(f(b)-f(a))<\epsilon$. Taking $n$ large enough
+    $M_f(x_i)$ and  $m_i=f(x_{i-1})$  by the extreme value theorem, Then:
+            \begin{equation*}
+            U(f,P,\alpha)-L(f,P,\alpha)=\frac{\alpha(b)-\alpha(a)}{n}\sum{f(x_i)-f(x_{i-1})}=
+                \frac{\alpha(b)-\alpha(a)}{n}(f(b)-f(a))<\epsilon
+        \end{equation*}
+    Taking $n$ large enough
     implies integrability.
 \end{proof}
 
