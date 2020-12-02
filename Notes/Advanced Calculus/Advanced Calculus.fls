@@ -433,9 +433,6 @@ INPUT Chapters/Chapter5/chapter5.tex
 INPUT Chapters/Chapter5/chapter5.tex
 INPUT Chapters/Chapter5/Section1/section1.tex
 INPUT Chapters/Chapter5/Section1/section1.tex
-INPUT figures/partitionOfAnInterval.png
-INPUT ./figures/partitionOfAnInterval.png
-INPUT ./figures/partitionOfAnInterval.png
 INPUT figures/partitionOfACurve.png
 INPUT ./figures/partitionOfACurve.png
 INPUT ./figures/partitionOfACurve.png
@@ -446,6 +443,7 @@ INPUT ./Advanced Calculus.out
 INPUT ./Advanced Calculus.out
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb

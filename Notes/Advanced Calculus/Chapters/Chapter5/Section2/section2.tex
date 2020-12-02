@@ -122,3 +122,99 @@
         \end{equation*}
     Which establishes the equality.
 \end{proof}
+
+\begin{theorem}[The comparison theorem]\label{5.2.4}
+    If $f$ and  $g$ are integrable on an interval  $[a,b]$, and  $f \leq g$ for all  $x \in [a,b]$,
+    then: 
+        \begin{equation}
+            \int_{a}^{b}{f} dx \leq \int_{a}^{b}{g} dx
+        \end{equation}
+        in particular, if $f$ is bounded between  $m$ and  $M$ for all  $x \in [a,b]$, then we
+        have:
+        \begin{equation}
+            m(b-a) \leq \int_{a}^{b}{f} dx \leq M(b-a)
+        \end{equation} 
+\end{theorem}
+\begin{proof}
+    Let $P$ be a partition of  $[a,b]$, since  $f \leq g$, then we know that  $M_i(f) \leq
+    M_i(g)$, then it follows that  $U(f,P) \leq U(g,P)$, hence:
+        \begin{equation*}    
+            \bar{\int}{f} \leq U(g,P)
+        \end{equation*}
+    taking infimums, we get:
+        \begin{equation*}
+            \int{f} \leq \int{g}
+        \end{equation*}
+    Moreover, if $m \leq f \leq M$, we just take intergral of  $m$, $f$ and $M$ to get the desired
+    result.
+\end{proof}
+
+\begin{theorem}\label{5.2.5}
+    If $f$ is integrable on an $[a,b]$, then $|f|$ is integrable on $[a,b]$, and:
+        \begin{equation}
+            |\int_{a}^{b}{f}dx| \leq \int_{a}^{b}{|f|}dx
+        \end{equation}
+\end{theorem}
+\begin{proof}
+    If we know that $|f|$ is integrable, then this reduces to a corollary of theorem \ref{5.2.4},
+    since  $-|f| \leq f \leq |f|$ for all  $x \in [a,b]$. That is:
+        \begin{equation*}
+            -\int{|f|} \leq \int{f} \leq \int{|f|}
+        \end{equation*}
+        It remains to show that $|f|$ is integrable. Let  $P$ be a partition of  $[a,b]$. 
+        We claim that  $M_j(|f|)-m_i(|f|) \leq M_i(f)-m_i(f)$ for all  $1 \leq i \leq n$. Let
+        $x,y \in [x_{i-1},x_i]$, Now if $f(x),f(y)>0$, then  $|f(x)|-|f(y)|=f(x)-f(y) \leq
+        M_i(f)-m_i(f)$, and we have  $M_i(|f|)-m_i(|f|) \leq M_i(f)-m_i(f)$. 
+
+        The proof is similar for the cases of $f(x(,f(y) \leq 0$, and  $f(x)>0$ and  $f(y)<0$
+        (and vice versa). Now given $\epsilon>0$, and a partiton  $P$ of  $[a,b]$ such that
+        $U(|f|,P)-L(|f|,P) \leq U(f,p)-L(f,P)<\epsilon$, by definition, thus $|f|$ is integrable
+        on  $[a,b]$.
+\end{proof}
+
+\begin{theorem}\label{5.2.6}
+    If $f$ and  $g$ are integrable on an interval  $[a,b]$, then  $fg$ is also integrable
+    on  $[a,b]$.
+\end{theorem}
+\begin{proof}
+    We know that $fg=\frac{(f+g)^2-f^2-g^2}{2}$, we have that $f+g$ is integrable, and we would
+    like to show that $f^2$  (consecuently $g^2$) is integrable.
+
+    We have that $M_i(f^2)=(M_i(|f|))^2$, $m_i(f^2)=(m_i(|f|))^2$. So
+    $M_i(f^2)-m_i(f^2)=M_i(|f|)^2-m_i_(|f|)^2=(M_i(|f|)-m_i_(|f|))(M_i(|f|)+m_i_(|f|) \leq
+    2M(M_i(|f|)-m_i(|f|))$ where $M-\sup{|f}$ for all $x \in [a,b]$. Then taking the upper and
+    lower sums on this inequality, we get:
+        \begin{equation*}
+            U(f^2,P)-L(f^2,P) \leq 2M(U(f,P)-L(f,P))<2M\epsilon.
+        \end{equation*}
+    Taking $\epsilon$ small enough, then  $f^2$ is integrable. Hence the implication that  $fg$
+    is integrable follows.
+\end{proof}
+
+\begin{theorem}[The first mean value theorem for Integrals]\label{5.2.7}
+    Suppose that $f$ and  $g$ are integrable on an interval  $[a,b]$, with $g \geq 0$ for all  $x
+\in [a,b]$. If $m=\inf{f}$ and $M=\sup{f}$ for all $x \in [a,b]$, then there is a number $c
+\in [m,M]$such that:
+    \begin{equation}
+        \int_{a}^{b}{fg(x)} dx=c\int_{a}^{b}{g(x)} dx
+    \end{equation} 
+in particular, if $f$ is continuous on  $[a,b]$, then there is an $ x_0 \in [a,b]$ satisfying:
+    \begin{equation}
+        \int_{a}^{b}{fg(x)} dx=f(x_0)\int_{a}^{b}{g(x)} dx
+    \end{equation} 
+\end{theorem}
+\begin{proof}
+    We have that $m \leq f \leq M$ for all  $x \in [a,b]$, and we have that $g \geq 0$. So we have
+    that  $mg \leq fg \leq Mg$. Notice that all three functions are integrable, then by the
+    comparison theorem, we have:
+        \begin{equation*}
+            m\int{g} \leq \int{fg} \leq M\int{g}
+        \end{equation*}
+    If $\int_{a}^{b}{g}=0$, then $\int_{a}^{b}{fg}=0$ by the Squeeze theorem, and any $c \in [m,M]$
+    is sufficient.
+
+    If $\int{g} \neq 0$, define $c=\frac{\int{fg}}{\int{g}}$, then we have $m\int{g} \leq c\int{g}
+\leq M\int{g}$. Then we have (since $\int{g}>0$) that $m \leq c \leq M$.
+
+Now if  $f$ is continuous on  $[a,b]$, then there is an $x_0 \in [a,b]$ for which $ f(x_0)=c$.
+\end{proof}
