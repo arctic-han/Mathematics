@@ -55,3 +55,82 @@ $f^{-1}(B)=\bigcap_{i=1}^{n}{f^{-1}(S_i)}$, thus  $S_i$ is also open in  $X$ for
             $g^{-1}((a,b))$ is open in  $\R_l$.
     \end{enumerate}
 \end{example} 
+
+\begin{theorem}\label{1.7.1}
+    Let $X$ and  $Y$ be topological spaces, and let  $f:X \rightarrow Y$ be a mapping of  $X$ into
+    $Y$. Then the following are equivalent:
+        \begin{enumerate}[label=(\arabic*)]
+            \item $f$ is continuous.
+
+            \item For every $A \subseteq X$,  $f(\bar{A}) \subseteq \bar{f(A)}$.
+
+            \item For every closed set $B \subseteq Y$,  $f^{-1}(B)$ is closed in $X$.
+
+            \item For each  $x \in X$ and each neighborhood  $V$ of  $f(x)$, tgere us a neighborhood
+                $U$ of  $x$ such that  $f(U) \subseteq V$.
+        \end{enumerate}
+\end{theorem}
+\begin{proof}
+    Let $f$ be continuous and let  $A \subseteq X$. Consider the neighborhood  $V$ of  $f(x)$, then
+    $f^{-1}(V)$ is open in $X$, and intersects  $A$ at a point  $y$. Then  $V \cap f(A)=f(y)$, thus 
+    $f(x) \in \bar{f(A)}$.
+
+    Now let $B$ be closed in  $Y$, and let  $A=f^{-1}(B)$. THen we have that $F(A)=f(f^{-1(B)})
+    \subseteq B$, thus $x \in \bar{A}$.
+
+    Now let $V$ be open in $Y$, so that  $B=\com{Y}{V}$ is closed in $Y$, and
+    $f^{-1}(B)=\com{f^{-1}(Y)}{f^{-1}(V)}=\com{X}{f^-1}(V)$ which is closed in $X$, hence
+    $f^{-1}(V)$ is open in $X$.
+
+    Now let  $x \in X$, and let  $V$ be a neighborhood of  $f(x)$. Then $U=f^{-1}(V)$ is a
+    neighborhood of $x$ for which  $f(U) \subseteq V$. Finally let $V$ be open in  $Y$, and let $x
+    \in f^{-1}(V)$, then $f(x) \in V$, so  there is a neighborhood $U_x$ of  $x$ for which  $f(U_x) \subseteq V$,
+    then $U_x \subseteq f^{-1}(V)$, then $f^{-1}(V)$ is a union of open sets, and hence open in $X$.
+\end{proof}
+
+\begin{definition}
+    Let $X$ and  $Y$ be topological spaces, and  $f:X \rightarrow Y$ be a $1-1$ mapping of  $X$ onto
+    $Y$. We call  $f$ a \textbf{homeomorphism} if both $f$ and  $f^{-1}$ are continuous.		
+\end{definition}
+
+\begin{lemma}\label{1.7.2} 
+    Let $X$ and  $Y$ be topological spaces and let $f:X \rightarrow Y$ be a homeomorphism. Then
+    $F(U)$ is open if and only if $U$ is open.
+\end{lemma}
+\begin{proof}
+    We have that both $f:X \rightarrow Y$ and  $f^{-1}:Y \rightarrow X$ are contiuous $1-1$ of $X$
+    and  $Y$ onto each other  (respectively). Now let $U$ be open in  $X$, then $U=f^{-1}(V)$, for 
+    some set  $V$ open in $Y$. Notice then, that $f(U)=f(f^{-1}(V))=V$, thus $f(U)$ is open in $Y$. 
+    Conversely, let $V=f(U)$ be open in $Y$ for some open set  $U$ in  $X$, then  $U=f^{-1}(V)$, so
+    by definition of continuity, $U$  is open in $X$.
+\end{proof}
+
+\begin{definition}
+    Let $X$ and  $Y$ be topological spaces and let  $f:X \rightarrow Y$ be a contiuous  $1-1$ maping
+    of  $X$ into  $Y$, and consider  $f(X)$ as a subspace of $Y$. We call  $f:X \rightarrow f(X)$ a
+    \textbf{topological imbedding} if $f$ is a homeomorphism of $X$ onto  $f(X)$.
+\end{definition}
+
+\begin{example}
+    \begin{enumerate}[label=(\arabic*)]
+        \item The map $f:\R \rightarrow \R$ defined by  $f(x)=3x+1$ is a homeomorphism whose inverse
+            is $f^{-1}(y)-\frac{1}{3}(y-3)$, both $f$ and  $f^{-1}$ are contiuous.
+
+        \item The map $f:(-1,1) \rightarrow \R$ defined by $f(x)=\frac{x^2}{1-x^2}$ has as its
+            inverse the map $f:\R \rightarrow (-1,1)$ defined by
+            $f^{-1}(y)=\frac{2y}{1+\sqrt{1+4y^2}}$. Both $f$ and  $f^{-1}$ are contiuous, so $f$ is
+            a homeomorphism.
+
+        \item Teh map  $g:\R_l \rightarrow \R$ defined by  $g(x)=x$ is not a homeomorphism, despite
+            being contiuous, as $g^{-1}(1)$ is undefined.
+
+        \item Let $S^1$ be the unit circle in $\R$, which is a subspace of $\R$, and define
+            $f:[0,1) \rightarrow S^1$ by $f(t)=(\cos(t),\sin(t))$. Clearly $f$ is  $1-1$ onto
+            $S^1$, and contiuous, however  $f^{-1}$ is not contiuous as $f([0,\frac{1}{4}))$ is not
+            open in $S^1$ as  $f(0)$ is in no open set of $\R^2$ such that  $U \cap S^1=f([0,1))$.
+
+        \item Consider the mappings $g:[0,1) \rightarrow \R^2$ by $f(t)=(\cos(2t\pi),\sin(2t\pi)))$.
+            Now $g$ is  $1-1$ and continuous, and we have that  $g([0,1)) \subseteq S^1$, however
+            since $g$ is not a homeomorphism,  $g$ fails to be a topological embedding.
+    \end{enumerate}
+\end{example} 

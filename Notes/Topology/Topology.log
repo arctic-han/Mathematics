@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  25 NOV 2020 16:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  12 DEC 2020 12:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -922,7 +922,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[16])) [17]
+[16] [17])) [18]
 
 ./Topology.tex:82: LaTeX Error: \begin{corollary} on input line 160 ended by \end{document}.
 
@@ -957,18 +957,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
 ### semi simple group (level 1) entered at line 160 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 29290 strings out of 482854
- 692227 string characters out of 5956880
- 1042826 words of memory out of 5000000
- 43946 multiletter control sequences out of 15000+600000
+ 29304 strings out of 482854
+ 692337 string characters out of 5956880
+ 1042890 words of memory out of 5000000
+ 43948 multiletter control sequences out of 15000+600000
  545857 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  68i,9n,98p,734b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Topology.pdf (17 pages, 1929795 bytes).
+Output written on Topology.pdf (18 pages, 1936510 bytes).
 PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
- 267 compressed objects within 3 object streams
- 111 named destinations out of 1000 (max. 500000)
+ 338 PDF objects out of 1000 (max. 8388607)
+ 283 compressed objects within 3 object streams
+ 123 named destinations out of 1000 (max. 500000)
  117 words of extra memory for PDF output out of 10000 (max. 10000000)
 
