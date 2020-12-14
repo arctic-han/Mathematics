@@ -134,3 +134,143 @@ $f^{-1}(B)=\bigcap_{i=1}^{n}{f^{-1}(S_i)}$, thus  $S_i$ is also open in  $X$ for
             since $g$ is not a homeomorphism,  $g$ fails to be a topological embedding.
     \end{enumerate}
 \end{example} 
+
+\begin{theorem}[Constructions for continuous functions.]\label{1.7.3}
+    Let $X$ and  $Y$ be topological spaces, then:
+        \begin{enumerate}[label=(\arabic*)]
+            \item (Constant construction) If $f:X \rightarrow Y$ maps  $x \rightarrow y_0$ for all
+                $x \in X$, then  $f$ is continuous.
+
+            \item  (Inclusion) If $A \subseteq X$ is a subspace, then the inclusion mapping  $\iota:A
+                \rightarrow Y$ is continuous.
+
+            \item (Construction by composition) If $f:X \rightarrow Y$ and  $g:Y \rightarrow Z$ are
+                continuous, then  $f \circ g: X \rightarrow Z$ is also continuous.
+
+            \item  (Domain restriction) If  $f:X \rightarrow Y$ is continuous and  $A \subseteq X$,
+                then  $f:A \rightarrow Y$ is continuous.
+
+            \item  (Range restriction) if $f:X \rightarrow Y$, and  $Z \subseteq Y$ such that  $f(X)
+                \subseteq Y$, then $f:X \rightarrow Z$ is continuous.
+
+            \item  (Range exapnsion) If $f:X \rightarrow Y$ is continuous, and  $Y \subseteq Z$ is a
+                subspace of  $Z$, then  $f:X \rightarrow Z$ is continuous.
+
+            \item  (Local Formulation) The map $f:X \rightarrow Y$ is continuous if  $X$ can be
+                written as the union of open sets  $U_{\alpha}$ such that $f:U_{\alpha} \rightarrow
+                Y$ is continuous for all $\alpha$.
+        \end{enumerate}
+\end{theorem}
+\begin{proof}
+    \begin{enumerate}[label=(\arabic*)]
+        \item Let $f (x)=y_0$ for all $x \in X$, and let  $V$ be open in  $Y$, then  $f^{-1}(V)=X$
+            or $\emptyset$ depending on if $ y_0 \in V$ or noy. In either case, $f^{-1}(V)$ is open.
+
+        \item If $U$ us open in  $X$, then  $f^{-1}(U)=U \cap A$ which is open in the subspace
+            topology of $X$.
+
+        \item If $U$ is open in  $Z$,  $g^{-1}(U)$ is open in $Y$, hence  $f^{-1(g^{-1(U)})}$ is
+            open in $X$.
+
+        \item Notice that  $f_A=\iota \circ f=f:A \rightarrow Y$ which is continuous by $(2)$
+            and $(3)$.
+
+        \item Let $f:A \rightarrow Y$ be continuous and let  $f(X) \subseteq Z \subseteq Y$. Let $B$
+            be open in  $Z$, so  $B=Z \cap U$ for some  $U$ open in  $Y$. Now by hypothesis, we have
+            that $f^{-1}(U) \subseteq f^{-1}(B)$, hence $f^{-1}(B)$ is open in $X$, thus  $f:X
+            \rightrightarrow Z$ is coontinuous.
+
+        \item Let  $f$ be as in  $(5)$, and let $Y \subseteq Z$ be a subspace of  $Z$. Then the
+            mapping  $h:X \rightarrow Z$ defined by $h=\iota \circ f$ is continuous.
+
+        \item Let  $X=\bingcup{U_{\alpha}}$ where $U_{\alpha}$ is open in $X$, and $f:U_{\alpha}
+            \rightarrow Y$ is continuous for all  $\alpha$. LEt $V$ be open in  $Y$, then
+            $f^{-1}(V) \cap U_{\alpha}=f^{-1}_U{\alpha}(V)$, and since $f$ is continuous on
+            $U_{\alpha]}$, then $f^{-1}(V)=\bingcup{f^{-1}_U_[\alpha](V)}$ is open in $X$.
+    \end{enumerate}
+\end{proof}
+
+\begin{theorem}[The pasting lemma]\label{1.7.4}
+    Let $X=A \cap B$ with  $A$ and  $B$ closed in  $X$, and let  $f:A \rightarrow Y$ and  $g:B
+    \rightrightarrow X$ be continuous. If  $f(x)=g(x)$ for all $x \in A \cap B$, then we can
+    construct a mapping  $h:X \rightarrow Y$ defined by  $h(x)=
+        \begin{cases}
+            f(x) \text{, } & x \in A \\
+            g(x) \text{, } & x \in B
+        \end{cases}$
+    . Then $h$ is continuous.
+\end{theorem}
+\begin{proof} 
+    Let $C$ be closed in  $Y$, then  $h^{-1}(C)=f^{-1}(C) \cup g^{-1}(C)$. Since $f$ and  $g$ are
+    continuous, then  $f^{-1}(C)$ and $g^{-1}(C)$ are closed in $A$ and  $B$, respectively. Thus
+    $h^{-1}(C)$ is closed in $X$.
+\end{proof}
+
+\begin{example}
+        Define $h:\R \rightarrow \R$ by $h(x)=
+            \begin{cases}
+                x \text{, } & x \leq 0 \\
+                \frac{x}{2} \text{, } & x \geq 0 
+            \end{cases}$
+        . We have that $x$ and  $\frac{x}{2}$ are continuous on their respective domains,
+        intersecting at $0$, i.e.  $x:(-\infty,0] \rightarrow \R$, $ \frac{x}{2}:[0,\infty
+        \rightarrow \R$, and $\{0\}=(-\infty, 0] \cap [0, \infty)$. Thus $h$ is continuous on $\R$.
+
+
+        However, $k,l:\R \rightarrow \R$ defined by $k(x)=
+            \begin{cases}
+                x-2 \text{, } & x \leq 0 \\
+                x+2 \text{, } & x \geq 0 
+            \end{cases}$
+            and $l(x)=
+            \begin{cases}
+                x-2 \text{, } & x < 0 \\
+                x+2 \text{, } & x \geq 0 
+            \end{cases}$
+            are not continuous. We have that their domains intersect at $0$, but that  $k(0)=\pm_2$,
+            (so $k$ isn't even a function). Likewise, $(-\infty,0) \cap [0,\infty)=\emptyset$, which
+            is open in $\R$ see \ref{fig_1.9}.
+
+            \begin{figure}
+                \centering
+                \includegraphics[scale = 0.2]{Figures/Chapter1/continuousFunctions.png}
+                \caption{The mappings $h$, $k$, and  $l$.}
+                \label{fig_1.9}
+            \end{figure}
+\end{example} 
+
+\begin{theorem}\label{1.7.5}
+    Let $f:A \rightarrow X \times Y$ be defined by  $f(a)=(f_1(a),f_2(a))$, where $ f_1:A
+    \rightarrow X$ and $ f_2: A \rightarrow Y$. Then $f$ is continuous if and only if  $ f_1$ and $
+    f_2$ are continuous.
+\end{theorem}
+\begin{proof}
+    Let $\pi_1:X \times Y \rightarrow X$ and $\pi_2:X \times Y \rightarrow Y$ be projections onto
+    $X$ and  $Y$ respectively. Since  $\pi_1^{-1}(U)=U \times Y$ and $\pi_2^{-1}(V)=X \times V$ are
+    both open in  $X \times Y$,  $\pi_1$ and $\pi_2$ are continuous. Then notice that $ f_1(a)=\pi_1
+    \circ f(a)$ and $ f_2(a)=\pi_2 \circ f(a)$, both of which are continuous.
+
+    Now suppose that $ f_1$ and $ f_2$ are continuous..We have that $a \in f^{-1}(U \times V)$ if
+    and only if $f_1(a) \in U$ and $ f_2(a) \in V$, then $ f_1^{-1}(U)$ and $f_2^{-1}(V)$ are open
+    in $A$, hence so is $f^{-1}(U \times V)=f_1^{-1}(U) \cap f_2^{-1}(V)$.
+\end{proof}
+
+\begin{definition}
+    We define the \textbf{parametrized curve} of the plane $\R^2$ to be the continuous function
+    $f:[a,b] \rightarrow \R^2$ defined by $f(t)=(x(t),y(t))$. If $f$ is in a vector field, then wwe
+    define $f(t)=x(t)i+y(t)j$ where $i=
+    \begin{pmatrix}
+        1 \\
+        0
+    \end{pmatrix}$
+    and $j=
+    \begin{pmatrix}
+        0 \\
+        1
+    \end{pmatrix}$
+\end{definition}
+
+\begin{example}
+    The function $f(t)=((\cos(t)),\sin(t))$ is a parametrization of the curve $x^2+y^2=1$, i.e. the
+    unit circle  $S^1$.
+\end{example} 
