@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  14 DEC 2020 11:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  28 DEC 2020 23:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -704,13 +704,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 Chapter 1.
 (./Chapters/Chapter1/Section1/section1.tex
-<Figures/Chapter1/topologiesOn3Points.png, id=53, 1020.6933pt x 484.209pt>
+<Figures/Chapter1/topologiesOn3Points.png, id=61, 1020.6933pt x 484.209pt>
 File: Figures/Chapter1/topologiesOn3Points.png Graphic file (type png)
 <use Figures/Chapter1/topologiesOn3Points.png>
 Package pdftex.def Info: Figures/Chapter1/topologiesOn3Points.png  used on input line 31.
 (pdftex.def)             Requested size: 306.21036pt x 145.26381pt.
  [3 <./Figures/Chapter1/topologiesOn3Points.png>]) (./Chapters/Chapter1/Section2/section2.tex
-<Figures/Chapter1/basesOfCircularRectangularRegions.png, id=71, 630.9171pt x 474.3321pt>
+<Figures/Chapter1/basesOfCircularRectangularRegions.png, id=79, 630.9171pt x 474.3321pt>
 File: Figures/Chapter1/basesOfCircularRectangularRegions.png Graphic file (type png)
 <use Figures/Chapter1/basesOfCircularRectangularRegions.png>
 Package pdftex.def Info: Figures/Chapter1/basesOfCircularRectangularRegions.png  used on input line 56.
@@ -726,7 +726,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ) (./Chapters/Chapter1/Section3/section3.tex [6]
-<Figures/Chapter1/orderTopologyOnRxR.png, id=112, 831.3459pt x 367.1316pt>
+<Figures/Chapter1/orderTopologyOnRxR.png, id=120, 831.3459pt x 367.1316pt>
 File: Figures/Chapter1/orderTopologyOnRxR.png Graphic file (type png)
 <use Figures/Chapter1/orderTopologyOnRxR.png>
 Package pdftex.def Info: Figures/Chapter1/orderTopologyOnRxR.png  used on input line 56.
@@ -736,7 +736,7 @@ Overfull \hbox (74.97047pt too wide) in paragraph at lines 8--11
 \OT1/cmr/m/n/12 to be the topol-ogy hav-ing as ba-sis the col-lec-tion $\OMS/cmsy/m/n/12 B \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 U \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 V \OMS/cmsy/m/n/12 ^^R \OML/cmm/m/it/12 X \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 Y \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 U[]X[]V[]Y\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 . 
  []
 
-<Figures/Chapter1/interiorOfRectangle.png, id=127, 681.2652pt x 309.5565pt>
+<Figures/Chapter1/interiorOfRectangle.png, id=135, 681.2652pt x 309.5565pt>
 File: Figures/Chapter1/interiorOfRectangle.png Graphic file (type png)
 <use Figures/Chapter1/interiorOfRectangle.png>
 Package pdftex.def Info: Figures/Chapter1/interiorOfRectangle.png  used on input line 49.
@@ -747,13 +747,13 @@ Overfull \hbox (1.10599pt too wide) in paragraph at lines 66--68
  []
 
 [8]
-<Figures/Chapter1/projections.png, id=136, 306.4248pt x 284.0211pt>
+<Figures/Chapter1/projections.png, id=144, 306.4248pt x 284.0211pt>
 File: Figures/Chapter1/projections.png Graphic file (type png)
 <use Figures/Chapter1/projections.png>
 Package pdftex.def Info: Figures/Chapter1/projections.png  used on input line 79.
 (pdftex.def)             Requested size: 153.21202pt x 142.0102pt.
 ) (./Chapters/Chapter1/Section5/section5.tex [9 <./Figures/Chapter1/interiorOfRectangle.png> <./Figures/Chapter1/projections.png>] [10]
-<Figures/Chapter1/ConvexSeAndNonConvexSet.png, id=160, 1864.566pt x 884.3439pt>
+<Figures/Chapter1/ConvexSeAndNonConvexSet.png, id=168, 1864.566pt x 884.3439pt>
 File: Figures/Chapter1/ConvexSeAndNonConvexSet.png Graphic file (type png)
 <use Figures/Chapter1/ConvexSeAndNonConvexSet.png>
 Package pdftex.def Info: Figures/Chapter1/ConvexSeAndNonConvexSet.png  used on input line 101.
@@ -781,7 +781,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/Chapter1/upperAndLowerBoundsOfDomains.png, id=161, 1611.621pt x 764.3757pt>
+<Figures/Chapter1/upperAndLowerBoundsOfDomains.png, id=169, 1611.621pt x 764.3757pt>
 File: Figures/Chapter1/upperAndLowerBoundsOfDomains.png Graphic file (type png)
 <use Figures/Chapter1/upperAndLowerBoundsOfDomains.png>
 Package pdftex.def Info: Figures/Chapter1/upperAndLowerBoundsOfDomains.png  used on input line 132.
@@ -876,7 +876,7 @@ l.198 ...1]$, the same can be said for any  $x \in
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-<Figures/Chapter1/hausdorffSpace.png, id=200, 805.5696pt x 392.9079pt>
+<Figures/Chapter1/hausdorffSpace.png, id=208, 805.5696pt x 392.9079pt>
 File: Figures/Chapter1/hausdorffSpace.png Graphic file (type png)
 <use Figures/Chapter1/hausdorffSpace.png>
 Package pdftex.def Info: Figures/Chapter1/hausdorffSpace.png  used on input line 243.
@@ -964,12 +964,26 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/Chapter1/continuousFunctions.png, id=264, 1267.2pt x 543.51pt>
+<Figures/Chapter1/continuousFunctions.png, id=272, 1267.2pt x 543.51pt>
 File: Figures/Chapter1/continuousFunctions.png Graphic file (type png)
 <use Figures/Chapter1/continuousFunctions.png>
 Package pdftex.def Info: Figures/Chapter1/continuousFunctions.png  used on input line 236.
 (pdftex.def)             Requested size: 253.4355pt x 108.70007pt.
-[19])) [20 <./Figures/Chapter1/continuousFunctions.png (PNG copy)>]
+[19])) (./Chapters/Chapter2/chapter2.tex [20 <./Figures/Chapter1/continuousFunctions.png (PNG copy)>]
+Chapter 2.
+(./Chapters/Chapter2/Section1/section1.tex
+./Chapters/Chapter2/Section1/section1.tex:31: Undefined control sequence.
+l.31 ...V_{\alpha}}=\prod{U_{\alpha} \cap V_{\apha
+                                                  }}$, which is also a basis...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)) [21
+
+]
 
 ./Topology.tex:82: LaTeX Error: \begin{corollary} on input line 160 ended by \end{document}.
 
@@ -989,7 +1003,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
 Package rerunfilecheck Info: File `Topology.out' has not changed.
-(rerunfilecheck)             Checksum: 10788BF7E55F9B8D984664028E72C9E4;570.
+(rerunfilecheck)             Checksum: C13F167BE8717AF3B1ED4AC3A00FA92C;699.
 
 
 LaTeX Warning: There were undefined references.
@@ -1004,18 +1018,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
 ### semi simple group (level 1) entered at line 160 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 29336 strings out of 482854
- 692794 string characters out of 5956880
- 1043098 words of memory out of 5000000
- 43957 multiletter control sequences out of 15000+600000
+ 29355 strings out of 482854
+ 693159 string characters out of 5956880
+ 1043212 words of memory out of 5000000
+ 43964 multiletter control sequences out of 15000+600000
  545857 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  68i,10n,98p,734b,614s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Topology.pdf (20 pages, 2008513 bytes).
+Output written on Topology.pdf (21 pages, 2013578 bytes).
 PDF statistics:
- 383 PDF objects out of 1000 (max. 8388607)
- 322 compressed objects within 4 object streams
- 145 named destinations out of 1000 (max. 500000)
- 122 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 397 PDF objects out of 1000 (max. 8388607)
+ 335 compressed objects within 4 object streams
+ 150 named destinations out of 1000 (max. 500000)
+ 138 words of extra memory for PDF output out of 10000 (max. 10000000)
 

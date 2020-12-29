@@ -391,6 +391,10 @@ INPUT Chapters/Chapter1/Section7/section7.tex
 INPUT Figures/Chapter1/continuousFunctions.png
 INPUT ./Figures/Chapter1/continuousFunctions.png
 INPUT ./Figures/Chapter1/continuousFunctions.png
+INPUT Chapters/Chapter2/chapter2.tex
+INPUT Chapters/Chapter2/chapter2.tex
+INPUT Chapters/Chapter2/Section1/section1.tex
+INPUT Chapters/Chapter2/Section1/section1.tex
 INPUT Topology.aux
 INPUT ./Topology.out
 INPUT ./Topology.out
