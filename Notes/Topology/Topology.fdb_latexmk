@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1609213812 "Topology.tex" "Topology.pdf" "Topology" 1609213812
+["pdflatex"] 1609868080 "Topology.tex" "Topology.pdf" "Topology" 1609868080
   "/etc/texmf/web2c/texmf.cnf" 1604064585 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -230,8 +230,9 @@
   "Chapters/Chapter1/Section6/section6.tex" 1606600743 16440 c5bb7157bca36f2f85d4421cd0e31237 ""
   "Chapters/Chapter1/Section7/section7.tex" 1607960344 13899 3671d8372661ea40c62de0f4e27eb75c ""
   "Chapters/Chapter1/chapter1.tex" 1606600743 774 60742b89f8cdd6afd41ba458d2076a98 ""
-  "Chapters/Chapter2/Section1/section1.tex" 1609213811 3120 e0d7e88f2950b0ca41665ff8e2ddb02c ""
-  "Chapters/Chapter2/chapter2.tex" 1609212157 664 952a61e1af2579be603058df5b161b0e ""
+  "Chapters/Chapter2/Section1/section1.tex" 1609868005 10099 778574f74f8a6801ed53eaa94ccf83ef ""
+  "Chapters/Chapter2/Section2/section2.tex" 1609868068 225 22f7f735bc52600bddac85051182aec5 ""
+  "Chapters/Chapter2/chapter2.tex" 1609868078 663 6f468626f448ac240622669ec5ce9c43 ""
   "Figures/Chapter1/basesOfCircularRectangularRegions.png" 1606600743 825314 761ca474224a9dffd78304f018349b25 ""
   "Figures/Chapter1/continuousFunctions.png" 1606600743 45834 21100e69ac71c48c6913c427622a5127 ""
   "Figures/Chapter1/convexSeAndNonConvexSet.png" 1606600743 331821 65f63bf9b203418c0376d3adc5c5e735 ""
@@ -243,11 +244,11 @@
   "Figures/Chapter1/upperAndLowerBoundsOfDomains.png" 1606600743 307312 cdab10a3dd96d9cc7da9a0df695a847a ""
   "Library/Fonts/BlackboardBold.tex" 1606600743 744 e62bfb97c3b0ebe0a2353762b95933da ""
   "Library/Fonts/MathCalligraphy.tex" 1606600743 791 fe7a518c060a9035d50e4618c12ce65f ""
-  "Topology.aux" 1609213687 6516 1168b68e8a79ff222321e929d2ee850e "pdflatex"
-  "Topology.out" 1609213687 699 c13f167be8717af3b1ed4ac3a00fa92c "pdflatex"
+  "Topology.aux" 1609868013 6810 3d861a15672bf4065896ea97b701722a "pdflatex"
+  "Topology.out" 1609868013 699 c13f167be8717af3b1ed4ac3a00fa92c "pdflatex"
   "Topology.tex" 1609212079 2225 80594a081efea6babd13ebd35f436618 ""
   (generated)
-  "Topology.log"
-  "Topology.aux"
   "Topology.pdf"
+  "Topology.aux"
+  "Topology.log"
   "Topology.out"

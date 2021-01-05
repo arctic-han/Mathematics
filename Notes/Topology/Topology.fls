@@ -395,6 +395,8 @@ INPUT Chapters/Chapter2/chapter2.tex
 INPUT Chapters/Chapter2/chapter2.tex
 INPUT Chapters/Chapter2/Section1/section1.tex
 INPUT Chapters/Chapter2/Section1/section1.tex
+INPUT Chapters/Chapter2/Section2/section2.tex
+INPUT Chapters/Chapter2/Section2/section2.tex
 INPUT Topology.aux
 INPUT ./Topology.out
 INPUT ./Topology.out

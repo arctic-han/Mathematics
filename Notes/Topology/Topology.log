@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  28 DEC 2020 23:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  5 JAN 2021 13:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -981,9 +981,26 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-)) [21
+[21
 
-]
+] [22]
+./Chapters/Chapter2/Section1/section1.tex:151: Missing $ inserted.
+<inserted text> 
+                $
+l.151 ...a}}$. Then $y_{\beta} \in V_{\beta}$ \cap
+                                                   A_{\beta}, hence $x \in
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapters/Chapter2/Section1/section1.tex:151: Missing $ inserted.
+<inserted text> 
+                $
+l.151 ...n V_{\beta}$ \cap A_{\beta}, hence $x \in
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+) (./Chapters/Chapter2/Section2/section2.tex)) [23]
 
 ./Topology.tex:82: LaTeX Error: \begin{corollary} on input line 160 ended by \end{document}.
 
@@ -1002,9 +1019,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
 (./Topology.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
-Package rerunfilecheck Info: File `Topology.out' has not changed.
-(rerunfilecheck)             Checksum: C13F167BE8717AF3B1ED4AC3A00FA92C;699.
 
+
+Package rerunfilecheck Warning: File `Topology.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Topology.out':
+(rerunfilecheck)             Before: C13F167BE8717AF3B1ED4AC3A00FA92C;699
+(rerunfilecheck)             After:  992673D26631145CB1C0D96382EAFE25;765.
 
 LaTeX Warning: There were undefined references.
 
@@ -1018,18 +1041,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
 ### semi simple group (level 1) entered at line 160 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 29355 strings out of 482854
- 693159 string characters out of 5956880
- 1043212 words of memory out of 5000000
- 43964 multiletter control sequences out of 15000+600000
+ 29377 strings out of 482854
+ 693490 string characters out of 5956880
+ 1043404 words of memory out of 5000000
+ 43972 multiletter control sequences out of 15000+600000
  545857 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  68i,10n,98p,734b,614s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Topology.pdf (21 pages, 2013578 bytes).
+Output written on Topology.pdf (23 pages, 2022699 bytes).
 PDF statistics:
- 397 PDF objects out of 1000 (max. 8388607)
- 335 compressed objects within 4 object streams
- 150 named destinations out of 1000 (max. 500000)
+ 417 PDF objects out of 1000 (max. 8388607)
+ 353 compressed objects within 4 object streams
+ 161 named destinations out of 1000 (max. 500000)
  138 words of extra memory for PDF output out of 10000 (max. 10000000)
 
