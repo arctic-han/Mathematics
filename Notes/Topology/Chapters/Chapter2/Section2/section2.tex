@@ -89,26 +89,26 @@ It is easy to see that boundedness of a set does not depend on the topology of $
 metric.
 
 \begin{theorem}\label{2.2.3}
-    Let $X$ be a metric space with metric $d$ and define  $\hat{d}:X \times X \rightarrow \R$ by
-    $\hat{d}=\min\{d(x,y),1\}$ for all $x,y \in X$. Then  $\hat{d}$ is a metric on $X$ that induces
+    Let $X$ be a metric space with metric $d$ and define  $\bar{d}:X \times X \rightarrow \R$ by
+    $\bar{d}=\min\{d(x,y),1\}$ for all $x,y \in X$. Then  $\bar{d}$ is a metric on $X$ that induces
     the same topology as  $d$.
 \end{theorem}
 \begin{proof}
-    Clearly we have that $0 \leq \hat{d}(x,y) \leq 1$, and that
-    $\hat{d}(x,y)=\min\{d(x,y),1\}=\min\{d(y,x),1\}=\hat{d}(y,x)$. It remains to show the triangly
+    Clearly we have that $0 \leq \bar{d}(x,y) \leq 1$, and that
+    $\bar{d}(x,y)=\min\{d(x,y),1\}=\min\{d(y,x),1\}=\bar{d}(y,x)$. It remains to show the triangly
     inequality.
 
     Now if $d(x,z) \leq 1$ and $d(z,y) \leq 1$, then by the triangle inequality $d(x,y) \leq 1$ and
-    $\hat{d}(x,y) \leq \hat{d}(x,z)+\hat{d}(z,y)$. Now if $d(x,z)<1$ and $d(z,y)<1$, we get the same
-    conclusion. Thus we see that $\hat{d}$ is a metric on $X$.
+    $\bar{d}(x,y) \leq \bar{d}(x,z)+\bar{d}(z,y)$. Now if $d(x,z)<1$ and $d(z,y)<1$, we get the same
+    conclusion. Thus we see that $\bar{d}$ is a metric on $X$.
 
     Now take as basis the collection of all  $\epsilon$-balls with  $0<\epsilon<1$, and any basis
-    element of  $x$ contains such an  $\epsilon$-ball, thus  $\hat{d}$ induces the same topology as
+    element of  $x$ contains such an  $\epsilon$-ball, thus  $\bar{d}$ induces the same topology as
     $d$.
 \end{proof}
 
 \begin{definition}
-    We call $\hat{d}$ the \textbf{standard bounded metric} corresponding to $d$.		
+    We call $\bar{d}$ the \textbf{standard bounded metric} corresponding to $d$.		
 \end{definition}
 
 \begin{definition}
@@ -185,7 +185,7 @@ Before we show that $||\cdot||$ and  $\rho$ are metrics, we introduce the follow
     The norm and the square metric both induce the product topology on $\R^n$.
 \end{theorem}
 \begin{proof}
-    Notics that $\rho(x,y) \leq ||x-y|| \leq \sqrt{n}\rho(x,y)$. This first inequality shcows that
+    Notics that $\rho(x,y) \leq ||x-y|| \leq \sqrt{n}\rho(x,y)$. This first inequality shows that
     $B_{||\cdot||}(x,\epsilon) \subseteq B_{\rho}(x,\epsilon)$, and the second shows that
     $B_{\rho}(x,\frac{\epsilon}{\sqrt{n}}) \subseteq B_{||\cdot||}(x,\epsilon)$, thus both
     $||\cdot||$ and  $\rho$ induce the same topology.
@@ -201,9 +201,9 @@ Before we show that $||\cdot||$ and  $\rho$ are metrics, we introduce the follow
 
 \begin{definition}
     Given an index set $J$ and given points  $x=(x_{\alpha})$ and $y=(y_{\alpha})$ fo $\R^J$, we
-    define the \textbf {uniform metric} $\hat{\rho}$ on $\R^J$ by
-    $\hat{\rho}(x,y)=\sup\{\hat{d}(x_{\alpha},y_{\alpha}): \alpha \in J\}$, where $\hat{d}$ is the
-    standar bounded metric on  $\R^J$. We call the topology induced by $\hat{\rho}$ the
+    define the \textbf {uniform metric} $\bar{\rho}$ on $\R^J$ by
+    $\bar{\rho}(x,y)=\sup\{\bar{d}(x_{\alpha},y_{\alpha}): \alpha \in J\}$, where $\bar{d}$ is the
+    standar bounded metric on  $\R^J$. We call the topology induced by $\bar{\rho}$ the
     \textbf{uniform topology}.
 \end{definition}
 
@@ -215,26 +215,26 @@ Before we show that $||\cdot||$ and  $\rho$ are metrics, we introduce the follow
     Let $x=(x_[\alpha])$ and $\prod{U_{\alpha}}$ be a basis element for the product topology, and
     let $\alpha_1 ,\dots, \alpha_n$ be the indices for which $U_{\alpha} \neq \R$, and for each $i$,
     choose  $\epsilon_i>0$ such that the  $\epsilon_i$-ball about  $x_{\alpha_i}$,
-    $B_{\hat{d}}(x_{\alpha_i},\epsilon_i) \subseteq U_{\alpha}$. Let $\epsilon=\min\{\epsilon_1,
-    \dots, \epsilon_n\}$, and let $z=(z_{\alpha}) \in \R^J$ be such that $\hat{\rho}(x,z)<\epsilon$.
-    Then $\hat{d}(x_{\alpha},z_{\alpha})<\epsilon$ for all $\alpha$. Hence  $B_{\hat{\rho}}
+    $B_{\bar{d}}(x_{\alpha_i},\epsilon_i) \subseteq U_{\alpha}$. Let $\epsilon=\min\{\epsilon_1,
+    \dots, \epsilon_n\}$, and let $z=(z_{\alpha}) \in \R^J$ be such that $\bar{\rho}(x,z)<\epsilon$.
+    Then $\bar{d}(x_{\alpha},z_{\alpha})<\epsilon$ for all $\alpha$. Hence  $B_{\bar{\rho}}
     \subseteq \prod{U_{\alpha}}$ for all $\alpha$; so the uniform topology is finer.
 
-    Likewise, consider $B$ the $\epsilon$-ball about  $x$ in the  $\hat{\rho}$ metric. Then the box
+    Likewise, consider $B$ the $\epsilon$-ball about  $x$ in the  $\bar{\rho}$ metric. Then the box
     $U=\prod{(x_{\alpha}-\frac{\epsilon}{2},x_{\alpha}+\frac{\epsilon}{2})}$ and $y \in U$ if
-    $\hat{d}(x_{\alpha},y_{\alpha}<\frac{\epsilon}{2})$, then $\hat {\rho}(x,y) \leq
+    $\bar{d}(x_{\alpha},y_{\alpha}<\frac{\epsilon}{2})$, then $\bar {\rho}(x,y) \leq
     \frac{\epsilon}{2}$, so $U \subseteq B$, and the uniform topology is coarser.
 
     Now in the case where  $J$ is infinite, if  $J$ is uncountable, we are done, since there is no
     way to map the indices of  $J$ onto  $\Z^+$. So consider the case where  $J$ is countable, and
     map  $J \rightarrow \Z^+$ by  $\alpha_i \rightarrow i$. Let
-    $U=\prod{(x_i-\epsilon,x_i+\epsilon)}$ and consider a base $B_{\hat{\rho}}(x,\epsilon)$. We have
-    that for  $y \in B_{\hat{\rho}}(x,\epsilon)$ that
-    $\hat{d(x_{\alpha},y_{\alpha})}=\min\{\rho(x_i,y_i),1\}$, we have that
-    $\hat{d}(x_i,y_i)=\hat{\rho}(x_i,y_i)$ or $1$, and if we choose  $0<\epsilon<1$, then
-    $\hat{\rho}$ fails to put $B_{\hat{\rho}}(x,\epsilon)$ inside of $U$. Likewise, the basis
+    $U=\prod{(x_i-\epsilon,x_i+\epsilon)}$ and consider a base $B_{\bar{\rho}}(x,\epsilon)$. We have
+    that for  $y \in B_{\bar{\rho}}(x,\epsilon)$ that
+    $\bar{d(x_{\alpha},y_{\alpha})}=\min\{\rho(x_i,y_i),1\}$, we have that
+    $\bar{d}(x_i,y_i)=\bar{\rho}(x_i,y_i)$ or $1$, and if we choose  $0<\epsilon<1$, then
+    $\bar{\rho}$ fails to put $B_{\bar{\rho}}(x,\epsilon)$ inside of $U$. Likewise, the basis
     $\prod{U_{\alpha}}$ (in the prodct topology) failes to be contained in
-    $B_{\hat{\rho}}(x,\epsilon)$ by the same argument. Thus the uniform topology is not necessarily finer than
+    $B_{\bar{\rho}}(x,\epsilon)$ by the same argument. Thus the uniform topology is not necessarily finer than
     the box topology, nor coarser than the product topology in $\R^J$, when $J$ is infinite.
 \end{proof}
 \begin{remark}
@@ -243,31 +243,31 @@ Before we show that $||\cdot||$ and  $\rho$ are metrics, we introduce the follow
 \end{remark}
 
 \begin{theorem}\label{2.2.9}
-    Let $\hat{d}(a,b)=\min{|a-b|,1\}$ be the standard bounded metric on $\R$, and for  $x,y \in
+    Let $\bar{d}(a,b)=\min{|a-b|,1\}$ be the standard bounded metric on $\R$, and for  $x,y \in
     \R^{\omega}$, define:
         \begin{equation}
-            D(x,y)=\sup\{\frac{\hat{d}(x_i,y_i)}{i}\}
+            D(x,y)=\sup\{\frac{\bar{d}(x_i,y_i)}{i}\}
         \end{equation}.
     Then $D$ is a metric that induces the product topology on $\R^{\omega}$.
-\$B_{\hat{\rho}}(x,\epsilon)$
+\$B_{\bar{\rho}}(x,\epsilon)$
 \end{theorem}
 \begin{proof}
-    Since $\hat{d}$ is a metric, $D$ satisfies the conditions for a metric space, it is worth
+    Since $\bar{d}$ is a metric, $D$ satisfies the conditions for a metric space, it is worth
     looking into the case for the triangle inequality however. Notice that for all  $i$,  $
-    \frac{\hat{d}(x_i,y_i)}{i} \leq \frac{\hat{d}(x_i,z_i)}{i}+\frac{\hat{d}(z_i,y_i)}{i} \leq
+    \frac{\bar{d}(x_i,y_i)}{i} \leq \frac{\bar{d}(x_i,z_i)}{i}+\frac{\bar{d}(z_i,y_i)}{i} \leq
     D(x,z)+D(z,y)$, thus $D(x,y) \leq D(x,z)+D(z,y)$.
 
     Now let $U$ be open in the metric topology induced by  $D$ and let  $x \in U$. Choose an
     $\epsilon$-ball  $B_D(x,\epsilon) \subseteq U$, and choose $N>0$ large enough that  $
     \frac{1}{N}<\epsilon$, and let $V=(x_1-\epsilon,x_1+\epsilon) \times \dots \times
     (x_N-\epsilon,x_N+\epsilon) \times \R \times \dots \times \R \times \dots$. Given $y \in
-    \R^{\omega}$, we have $ \frac{\hat{d}(x_i,y_i)}{i} \leq \frac{1}{N}$, thus $D(x,y)$ \leq
-    \max\{\hat(d)(x_1,y_1),\dots, \hat(d)(x_i,y_i)}{i}, \frac{1}{N}\} for all $i \geq N$. Now if  $y
+    \R^{\omega}$, we have $ \frac{\bar{d}(x_i,y_i)}{i} \leq \frac{1}{N}$, thus $D(x,y)$ \leq
+    \max\{\bar(d)(x_1,y_1),\dots, \bar(d)(x_i,y_i)}{i}, \frac{1}{N}\} for all $i \geq N$. Now if  $y
     \in V$, then the expression is less than  $\epsilon$, so  $V \subseteq B_D(x,\epsilon)$.
     Convsersely, let $U=\prod{U_{i}}$ with $U_i$ open in  $\R$ for  $i=\alpha_1, \dots, \alpha_n$,
     and $U_i=\R$ for all other  indices. Given $x \in U$, for  $i=\alpha_1, \dots, \alpha_n$ and let
     $\epsilon=\min\{\frac{\epsilon_i}{i}:i=\alpha_1, \dots, \alpha_n\}$. Letting $B_d(x,\epsilon)$,
-    we see that $ \frac{\hat{d}(x_i,y_i)}{i} \leq D(x,y)<\epsilon$. Now if $i=\alpha_1, \dots,
-    \alphaalpha_n$, then $\hat{d}(x_i,y_i)<\epsilon_i \leq 1$, hence $|x_i-y_i|<\epsilon_i$, thus
+    we see that $ \frac{\bar{d}(x_i,y_i)}{i} \leq D(x,y)<\epsilon$. Now if $i=\alpha_1, \dots,
+    \alphaalpha_n$, then $\bar{d}(x_i,y_i)<\epsilon_i \leq 1$, hence $|x_i-y_i|<\epsilon_i$, thus
     $y \in U$.
 \end{proof}
