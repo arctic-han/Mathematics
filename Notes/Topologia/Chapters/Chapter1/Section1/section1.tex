@@ -1,0 +1,31 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 1.1
+%----------------------------------------------------------------------------------------
+
+\section{Espacios M\'etricos.}
+
+\begin{definition}
+    Una \textbf{M\'etrica} sobre un conjunto $X$ es ina funcion  $d:X \times X \rightarrown \R$ tal
+    que para toda $x,yz \in X$:
+        \begin{enumerate}[label=(\arabic*)]
+            \item $d(x,y) \geq 0$ y $d(x,y)=0$ si y solo si $x=y$.
+
+            \item $d(x,y)=d(y,x)$.
+
+            \item $d(x,z) \leq d(x,y)+d(y,z)$ (La Desigualdad Triangular).
+        \end{enumerate}
+        Si $d$ es una m\'etrica sobre el conjunto $X$, entonces decimos que el par ordenado  $(X,d)$
+        es un \textbf{espacio m\'etrico}, y que $ d(x,y)$ es la \textbf{distancia} entre $x$ y y.
+\end{definition}
+
+\begin{example}
+    Sea $X=\R$ y  $d=|\cdot|$, entonces $(\R,|\cdot|)$ es una espacio m\'etrico. Para $X=\R^2$ y
+    $d=||\cdot||$,  $(\R^2,||\cdot||)$ tambien es un espacio metrico.		
+\end{example} 
+
+\begin{example}[La M\'etrica Discreta]
+    Sea $X$ cualquier conjunto, y sea  $d(x,y)=\begin{cases} 1 & x \neq y \\ 0 & x=y \\\end{cases}$ 
+    Vemos que las propiedades $(1)$ y $(2)$ estan satisfecho. Tambien vemos que para $x,y,z \in X$
+    que  $d(x,z)=1,0$ y que $d(x,y),d(y,x)=1,0$. Pues $d(x,y)+d(y,z)=2,1,0$, pues en todo caso
+    $d(x,z) \leq d(x,y)+d(y,z)$. $(X,d)$ es un espacio metrico.
+\end{example} 
