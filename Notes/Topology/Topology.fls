@@ -403,6 +403,8 @@ INPUT ./Figures/Chapter2/openBall.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcti1200.tfm
 INPUT Chapters/Chapter2/Section3/section3.tex
 INPUT Chapters/Chapter2/Section3/section3.tex
+INPUT Chapters/Chapter2/Section4/section4.tex
+INPUT Chapters/Chapter2/Section4/section4.tex
 INPUT Topology.aux
 INPUT ./Topology.out
 INPUT ./Topology.out
