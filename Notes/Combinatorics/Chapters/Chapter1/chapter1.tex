@@ -1,0 +1,60 @@
+% Chapter Template
+
+\chapter{Essential Problems} % Main chapter title
+
+\label{Chapter 1} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+%% to include section files use the \input{} command.
+
+There are some essential problems to discuss, but we first give some counting principles.
+
+\begin{axiom}[The Sum Rule]\label{1.0.1}
+    Suppose $ S_1, S_2, \dots, S_m$ are mutually disjoint finite sets and that $|S_i|=n_i$
+    for  $1 \leq i \leq n$. There are  $ n_1+n_2+\dots+n_m=\sum_{i=1}^{m}{n_}$ ways to select one
+    element from any of the sets $S_i$
+\end{axiom}
+
+\begin{axiom}[The Product Rule]\label{1.0.2}
+    Suppose $ S_1,S_2, \dots, S_m$ are finite sets, (not necessarily mutually disjoint) for $1 \leq
+    i \leq n$. Provided that the selections are made independently, there are  $ n_1n_2 \dots
+n_m=\Prod_{i=1}^{m}{n_i}$ ways to select one element from the set $S_i$ followed by an element from
+ $S_{i+1}$.
+\end{axiom}
+
+The following problems can now be discussed, and are all solved by the product rule.
+
+\begin{problem}
+    How many ways are there to order $n$ different elements in a given $n$ element set?
+\end{problem} 
+\begin{solution}
+    Let $S$ be a set with  $|S|=n$ and choose one element $s_1 \in S$ and take $
+    S_1=\com{S}{s_1}$, since $ s_1$ is arbitrary, by the sum rule, there are $n$ choices for
+    elements in $S$ Now we need to choose elements from $ S_1$ which has $|S_1|=n-1$, by the same
+    reasoning, choose $ s_2 \in S_2$ and take $ S_2=\com{S_1}{s_2}$. Since $ s_2$ was arbitrary,
+    by the sum rule again, there are $n-1$ ways to choose elements from $ S_2$. Continuing
+    along this construction, take $s_i \in S_{i-1}$ and take $S_o=\com{S_{i-1}{s_i}}$, by the same
+    reasoning there are $n-i$ ways to choose elements from $S_i$, where $1 \leq i \leq n$. Then by
+    the product rule, there are  $\Prod_{i=1}^n{n-i}=n(n-1) \dots 2 \cdot 1 \cdot 0!=n!$ ways to
+    order $n$ elements of  $S$.
+\end{solution}
+
+\begin{problem}
+    How many ways are there to order $k$ elements from an $n$ element set? 		
+\end{problem}
+\begin{solution}
+    Let $S$ be a set with  $|S|=n$ and choose an arbitrary subset  $T \subseteq S$ with  $|T|=k$. Now
+    there are $n!$ ways to order the elements of $S$ and  $(n-k)!$ ways to order elements
+    from $\com{S}{T}$, hence there are $\frac{n!}{(n-k)!}$ ways to order $k$ elements of  $T$ from
+     $S$.
+\end{solution}
+
+\begin{problem}
+    How many ways are the to select $k$ elements, regardless of order, from an  $n$ element set?
+\end{problem} 
+\begin{solution}
+    Let $S$ be a set with $|S|=n$ and $T \subseteq S$ with $|T|=k$. We have there are  $n!$ ways to
+    order the elements of  $S$,  $k!$ ways to order the elements of  $T$ and  $\frac{n!}{(n-k)!}$ 
+    ways to order the elements of $\com{S}{T}$. Now since order is irrelevant, the ordering of
+    the elements of $T$ does not matter. Hence there are  $\binom{n}{k}=\frac{n!}{k!(n-k)!}$ ways
+    to select $k$ elements from  $S$ in no particular order.
+\end{solution}
