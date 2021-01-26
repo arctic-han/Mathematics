@@ -1,0 +1,120 @@
+% Chapter Template
+
+\chapter{Binomial Coefficients} % Main chapter title
+
+\label{Chapter 2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+%% to include section files use the \input{} command.
+
+\begin{definition}
+    Let $n \in \N$ and  $k \in \Z$. We define the \textbf {binomial coefficient} of $n$ \textbf
+    {choose} $k$ to be 
+        \begin{equation}
+        \binom{n}{k}=\begin{cases}
+            \frac{n!}{k!(n-k)!} & \text{, if } 0 \leq k \leq n \\
+            0                   & \text{, if } k>n \text{ or } k<0 \\
+                    \end{cases}
+        \end{equation} 
+    and where $\binom{n}{0}=\binom{n}{n}=1$.
+\end{definition}
+
+The solution to problem $3$ is a sufficient proof for the relation; and the fact that
+$\binom{n}{k}=0$ for $n<k$ and  $k<0$ is evident since there can be no  $k$ element subsets of an
+$n$ element set under those conditions. What follows are some fundamental lemmas about the binomial
+coefficient.
+
+\begin{lemma}[Symmetry]\label{2.0.1}
+    $\binom{n}{k}=\binom{n}{n-k}$
+\end{lemma}
+\begin{proof}
+    $\binom{n}{k}=\frac{n!}{k!(n-k)!}=\frac{n!}{(n-k)!(n-(n-k))!}=\binom{n}{n-k}$.
+\end{proof}
+
+\begin{lemma}[Pascal's Lemma]\label{2.0.2}
+    If $n \in \N$ and  $k \in Z$ then 
+        \begin{equation}
+            \binom{n}{k}=\binom{n-1}{k}+\binom{n-1}{k-1}.
+        \end{equation} 
+\end{lemma}
+\begin{proof}
+    For $k<0$ or  $k>n$, the result is obvious by definition. Now suppose that $0 \leq k \leq n$,
+    then
+    $\binom{n-1}{k}+\binom{n-1}{k-1}=\frac{(n-1)!}{k!(n-k-1)!}+\frac{(n-1)!}{(k-1)!(n-k)!}=(n-1)!\frac{(n-k)+k}{k!(n-k)!}=\binom{n}{k}$.
+\end{proof}
+\begin{remark} 
+    We can use Pascal's lemma to construct Pascal's triangle in figure \ref{fig:2.1}.
+\end{remark}
+
+\begin{figure} 
+    \centering
+        \begin{tabular}{>{$n=}l<{$\hspace{12pt}$}*{13}{c}}
+            &&&&&&&1&&&&&&\\
+            &&&&&&1&&1&&&&&\\
+            &&&&&1&&2&&1&&&&\\
+            &&&&1&&3&&3&&1&&&\\
+            &&&1&&4&&6&&4&&1&&\\
+            &&1&&5&&10&&10&&5&&1&\\
+            &1&&6&&15&&20&&15&&6&&1
+        \end{tabular}
+        \caption{Pascal's triangle up to $n=6$.}
+        \label{fig:2.1}
+\end{figure}
+
+\begin{theorem}[The Binomial Theorem]\label{2.0.3}
+    If $n \in \N$, then
+        \begin{equation}
+            (x+y)^n=\sum_{k}{\binom{n}{k}x^ky^{n-k}}
+        \end{equation} 
+\end{theorem}
+\begin{proof}
+    We use induction on $n$. Notice that  $(x+y)^0=1=\binom{0}{0}x^0y^0$, and
+    $(x+y)^1=x+y=\binom{1}{0}x^0y^1+\binom{1}{1}x^1y^0$
+\end{proof}
+\begin{proof}
+    We use induction on $n$. Notice that  $(x+y)^0=\binom{0}{0}x^0y^0$ and
+    $(x+y)^1=x+y=\binom{1}{0}x^0y^1+\binom{1}{1}x^1y^0$. Now suppose that the theorem holds for $n
+    \geq 1$. Then
+    $(x+y)^{n+1}=(x+y)\sum{\binom{n}{k}x^ny^{n-k}}=
+    \sum{\binom{n}{k}x^{k+1}y^{n-k}}+\sum{\binom{n}{k}x^ky^{n+1-k}}=\sum{(\binom{n}{k-1}\binom{n}{k})x^ky^{n+1-k}}=
+    \sum{\binom{n+1}{k}x^ky^{n+1-k}}$, by Pascal's lemma.
+\end{proof}
+\begin{corollary}
+    $\sum_k{\binom{n}{k}}=2^n$ and there are exactly $2^n$ subsets of an  $n$ element set.		
+\end{corollary}
+\begin{proof}
+    Exapand $(1+1)^n$, also notice that since there are $\binom{n}{k}$ possible $k$ element subsets
+    of a given  $n$ element set, then  all we need to do is  take the sum of $\binom{n}{k}$ over
+    $k$.
+\end{proof}
+\begin{corollary}
+    $\sum_{k}{(-1)^k\binom{n}{k}}=\begin{cases}
+                                    0 & , \text{ if } n \geq 1
+                                    1 & , \text{ if } n=0
+                                \end{cases}$
+\end{corollary}
+\begin{proof}
+    Expand $(-1+1)^n$.
+\end{proof}
+
+\begin{lemma}\label{2.0.4}
+    If $m,n \in \N$, then  $\sum_{k}{\binom{k}{m}}=\binom{n+1}{m+1}$.
+\end{lemma}
+\begin{proof}
+    For $n=0$, the result follows,  $\binom{0}{0}=1=\binom{1}{1}$, and if $m>0$, then each side is
+    $0$. Now suppose for $n \geq 0$ that the lemma holds. Then
+    $\sum_{k=0}^{n+1}{\binom{k}{m}}=\binom{n+1}{m}+\binom{n+1}{m+1}=\binom{n+1}{m+1}$ by Pascal's
+    lemma.
+\end{proof}
+
+\begin{theorem}[Vandermonde's Convolution]\label{2.0.5}
+    If $m,n \in \N$ and  $l,p \in \Z$, then
+        \begin{equation}
+            \sum_{k}{\binom{m}{p+k}\binom{n}{l-k}}=\binom{m+n}{l+p}
+        \end{equation} 
+\end{theorem}
+\begin{proof}
+    By induction on $n$, for  $n=0$,  $\binom{m}{l+p}=\sum{\binom{m}{p+k}}$. Now suppose that the
+    theorem holds for $n \geq 0$, then by Pascal's lemma we have that
+    $\binom{m+n+1}{p+l}=\binom{m+n}{p+l}+\binom{m+n}{p+l-1}=\sum{\binom{m}{p+k}\binom{n}{l-k}}=
+    \binom{m}{p+k}\binom{n+1}{0}+\sum{\binom{m}{p+k}\binom{n+1}{l-k}}=\sum{\binom{m}{p+k}\binom{n+1}{l-k}}$.
+\end{proof}
