@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1611675542 "Combinatorics.tex" "Combinatorics.pdf" "Combinatorics" 1611675542
+["pdflatex"] 1611676825 "Combinatorics.tex" "Combinatorics.pdf" "Combinatorics" 1611676825
   "/etc/texmf/web2c/texmf.cnf" 1604064585 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -25,9 +25,11 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1248133631 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb" 1248133631 34586 5a65dc15601f9c74fe3fb3f37b3b8b6f ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -157,12 +159,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1596975543 38841 5237427e4d3283e7b009b6a8b45dfdcd ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1604064816 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1604064823 1156109 3d7119fb332ffed2b4ab40dce9b9b203 ""
-  "Chapters/Chapter1/chapter1.tex" 1611675518 3057 e9cbc160c5e215e32b406bfcf9514385 ""
-  "Combinatorics.aux" 1611675520 1035 d357e9ef2687c73e2ff472baaa68da50 "pdflatex"
-  "Combinatorics.out" 1611675520 53 9ba8df0aaf45970968a643c394efca1a "pdflatex"
-  "Combinatorics.tex" 1611675540 1432 d3a215cd5a7481b63cfd3eca09b8ba39 ""
+  "Chapters/Chapter1/chapter1.tex" 1611676824 3972 2d66b2270b8ea3bae1746d5296266ebb ""
+  "Combinatorics.aux" 1611676598 1035 d357e9ef2687c73e2ff472baaa68da50 "pdflatex"
+  "Combinatorics.out" 1611676598 53 9ba8df0aaf45970968a643c394efca1a "pdflatex"
+  "Combinatorics.tex" 1611676029 1468 0b75f05ed3f4a893f013cbf7dbb6d84d ""
   (generated)
   "Combinatorics.log"
-  "Combinatorics.aux"
   "Combinatorics.pdf"
+  "Combinatorics.aux"
   "Combinatorics.out"

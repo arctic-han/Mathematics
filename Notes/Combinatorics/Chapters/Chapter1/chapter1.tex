@@ -51,10 +51,34 @@ The following problems can now be discussed, and are all solved by the product r
 \begin{problem}
     How many ways are the to select $k$ elements, regardless of order, from an  $n$ element set?
 \end{problem} 
-\begin{solution}
+\begin{solution}[1]
     Let $S$ be a set with $|S|=n$ and $T \subseteq S$ with $|T|=k$. We have there are  $n!$ ways to
     order the elements of  $S$,  $k!$ ways to order the elements of  $T$ and  $\frac{n!}{(n-k)!}$ 
     ways to order the elements of $\com{S}{T}$. Now since order is irrelevant, the ordering of
     the elements of $T$ does not matter. Hence there are  $\binom{n}{k}=\frac{n!}{k!(n-k)!}$ ways
     to select $k$ elements from  $S$ in no particular order.
 \end{solution}
+
+There is an another way of arriving to this solution.
+
+\begin{definition}
+    We define the \textbf{falling factorial power} $x^{\bbar{k}}$, of $x$ is the product
+        \begin{equation}
+            x^{\bbar{k}}=x(x-1)(x-2) \dots (x-k+1)=\prod_{i=1}^{k-1}{x-i}
+        \end{equation} 
+    We define the \textbf{rising factorial power} of $x$ to be
+        \begin{equation}
+            x^{\bar{k}}=x(x+1)(x+2) \dots (x+k-1)=\prod_{i=1}^{k-1}{x-i}
+        \end{equation} 
+    Ande we define $n^\bbar{0}=n^{\bar{0}}=0!=1$.
+\end{definition}
+
+\begin{solution}[2]		
+    Notice that $\frac{n!}{(n-k)!}=n(n-1) \dots (n-k+1)=n^{\bbar{k}}=n^{\bar{k}}$ and
+    $n^{\bbar{n}}=1^{\bar{n}}=n!$. So there are
+    $\frac{n^{\bbar{k}}}{k!}=\frac{n!}{k!(n-k)!}=\binom{n}{k}$ ways to choose $k$ elements from  $S$
+    in no particular order.
+\end{solution}
+\begin{remark} 
+    Note that this solution is not unique.
+\end{remark}
