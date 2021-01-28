@@ -2,29 +2,229 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Mappings}
+\section{Definitions}
 
-\hspace{5mm}One topic of great importance in the whole of mathematics, especially in tat of Algebra, Calculus, Topology; is the notion of a "mapping" or "function". A mapping can informally be thought of as being a rule that takes an element from a specified set $S$ and sends it to a set $T$. We will however, require a formal definition of such an object if we want to be able to do mathematics with it.
+We go over some fundamental definitions and theorems for matroids.
 
-\begin{definition}
-    Let $S \neq \emptyset$ and $T \neq \emptyset$ be sets. A \ita{Mapping}, $M:S \rightarrow T$ is the set $M \subseteq S \times T$; such that $\forall s \in S$, there exists a unique $t \in T$ shuch that $(s,t) \in M$
-\end{definition}
-
-If we let $\sigma :S \rightarrow T$ be a mapping, we can also write $S\xrightarrow{\sigma} T$, or if $(s,t) \in \sigma$ is known, we can write $\sigma :s \rightarrow t$.We represent the latter by using the notation "$\sigma(s)=t$" (however some algebraists will write $(s)\sigma =t$ or $s\sigma = t$, we however will use $\sigma(s)=t$). In fact, it turns out that, though precise, our current definition is a bit clunky; so we can introduce an equivalent definition which allows use to make use of our prefered notation:
-
-\begin{definition}
-    Let $S \neq \emptyset$ and $T \neq \emptyset$ be sets. A \ita{Mapping}, $M:S \rightarrow T$ is the set $M \subseteq S \times T$; such that:
+\begin{definition}[The Independence Axioms]
+    We define a \textbf{matroid} $M$ to be a set $S$, called the \textbf {ground set}, together with
+    a collection $\Ic \subseteq 2^S$ of subsets of  $S$ which we call \textbf {independent sets} to
+    such that;
         \begin{enumerate}
-            \item If $s \in S$, then  $\exists t \in T$ such that $M(s)=t$
-            \item If $s \in S$ and $t_1,t_2 \in T$ $M(s)=t_1$ and $M(s)=t_2$ then $t_1=t_2$
+            \item[(I1)] $\emptyset \in \Ic$.
+
+            \item[(I2)] If $X \in \Ic$ and $Y \subseteq X$, then  $Y \in \Ic$. (Inheretence)
+
+            \item[(I2)] If $X,Y \in \Ic$ such that  $|Y|<|X|$, then ther is an  $x \in \com{X}{Y}$ such
+                that $Y \cup x \in \Ic$.  (Augmentation)
         \end{enumerate}
 \end{definition}
 
+There is one immediate example for a matroid.
+
+\begin{example}
+    Let $V$ be a finite vector space and let  $\Ic$ be the collection of all linearly independent
+    subsets of vectors of  $V$. Clearly  $\emptyset \in V$, and if  $X$ is linearly independent, and
+     $Y \subseteq X$, then  $Y$ is also linearly independent; so inheretence is satisfied.
+
+     Now let $X$ be linearly independent, then  $\Span{S}$ must also be linearly independent. Now
+     take $\beta \in \com{V}{\Span{S}}$ and for $\alpha_1, \dots, \alpha_m \in S$ take
+        \begin{equation*}
+            c_1\alpha_1+\dots+c_2\alpha_2+b\beta=0
+        \end{equation*}
+    If $b \neq 0$, then
+        \begin{equation*}
+            \beta=(-\frac{c_1}{b})\alpha_1+\dots+(-\frac{c_m}{b})\alpha_m
+        \end{equation*}
+    putting $\beta \in \Span{S}$, a contradiction, hence $b=0$, and so  $S \cup \beta$ is also
+    linearly independent. Thus the augmentation axiom is satisfied and  $V$ is a matroid together
+    with  $\Ic$.
+\end{example} 
+
+We define some additional concepts, all of which can be used in the definition of a matroid.
+
 \begin{definition}
-    Let $M:S \rightarrow T$ be a mapping. The \ita{Image} of $S$ under $M$ is the set
+    A \textbf{base} of a matroid $M$ is a maximally independent subset of  $S$. We denote the
+    collection of bases of $M$ by  $\Bc$. We say a subset of  $S$ is \textbf {spanning} in $M$ if it
+    contains a base.
+\end{definition}
+
+\begin{definition}
+    We define the \textbf{rank function} of a matroid to be the map $\rank:2^S \rightarrow \Z$
+    defined by
         \begin{equation}
-            M(S)=\{M(s):s \in S\}
+        \rank{A}=\max\{|X|:X \in \Ic \text{ and } X \subseteq A\}
+        \end{equation} 
+    We define the \textbf{rank} of the matroid to be $\rank{M}=\rank{S}$. We say $A \subseteq S$ is
+    \textbf{closed}, or a \textbf{flat}, or a \textbf{subspace} of $M$ if for all  $x \in
+    \com{S}{A}$, $\rank{A \cup x}=\rank{A}+1$, and we say $x$ \textbf{depends} on $A$.
+\end{definition}
+
+\begin{definition}
+    We define the \textbf{closure operator} of a matroid to be the map $\cl:@^S \rightarrow 2^S$
+    defined such that  $\cl{A}$is the set of all elements which depend on $A$; that is
+        \begin{equation}
+            \cl{A}=\{x \in \com{S}{A}:\rank{A \cup x}=\rank{A}+1\}.
         \end{equation}
 \end{definition}
 
-Using the definition of an image, we can further define for $s \in S$, $M(s)=t$ to be the \ita{image} of $s$ under $M$
+\begin{definition}
+    A \textbf{dependent set} of a matroid is a subset $D \subseteq S$ which is not independent; this
+    is $D \notin \Ic$. A \textbf {circuit} of a matroid is a minimally dependent set, and we denote
+    the collection of all circuits as $\Cc$.
+\end{definition}
+
+Now one thing that makes matroids so interesting, is that they can be axiomatically defined in
+various ways. We can not only define them in terms of independence, bu also in terms of bases,
+circuits, rank, and closure. We give the theorems below that establish the axioms.
+
+\begin{theorem}[The Base Axioms]\label{1.1.1}
+    A nonempty collection $\Bc$ of subsesets of a set $S$ forms a set of bases of a matroid $M$ on
+    $S$ if, and only if for:
+        \begin{enumerate}
+            \item[(B1)] $ B_1,B_2 \in \Bc$, and $x \in \com{B_1}{B_2}$, there is a $y \in
+                \com{B_2}{B_1}$ such that $\com{(B_1 \cup y)}{x} \in \Bc$.
+        \end{enumerate}
+\end{theorem}
+
+\begin{theorem}[The Circuit Axioms]\label{1.1.2}
+    A nonempty collection $\Cc$ of subsesets of a set $S$ forms a set of circuits of a matroid $M$ on
+    $S$ if, and only if:
+        \begin{enumerate}
+            \item[(C1)] If $Y \in \Cc$ and  $X \neq Y$, then  $X \not\subseteq Y$.
+
+            \item[(C2)] If $ C_1,C_2 \in \Cc$ are distinct, and $z \in C_1 \cap C_2$, then there is
+                a circuit $ C_3 \in \Cc$ such that $ C_3 \subseteq \com{(C_1\cup C_2)}{z}$.
+        \end{enumerate}
+\end{theorem}
+
+\begin{theorem}[The First Rank Axioms]\label{1.1.3}
+    Let $S$ be a set. A map $\rank:2^S \rightarrow \Z$ is the rank function of a matroid on $S$ if
+    and only if for $X \subseteq S$ and  $y,z \in S$
+        \begin{enumerate}
+            \item[(R1)] $\rank{\emptyset}=1$.
+
+            \item[(R2)] $\rank{X} \leq \rank{X \cup y} \leq \rank{X}+1$.
+
+            \item[(R3)] If $\rank{X \cup y}=\rank{X \cup z}=\rank{X}$, then $\ranl{x \cup y \cup
+                z}=\rank{X}$.
+        \end{enumerate}
+\end{theorem}
+
+\begin{theorem}[The Second Rank Axioms]\label{1.1.4}
+    Let $S$ be a set. A map $\rank:2^S \rightarrow \Z$ is the rank function of a matroid on $S$ if
+    and only if for $X,Y \subseteq S$
+        \begin{enumerate}
+            \item[(R$'$1)] $0 \leq \rank{X} \leq |X|$.
+
+            \item[(R$'$2)] If $X \subet Y$, then  $\rank{X} \leq \rank{Y}$ 
+
+            \item[(R\`3)] $\rank{X \cup Y}+\rank{X \cap Y} \leq \rank{X}+\rank{Y}$.
+        \end{enumerate}
+\end{theorem}
+
+\begin{theorem}[The Closure Axioms]\label{1.1.5}
+    Let $S$ be a set. A map $\cl:2^S \rightarrow 2^S$ is the closure operator of a matroid on $S$ if
+    and only if for $X,Y \subseteq S$, and $x,y \in S$
+        \begin{enumerate}
+            \item[(S1)] $X \subseteq \cl{X}$.
+
+            \item[(S2)] If $Y \subseteq X$, then  $\cl{Y} \subseteq \cl{X}$.
+
+            \item[(S3)] $\cl{X}=\cl{(\cl{X})}$.
+
+            \item If $y \notin \cl{X}$ and $y \in \cl{(X \cup x)}$, then $x \in \cl{(X \\cup y)}$.
+        \end{enumerate}
+\end{theorem}
+
+We defer their proofs to the relevant sections.
+
+We can already provea fact about matroids.
+
+\begin{proposition}\label{1.1.6}
+    If an element of a matroid belongs to every base, then it can belong to no circuit of the
+    matroid.
+\end{proposition}
+\begin{proof}
+    Let $M$ be a matroid and let  $\Bc$ be the collection of all bases of $M$, $\Cc$ the collection
+    of all circuits of $M$, and  $\Ic$ the collection of all independent sets of  $M$. Take  $x \in
+    X=\bigcap_{B \in \Bc}{B}$ and suppose that $x \in C$ for $C \in \Cc$. By theorem \ref{1.1.1}, we
+    have that $X \neq \emptyset$, moreover since  $x \in C$,  $C \subseteq X$, i.e  $C \in \Bc$. mow
+    notice that since  $C$ is a circuit, it is dependent, so  $C \notin \Ic$, but we have that  $C
+    \in \Bc$ which makes it a base, and hence independent; so  $C \in \Ic$, a contradiction.
+\end{proof}
+
+\begin{definition}
+    We say that two matroids $ M_1$ and $ M_2$ on $ S_1$ and $ S_2$ respectively are
+    \textbf{isomorphic} if there is a $1-1$ map  $\phi:S_1 \rightarrow S_2$ of $S_1$ onto $ S_2$ 
+    such that if $X \subseteq S_1$ is independent in $ M_1$, then $\phi(X) \subseteq S_2$ is
+    independent in $ M_2$. We write $ M_1 \simeq M_2$ to denote isomorphism. 		
+\end{definition}
+
+\begin{example}
+    We list all nonisomorphic matroids on a set of $n$ elements for  $n=1,2,3$.		
+        \begin{enumerate}
+            \item[\underline{$n=1$}] For $S=\{1\}$, we have $ M_1=\emptyset$ and $ M_2=2^S$. There
+                are $2^1=2$ matroids on  $S$.
+
+            \item [\underline{$n=2$}] On $S=\{1,2\}$we have
+                \begin{align*}
+                    M_1 &= \emptyset \\
+                    M_2 &= \{\emptyset, \{1\}\} \\
+                    M_3 &= \{\emptyset \{1\},\{2\}\} \\
+                    M_4 &= \{\emptyset,\{1\},\{2\},\{1,2\}\}=2^S
+                \end{align*}
+                there are $2^2=4$ matroids on $S$ 
+
+            \item [\underline{$n=3$}] For $S=\{1,2,3\}$ we have
+                \begin{align*}
+                    M_1 &= \emptyset \\
+                    M_2 &= \{\emptyset, \{1\}\} \\
+                    M_3 &= \{\emptyset \{1\},\{2\}\} \\
+                    M_4 &= \{\emptyset,\{1\},\{2\},\{1,2\}\} \\
+                    M_5 &= \{\emptyset, \{1\}, \{2\}, \{3\}\} \\
+                    M_6 &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{1,2\}, \{1,3\}\} \\
+                    M_7 &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{1,2\}, \{1,3\}, \{2,3\}\} \\
+                    M_8 &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{1,2\}, \{1,3\}, \{2,3\},
+                    \{1,2,3\}\}=2^S \\
+                \end{align*}
+                There are $2^3=8$ matroids on  $S$.
+        \end{enumerate}
+
+        Now one might be tempted to generalize that there are a total of $2^n$ matroids on a given
+        $n$ element set, however a quick check for  $n=4$ concludes that that is not the case.
+
+        \begin{enumerate}
+            \item [\underline{$n=4$}] For $S=\{1,2,3,4\}$ we have
+                \begin{align*}
+                    M_1 &= \emptyset \\
+                    M_2 &= \{\emptyset, \{1\}\} \\
+                    M_3 &= \{\emptyset \{1\},\{2\}\} \\
+                    M_4 &= \{\emptyset,\{1\},\{2\},\{1,2\}\} \\
+                    M_5 &= \{\emptyset, \{1\}, \{2\}, \{3\}\} \\
+                    M_6 &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{1,2\}, \{1,3\}\} \\
+                    M_7 &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{1,2\}, \{1,3\}, \{2,3\}\} \\
+                    M_8 &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{1,2\}, \{1,3\}, \{2,3\},
+                    \{1,2,3\}\} \\
+                    M_9 &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{4\}\} \\
+                    M_{10} &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{4\}, \{1,2\}, \{1,3\}, \{1,4\}\}
+                    \\
+                    M_{11} &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{4\}, \{1,2\}, \{1,3\}, \{1,4\},
+                    \{2,3\}\} \\
+                    M_{12} &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{4\}, \{1,2\}, \{1,3\}, \{1,4\},
+                    \{2,3\}, \{2,4\}, \{3,4\}\} \\
+                    M_{13} &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{4\}, \{1,2\}, \{1,3\}, \{1,4\},
+                    \{2,3\}, \{2,4\}, \{3,4\}, \{1,2,3\}\} \\
+                    M_{14} &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{4\}, \{1,2\}, \{1,3\}, \{1,4\},
+                    \{2,3\}, \{2,4\}, \{3,4\}, \{1,2,3\}, \{1,2,4\}\} \\
+                    M_{15} &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{4\}, \{1,2\}, \{1,3\}, \{1,4\},
+                    \{2,3\}, \{2,4\}, \{3,4\}, \{1,2,3\}, \{1,2,4\} \{1,3,4\}\} \\
+                    M_{16} &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{4\}, \{1,2\}, \{1,3\}, \{1,4\},
+                    \{2,3\}, \{2,4\}, \{3,4\}, \{1,2,3\}, \{1,2,4\} \{1,3,4\}, \\ & \{2,3,4\}\} \\
+                    M_{17} &= \{\emptyset, \{1\}, \{2\}, \{3\}, \{4\}, \{1,2\}, \{1,3\}, \{1,4\},
+                    \{2,3\}, \{2,4\}, \{3,4\}, \{1,2,3\}, \{1,2,4\} \{1,3,4\}, \\ & \{2,3,4\},
+                        \{1,2,3,4\}\}=2^S 
+                \end{align*}
+        \end{enumerate}
+        Notice that $S=\{1,2,3,4\}$ has $17=2^4+1$ matroids.
+\end{example} 

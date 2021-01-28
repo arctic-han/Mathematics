@@ -3,12 +3,8 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amsfonts,amsthm,amssymb,graphicx,mathtools,tikz,hyperref}
 \usetikzlibrary{positioning}
-\newcommand{\n}{\mathbb{N}}
-\newcommand{\z}{\mathbb{Z}}
-\newcommand{\q}{\mathbb{Q}}
-\newcommand{\cx}{\mathbb{C}}
-\newcommand{\real}{\mathbb{R}}
-\newcommand{\field}{\mathbb{F}}
+\input{Library/Fonts/BlackboardBold.tex}
+\input{Library/Fonts/MathCalligraphy.tex}
 \newcommand{\ita}[1]{\textit{#1}}
 \newcommand{\com}[2]{#1\backslash#2}
 \newcommand{\oneton}{\{1,2,3,...,n\}}
@@ -20,6 +16,10 @@
 \newcommand\setb[1]{\{#1\}}
 \newcommand\en{\ita{n }}
 \newcommand{\vbrack}[1]{\langle #1\rangle}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\rank}{rank}
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
@@ -39,7 +39,7 @@
  \date{}
 
 
-\title{Notes on Combinatorics}
+\title{Matroid Theory}
 \author{Alec Zabel-Mena \\ Text -}
 
 \begin{document}
