@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1611862806 "matroid.tex" "matroid.pdf" "matroid" 1611862806
+["pdflatex"] 1611875764 "matroid.tex" "matroid.pdf" "matroid" 1611875764
   "/etc/texmf/web2c/texmf.cnf" 1604064585 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -160,16 +160,17 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1596975543 38841 5237427e4d3283e7b009b6a8b45dfdcd ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1604064816 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1604064823 1156109 3d7119fb332ffed2b4ab40dce9b9b203 ""
-  "Chapters/Chapter1/Sections/Section1/section1.tex" 1611856458 11298 acfa22d1ed6b950a310c400e52ed1a07 ""
-  "Chapters/Chapter1/Sections/Section2/section2.tex" 1611862805 2944 b32735e5d80dd2ab2e6e4e9371a19e49 ""
+  "Chapters/Chapter1/Sections/Section1/section1.tex" 1611871283 11298 acfa22d1ed6b950a310c400e52ed1a07 ""
+  "Chapters/Chapter1/Sections/Section2/section2.tex" 1611875763 9241 bc4949ad351378cf50124391b2af4ec7 ""
   "Chapters/Chapter1/chapter1.tex" 1611856655 366 8500eaabb6e758d24f2ae018dff379b2 ""
+  "Figures/Chapter1/k3cyclemat.png" 1611872366 114086 56f3b55a79844a48ce2214994dde1179 ""
   "Library/Fonts/BlackboardBold.tex" 1611845331 744 e62bfb97c3b0ebe0a2353762b95933da ""
   "Library/Fonts/MathCalligraphy.tex" 1611845331 791 fe7a518c060a9035d50e4618c12ce65f ""
-  "matroid.aux" 1611862778 1589 81db0294fddd4c625cf53a389b3aaca6 "pdflatex"
-  "matroid.out" 1611862778 176 2fa49fa64a5cf2d0f3ff2c7fdd0dc3e6 "pdflatex"
-  "matroid.tex" 1611856749 1359 670e952cec170fe01da586e9089923f8 ""
+  "matroid.aux" 1611875756 1942 6922a2c397f88f2ce849c99a74695726 "pdflatex"
+  "matroid.out" 1611875756 176 2fa49fa64a5cf2d0f3ff2c7fdd0dc3e6 "pdflatex"
+  "matroid.tex" 1611871279 1359 54ab360b1982c556ade719bad078a00b ""
   (generated)
+  "matroid.aux"
   "matroid.pdf"
   "matroid.out"
   "matroid.log"
-  "matroid.aux"

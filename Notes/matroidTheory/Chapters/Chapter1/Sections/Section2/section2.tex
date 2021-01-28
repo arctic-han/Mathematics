@@ -62,3 +62,127 @@ k+1>|A|+1$, this puts $x \in \cl{A}$, and bu consequence $S \subseteq \cl{A}$. T
 \begin{corollary}
     $\rank{U_{n,k}}=k$.
 \end{corollary}
+
+In the example 1.1.1 of section 1.1, we showed that a collection of linearlt independent subsets of
+vectors of a vector space forms a matroid over that vector space.
+
+\begin{definition}
+    Let $V$ be a finite vector space, and let $M$ be the matroid on $V$ formed by taking all
+    linearly independent subsets of vectors of $V$. We call a matroid isomorphic to $M$
+    \textbf{vectorial}.
+\end{definition}
+
+\begin{proposition}\label{1.2.2}
+    The rank of a vectorial matroid is the dimension of the vector space that it is isomorphic to.
+\end{proposition}
+\begin{proof}
+    Since $\dim{V}=|B|$, where $B$ is a basis of linearly independent vectors of  $V$, it is easy to
+    see that  $\rank{M}=\dim{V}$.
+\end{proof}
+
+\begin{definition}
+    Let $G$ be a graph with edge set  $E$, and let  $X \in \Ic$ if and only if  $X$ contains no
+    cycle of  $G$. Then  $\Ic$ is a collection of independent sets of a matroid, which we call the
+    \textbf {cycle matroid} on $G$ and denote it  $M(G)$.		
+\end{definition}
+
+We defer the proof that the cycle is indeed a matroid for when we talk about matroids on graphs.
+
+\begin{example}
+    The complete graph $K_3$ has as it's cycle matroid the matroid  $U_{3,2}$ see figure
+    \ref{fig:1.1}.
+    \begin{figure}
+        \centering
+        \includegraphics[scale = 0.3]{Figures/Chapter1/k3cyclemat.png}
+        \caption{The complete graph $K_3$.}
+        \label{fig:1.1}
+    \end{figure}
+\end{example} 
+
+We now talk about matroids arising from algebra. we give some proofs, but these matroids will be
+discussed when approrpiate.
+
+\begin{definition}
+    Let $F$ be a field and  $K$ be an extension of $F$. We call a subset  $\{x_1, \dots, x_k\}
+    \subseteq K$ of $K$ \textbf {algebraically dependent} if there is a polynomial $f$ with
+    coefficients in  $F$ such that  $f(x_1, dots, x_k)=0$. Otherwise we say they are \textbf
+    {algebraically independent}.
+\end{definition}
+
+\begin{theorem}\label{1.2.3}
+    Let $F$ be a field,  $K$ an extension of  $F$, and let  $S \subseteq K$ be finite.  For any $X
+    \subseteq S$, let  $X \in \Ic$ if and only if  $X$ is algebraically independent. Then  $\Ic$
+    forms a matroid over  $S$..
+\end{theorem}
+\begin{proof}
+    Clearly $\emptyset$ is algebraically independent. Now suppose that $X$
+    is algebraically independent, and that  $Y \subeteq X$. Then for every polynomial 
+    in $X$, $f \neq 0$. We have then there is a polyomial $g \in Y$ with $g \neq 0$ for which
+     $f=g+h$ hence $Y$ is algebraically independent.
+
+     Now suppose that $X=\{x_1, \dots, x_k\}$ and $Y=\{y_1, \dots, y_m\}$ are algebraically
+     independent, with $m<k$, so that  $|Y|<|X|$. Now for every polynomial in $X$, $f$, $f(x_1,
+     \dots, x_k) \neq 0$, and for every polynomial $g$ in  $Y$,  $g(y_1, \dots, y_m) \neq 0$. Now we
+     can find a polynomial $ f_1$ in $X$ such that  $f=f_1(x_i)+f_2(x_1, \dots, x_{i-1},x_{i+1},
+     \dots, x_k)$, where $ f_1(x_i) \neq 0$, for $x_i \in \com{X}{Y}$ (if $X \cap Y=\emptyset$, then
+     choose any  $x_i$), then $f_1 \neq 0$ and $g \neq 0$ implies that  $f(x_i)+g(y_1, \dots, y_m)
+     \neq 0$, then we see that $Y \cup x_i$ is also algebraically independent, whc=ich completes the
+     proof.
+\end{proof}
+
+\begin{definition}
+    Let $F$ be a field,  $K$ a field extension of  $F$, and  $S \subseteq K$ be finite. The
+    collection of all algebraically independent subsets of  $S$ form a matroid on  $S$. We call
+    these matroids \textbf {algebraic}.		
+\end{definition}
+
+\begin{definition}
+    We call an element of Euclidean $d$-space, $x \in \R^d$ \textbf{affinely dependent} on a subset
+    $\{x_1, \dots, x_r\} \subseteq \R^d$ if there exist real numbers $\lambda_i$ for  $1 \leq i \leq
+    r$ such that:
+        \begin{equation}
+            \sum{\lambda_i}=1
+        \end{equation}
+    and
+        \begin{equation}
+            x=\sum{\lambda_ix_i}
+        \end{equation} 
+        We call a subset $X \subseteq \R^d$ \textbf {affinely independent} if no element $x \in X$ is
+        affinely dependent on  $\com{X}{x}$.
+\end{definition}
+
+\begin{theorem}\label{1.2.4}
+    Let $S \subseteq \R^d$. Then the collection of all affinely independent subsets of  $S$ form a
+    matroid on $S$.
+\end{theorem}
+\begin{proof}
+    Clearly $\emptyset$ is affinely indipendent, trivially. Let $X$ be affinely independent, and let
+     $Y \subseteq X$. Then for  $x \in X$ and  $\{x_1, \dots, x_r\} \subseteq X$ with $x \neq x_i$
+     for  $1 \leq i \leq r$, there are no real nubers  $\lambda_i$ for which  $\sum{\lambda_i}=1$ and
+     $x=\sum{\lambda_ix_i}$. Now if $x \in Y$, take  $\{y_1, \dots, y_s\} \subseteq \{x_1, \dots,
+     x_r\}$ and we are done. Now take $y \neq x \in Y$, and again take $\{y_1, \dots, y_s\} \subseteq \{x_1, \dots,
+     x_r\}$ and where $y \neq y_j$ for  $1 \leq j \leq s$. Now if there are realnumbers  $\gamma_j$
+     for which  $\sum{\gamma_j}=1$ and $y=\sum{\gamma_jy_j}$, then by inclusion, we can find
+     addition $\gamma_i$ for which  $x=\sum{\gamma_ix_i}$, a contradiction; so $Y$ must also be
+     affinely independent.
+     
+     Now let  $X$ and $Y$ be affinely independent with  $|Y|<|X|$, then for  $y \in Y$ and  $x \in
+     X$ and  $\{x_1, \dots, x_r\}$, $\{y_1, \dots, y_s\}$ (not necessarily disjoint) with $x_i \neq
+     x$ and  $y_j \neq y$ for  $1 \leq i \leq r$ and  $1 ]leq j \leq s$, there are no real numbers
+     $\lambda_i$ and  $\gamma_j$ for which  $\sum{\lambda_i}=\sum{\gamma_j}=1$ and
+     $x=\sum{\lambda_ix_i}$ and $y=\sum{\gamma_jy_j}$. Now if there is indeed a $\lambda_i$ and
+     $x_i \notin \{y_1, \dots, y_s\}$ for which $y=\lambda_ix_i+\sum{\gamma_iy_i}$, that would imply
+     that we can find real numbers $\lambda_i$ for which  $x=\sum{\lambda_i}$ which cannot happen.
+     Thus $Y \cup x_i$ must be affinely independent.
+\end{proof}
+
+\begin{definition}
+    Let $J$ be an abelian torsion group. An element  $g \in J$ is called \textbf {dependent} if for
+    elements $ g_1, \dots, g_n \in J$ and integers $m \neq 0, k_1, \dots, k_m$ we have 
+        \begin{equation}
+            mg=k_1g_1+\dots+k_ng_n.
+        \end{equation}
+    A subset $Y \subseteq J$ is \textbf {independent} if there is no $y \in Y$ for which  $y$ is
+    dependent on  $\com{Y}{y}$.
+\end{definition}
+We defer the proof of this theorem.
