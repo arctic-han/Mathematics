@@ -61,7 +61,7 @@ We define some additional concepts, all of which can be used in the definition o
 \end{definition}
 
 \begin{definition}
-    We define the \textbf{closure operator} of a matroid to be the map $\cl:@^S \rightarrow 2^S$
+    We define the \textbf{closure operator} of a matroid to be the map $\cl:2^S \rightarrow 2^S$
     defined such that  $\cl{A}$is the set of all elements which depend on $A$; that is
         \begin{equation}
             \cl{A}=\{x \in \com{S}{A}:\rank{A \cup x}=\rank{A}+1\}.
@@ -232,5 +232,34 @@ We can already provea fact about matroids.
 We conclude the section with an additional axiomatic definition for a matroid. This definition
 relies on the concept of an ``independence function'', which was postulated and shown by Rado.
 
-\begin{theorem}[The Independence Function Axioms]\label{1.1.7}
+\begin{definition}[The Independence Function Axioms]
+    A map $f:2^S \rightarrow \Z/2\Z$ on the set of finite sequences of elements of  $S$ is an \textbf{independence
+    function} if for any $n \in \Z^+$ and sequences  $\{x_i\}_{i=1}^{n}, \{y_i\}_{i=1}^{n+1}$ of $S$
+    the folowing hold:
+        \begin{enumerate}
+            \item[(IF1)] $f(\emptyset)=1$
+
+            \item[(IF2)] $f$ is decreasing.
+
+            \item[(IF3)] $f$ is commutative, i.e. for any permutation $i \rightarrow \alpha i$ of
+                $\{1,\dots, n\}$
+                    \begin{equation}
+                        f(\{x_i\})=f(\{x_{\alpha i}\})
+                    \end{equation} 
+
+            \item[(IF4)] $f$ is non reflexive, i.e.  $f(x,x)=0$ for all $x \in S$.
+
+            \item[(IF5)] $f$ is distributive; that is 
+                \begin{equation}
+                    f(\{x_i\})f(\{y_i\}) \leq \sum_{i=1}^{n+1}{f(\{x_i\},y_i)}
+                \end{equation}
+        \end{enumerate}
+\end{definition}
+
+\begin{theorem}\label{1.1.7}
+    Let $S$ be a set and $f:2^S \rightarrow \Z/2\Z$ be an independence function. Define  $\Ic$ to be
+    the collection of sequences finite $\{x_i\}_{i=1}^{n}$ of $S$ such that $f(\{x_i\})=1$. Then
+    $\Ic$ forms a matroid on  $S$. Conversely, if  $M$ is a matroid on  $S$ with independence set
+    $\Ic$, then there is a map $f:2^S \rightarrow \Z/2\Z$ satisfying the independence function
+    axioms.
 \end{theorem}
