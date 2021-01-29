@@ -119,7 +119,7 @@ circuits, rank, and closure. We give the theorems below that establish the axiom
 
             \item[(R$'$2)] If $X \subet Y$, then  $\rank{X} \leq \rank{Y}$ 
 
-            \item[(R\`3)] $\rank{X \cup Y}+\rank{X \cap Y} \leq \rank{X}+\rank{Y}$.
+            \item[(R$'$3)] $\rank{X \cup Y}+\rank{X \cap Y} \leq \rank{X}+\rank{Y}$.
         \end{enumerate}
 \end{theorem}
 
@@ -263,3 +263,41 @@ relies on the concept of an ``independence function'', which was postulated and 
     $\Ic$, then there is a map $f:2^S \rightarrow \Z/2\Z$ satisfying the independence function
     axioms.
 \end{theorem}
+\begin{proof}
+    Clearly $\emptyset \in \Ic$ since  $f(\emptyset)=1$ by definition. Now let $X=\{x_i\}_{i=1}^{m}
+    \in \Ic$ and $Y=\{x_j\}_{j=1}^{n} \subseteq X$, with $n \leq m$. Since $f$ is decreasing, we have that  $f(X)
+    \leq f(Y)$; now if $f(Y)=0$ then $x_j=x$ for all  $1 \leq j \leq n$ by the nonreflexivity of
+    $f$. Then  $f(X)f(Y) \leq \sum_{i=1}^{n+m}{f(X,x_i)}=0$ by nonreflexivity again, implying that
+    $f(X)=0$ which cannot happen. So $f(Y)=1$.
+
+    Now take $X=\{x_i\}_{i=1}^{m}, Y=\{y_i\}_{i=1}^{n} \in \Ic$ with $n<m$ so that  $|Y|<|X|$. Take
+    $\com{X}{Y}$, then since $f$ is distributrive, we have  $f(Y)f(\com{X}{Y}) \leq
+    \sum_{i=1}^{n+1}{f(Y,x_i)}$ (if $x_i \in Y$ we reduce to nonreflexivity), and since $f(X)=1$ and
+    $f(Y)=1$, then $\sum_{}{f(Y,x_i)}=1$ for if not we get nonreflexivity leading to the previous
+    contradictions; thus $f(Y,x_i)=1$. Therefore $\Ic=\{X \subseteq S:f(X)=1\}$ defines a matroid 
+    over $S$.
+
+    Conversely, suppose we habe a matroid  $M=(S,\Ic)$, and define the map $f:2^S \rightarrow
+    \Z/2\Z$ By  $f(X)=\begin{cases}
+                        1 & \text{, if } X \in \Ic \\
+                        0 & \text{, if } X \notin \Ic \\
+                      \end{cases}$
+    , we wish to show that $f$ is an independence function on $M$.
+
+    Clearly  $f(\emptyset)=1$. Now for $X \in \Ic$ and  $Y \subseteq X$,  $Y \in \Ic$, so we have
+    that  $f(X)=f(Y)=1$, moreover since $|Y| \leq |X|$, by augmentation,  $f(Y \cup x)=1$ for $x \in
+    \cup{X}{Y}$, and if this not the case, we get $f(Y \cup x)=0$. In either cases we have $f(Y \cup x)
+    \leq f(Y)$, so $f$ is decreasing. It is also clear to see that  $f$ is commutative.
+
+    Now take  $f(X \cup x)$ for $x \in X$  (we are generalizing reflexivity), then $f(X \cup x) \leq
+    f(X)$. Now if $f(X \cup x)=1$, we have a contradiction in the agumentation property, so that
+    cannot happen; hence  $f$ is nonreflexive.
+
+    Lastly, we see by the deacreasing of  $f$, and by augmentation that for  $X=\{X_i\}_{i=1}^n,
+    Y=\{y_i\}_{i=1}^{n+1} \in \Ic$, and summing the augmentations $f(X \cup y_i)$ for all $y_i \in
+    Y$, we get
+        \begin{equation*}
+            f(X)f(Y) \leq \sum_{i=1}^{n+1}{f(X \cup y_i)}
+        \end{equation*}
+        and so $f$ is distributive, which makes it into an independence function.
+\end{proof}

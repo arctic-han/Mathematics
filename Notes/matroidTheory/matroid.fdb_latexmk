@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1611889057 "matroid.tex" "matroid.pdf" "matroid" 1611889057
+["pdflatex"] 1611917870 "matroid.tex" "matroid.pdf" "matroid" 1611917870
   "/etc/texmf/web2c/texmf.cnf" 1604064585 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -160,18 +160,18 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1596975543 38841 5237427e4d3283e7b009b6a8b45dfdcd ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1604064816 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1604064823 1156109 3d7119fb332ffed2b4ab40dce9b9b203 ""
-  "Chapters/Chapter1/Sections/Section1/section1.tex" 1611889056 12926 8e4ed290e18c8e90bf7a72e2710b6947 ""
+  "Chapters/Chapter1/Sections/Section1/section1.tex" 1611917868 15291 ae9e0dd16e1659cb26dce50d480d0c13 ""
   "Chapters/Chapter1/Sections/Section2/section2.tex" 1611875788 9241 bc4949ad351378cf50124391b2af4ec7 ""
   "Chapters/Chapter1/Sections/Section3/section3.tex" 1611876105 232 ec7bfbaecd9c30521bbb93a83cc9c457 ""
   "Chapters/Chapter1/chapter1.tex" 1611876136 423 8c5c3ccfd3e4c85c76a049c3b5967084 ""
   "Figures/Chapter1/k3cyclemat.png" 1611872366 114086 56f3b55a79844a48ce2214994dde1179 ""
   "Library/Fonts/BlackboardBold.tex" 1611845331 744 e62bfb97c3b0ebe0a2353762b95933da ""
   "Library/Fonts/MathCalligraphy.tex" 1611845331 791 fe7a518c060a9035d50e4618c12ce65f ""
-  "matroid.aux" 1611888997 2121 b0702d2805c4dd002ba941b167c9e59a "pdflatex"
-  "matroid.out" 1611888997 250 61e0a5455a0eef73df5aefbec8805c42 "pdflatex"
+  "matroid.aux" 1611917864 2122 8d1a2c2198c2ed21cb9b456421780791 "pdflatex"
+  "matroid.out" 1611917864 250 61e0a5455a0eef73df5aefbec8805c42 "pdflatex"
   "matroid.tex" 1611876010 1392 fd1e5535ec90e5e3660da9d52f9f3b52 ""
   (generated)
+  "matroid.pdf"
   "matroid.out"
   "matroid.aux"
-  "matroid.pdf"
   "matroid.log"
