@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1612028734 "matroid.tex" "matroid.pdf" "matroid" 1612028734
+["pdflatex"] 1612046843 "matroid.tex" "matroid.pdf" "matroid" 1612046843
   "/etc/texmf/web2c/texmf.cnf" 1604064585 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -164,18 +164,19 @@
   "Chapters/Chapter1/Sections/Section1/section1.tex" 1612027045 15337 361143268b0aef4868299a53284ada5c ""
   "Chapters/Chapter1/Sections/Section2/section2.tex" 1612024619 12336 b54fb0e98aeb61269b6dee654bc11ac3 ""
   "Chapters/Chapter1/Sections/Section3/section3.tex" 1612028542 5094 e9c3b6a5a39c92e39dabe07c3e1acfca ""
-  "Chapters/Chapter1/Sections/Section4/section4.tex" 1612028729 231 e0d2f18ca8a7193f7ad4d383386ec08e ""
-  "Chapters/Chapter1/chapter1.tex" 1612028722 480 44c46944e9a3999293ae2699bcc165da ""
+  "Chapters/Chapter1/Sections/Section4/section4.tex" 1612046752 5975 ec788a91c20c991b4eedafd6e392601b ""
+  "Chapters/Chapter1/Sections/Section5/section5.tex" 1612046801 222 e86cdde37d2749939630065e42f4bae7 ""
+  "Chapters/Chapter1/chapter1.tex" 1612046837 537 e777ccbf539ad5788b917e6c1acb3549 ""
   "Figures/Chapter1/k3cyclemat.png" 1611872366 114086 56f3b55a79844a48ce2214994dde1179 ""
   "Figures/Chapter1/loopsAndParallels.png" 1612025621 394932 f440443f29bef983b89433abad6c04ea ""
   "Figures/Chapter1/vamosmatroid.png" 1611978687 49339 59659d1fc5691263834bd81c69acb332 ""
   "Library/Fonts/BlackboardBold.tex" 1611845331 744 e62bfb97c3b0ebe0a2353762b95933da ""
   "Library/Fonts/MathCalligraphy.tex" 1611845331 791 fe7a518c060a9035d50e4618c12ce65f ""
-  "matroid.aux" 1612028323 2686 ea4280b17d8d67b2849e2dc326919a91 "pdflatex"
-  "matroid.out" 1612028323 250 61e0a5455a0eef73df5aefbec8805c42 "pdflatex"
-  "matroid.tex" 1612028733 1392 fd1e5535ec90e5e3660da9d52f9f3b52 ""
+  "matroid.aux" 1612046745 2986 3c944345cc2f6c1928c5542a60142e28 "pdflatex"
+  "matroid.out" 1612046745 323 5e831fdc568d8a5d7d423d6a6be74ce6 "pdflatex"
+  "matroid.tex" 1612046841 1392 fd1e5535ec90e5e3660da9d52f9f3b52 ""
   (generated)
-  "matroid.aux"
   "matroid.log"
-  "matroid.out"
+  "matroid.aux"
   "matroid.pdf"
+  "matroid.out"

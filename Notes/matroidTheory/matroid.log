@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  30 JAN 2021 13:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  30 JAN 2021 18:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -631,7 +631,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<Figures/Chapter1/vamosmatroid.png, id=93, 432.1746pt x 333.8874pt>
+<Figures/Chapter1/vamosmatroid.png, id=97, 432.1746pt x 333.8874pt>
 File: Figures/Chapter1/vamosmatroid.png Graphic file (type png)
 <use Figures/Chapter1/vamosmatroid.png>
 Package pdftex.def Info: Figures/Chapter1/vamosmatroid.png  used on input line 113.
@@ -646,7 +646,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [9 <./Figures/Chapter1/vamosmatroid.png>]
-<Figures/Chapter1/k3cyclemat.png, id=110, 1202.8137pt x 681.5061pt>
+<Figures/Chapter1/k3cyclemat.png, id=114, 1202.8137pt x 681.5061pt>
 File: Figures/Chapter1/k3cyclemat.png Graphic file (type png)
 <use Figures/Chapter1/k3cyclemat.png>
 Package pdftex.def Info: Figures/Chapter1/k3cyclemat.png  used on input line 153.
@@ -670,7 +670,7 @@ and I'll forget about whatever was undefined.
 
 LaTeX Warning: Reference `fig:1.3' on page 12 undefined on input line 14.
 
-<Figures/Chapter1/loopsAndParallels.png, id=130, 2293.1271pt x 1118.4987pt>
+<Figures/Chapter1/loopsAndParallels.png, id=134, 2293.1271pt x 1118.4987pt>
 File: Figures/Chapter1/loopsAndParallels.png Graphic file (type png)
 <use Figures/Chapter1/loopsAndParallels.png>
 Package pdftex.def Info: Figures/Chapter1/loopsAndParallels.png  used on input line 19.
@@ -721,7 +721,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-[13]) (./Chapters/Chapter1/Sections/Section4/section4.tex)) [14]
+[13]) (./Chapters/Chapter1/Sections/Section4/section4.tex [14]) (./Chapters/Chapter1/Sections/Section5/section5.tex)) [15]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
  (./matroid.aux)
@@ -734,8 +734,8 @@ Package rerunfilecheck Warning: File `matroid.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `matroid.out':
-(rerunfilecheck)             Before: 61E0A5455A0EEF73DF5AEFBEC8805C42;250
-(rerunfilecheck)             After:  5E831FDC568D8A5D7D423D6A6BE74CE6;323.
+(rerunfilecheck)             Before: 5E831FDC568D8A5D7D423D6A6BE74CE6;323
+(rerunfilecheck)             After:  04D22837955C8A0CDC1453CA1C828DC6;387.
 
 LaTeX Warning: There were undefined references.
 
@@ -745,18 +745,18 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 17880 strings out of 482854
- 332077 string characters out of 5956880
- 584658 words of memory out of 5000000
- 32757 multiletter control sequences out of 15000+600000
+ 17895 strings out of 482854
+ 332371 string characters out of 5956880
+ 584778 words of memory out of 5000000
+ 32762 multiletter control sequences out of 15000+600000
  545550 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,14n,60p,416b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on matroid.pdf (14 pages, 642998 bytes).
+Output written on matroid.pdf (15 pages, 651853 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
- 202 compressed objects within 3 object streams
- 88 named destinations out of 1000 (max. 500000)
- 60 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 255 PDF objects out of 1000 (max. 8388607)
+ 216 compressed objects within 3 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 68 words of extra memory for PDF output out of 10000 (max. 10000000)
 

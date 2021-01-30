@@ -3,3 +3,103 @@
 %----------------------------------------------------------------------------------------
 
 \section{Independent Sets and Bases.}
+
+It is clear that if $A$ is an independent set, then there is a base  $B$ for which  $A \subseteq B$.
+
+\begin{theorem}[The Augmentation Theorem]\label{1.4.1}
+    Suppose that $X$ and $Y$ are independent in a matroid $M$, and that $|X|<|Y|$, then there is a
+    $Z \subseteq \com{X}{y}$ such that $|X \cup Z|=|Y|$, and $X \cup Z$ is independent in $M$.
+\end{theorem}
+\begin{proof}
+    Let $Z_0$ be such that for all $Z \subseteq \com{X}{Y}$, with $X \cup Z$ independent,  $X \cup
+    Z_0$ is maximally independent. Now if $|X \cup Z_0|<|Y|$, there is a $Y_0 \subseteq Y$ such 
+    that $|X \cup Z_0|<|Y_0|$, and since $ Y_0$ is independent, by the augmentation axiom, 
+    there is a $y \in \com{Y_0}{(X \cup Z_0)}$ for which $X \cup Z_0 \cup y$ is independent. 
+    But $X \cup Z_0$ is maximal, a contradiction.
+\end{proof}
+\begin{corollary}
+    Any two bases of a matroid on  $S$ have the same size, and  $|B|=\rank{S}$ for any $B \in \Bc$.
+\end{corollary}
+\begin{proof}
+    Suppose that there are bases $ B_1,B_2 \in \Bc$ for which $|B_1|<|B_2|$. Then by the
+    augmentation theorem, there is a $Z \subseteq \com{B_2}{B_1}$ for which $ B_1 \cup Z$ is
+    independent; but $ B_1$ is maximally independent, which is a contradiction. Thus $|B_1|=|B_2|$
+    for any two bases $ B_1,B_2 \in \Bc$. We also see that by the definition of $\rank$, that
+    $|B|=\rank{S}$ for any $B \in \Bc$.
+\end{proof}
+
+We can now give a proof of theorem \ref{1.1.1}.
+
+\begin{proof}[Proof of theorem \ref{1.1.1}]
+    If $\Bc$ is the set of bases of a matroid, then we have that  $\Bc \neq \emptyset$, since
+    $\emptyset \in \Ic$. Now let  $ B_1,B_2 \in \Bc$, then by the augmentation theorem, there is a
+    $y \in B_2$ for which $|(\com{B}{x})\cup y|=|B_2|$, thus $y \in \com{B_2}{B_1}$.
+
+    Conversely, let $\Bc$ be a nonempty collection of subsets for which axiom $(B1)$ holds. Define
+    $\Ic$ the be the colection of all subsets $X$ of  $S$ for which  $X \subseteq B \in \Bc$.
+    Clearly  $\emptyset \in \Ic$, and if  $X \in \Ic$, and  $Y \subseteq X$, then  $Y \subseteq B
+    \in \Bc$, so  $Y \in \Ic$.
+
+    Now let  $X,Y \in \Ic$ with  $|X|<|Y|$, and choose  $ B_1,B_2 \in \Bc$ For $\com{B_1}{b}$, by
+    the augmentation theorem, there is a $z \in B_2$ for which $(\com{B_2}{b} \cup z) \in \Bc$. if
+    $z \in Y$, we are done. Otherwise consider  $(\com{(\com{B_1}{b}) \cup z)}{b'}$ then there is a
+    $z' \in B_2$ for which $(\com{(\com{B_1}{b}) \cup z)}{b'} \cup z' \in \Bc$, then if  $z' \in Y$,
+    we are done. If not, then continue, and by induction on  $|B_1|$, and since
+    $|B_1|>|\com{B_1}{Y}|$, after atmost $|B_1|$ steps, we will reach a member of $Y$. Thus the
+    augmentation axiom is satisfied. That is  $\Bc$ is the collection of bases of  $M$.
+\end{proof}
+
+\begin{theorem}\label{1.4.2}
+    A collection $\Ic$ of subsets of a set  $S$ is th collection of independent sets of a matroid
+    on  $S$ if and only if  $\Ic$ satisfies:
+        \begin{enumerate}
+            \item[(I$'$1)] $\emptyset \in \Ic$
+
+            \item[(I$'$2)] If $X \in \Ic$, and  $Y \subseteq X$, then  $Y \in \Ic$.
+
+            \item [(I$'$3)] If $A \subseteq S$, then for any two maximal subsets  $ Y_1,Y_2
+                \subseteq A$, with $ Y_1,Y_2 \in \Ic$, $|Y_1|=|Y_2|$.
+        \end{enumerate}
+\end{theorem}
+\begin{proof}
+    If $\Ic$ is the collection of independent sets, cleary $(I'1)$ and $(I'2)$ are satisfied. Now if
+    $(I'3)$ fails, then there are maximal set $ Y_1,Y_2 \in \Ic$ for which $|Y_1|<|Y_2|$, then by
+    the augmentation axiom, there is a $y \in \com{Y_2}{Y_1}$ for which $ Y_1 \cup y \in \Ic$, which
+    contradicts maximality.
+
+    Conversely, if $\Ic$ satisfies  $(I'1)$, $(I'2)$ and $(I'3)$, then clearly $(I1)$ and $(I2)$ are
+    satisfied. Now let $U,V \in \Ic$ with  $|U|<|V|$, and let  $A=U \cup V$. Since all maximal
+    subsets of  $A$ have the same size, there is an  $x \in A$ for which  $|x \cup U|=|V|$, by the
+    augmentation theorem. So  $x \cup U \in \Ic$, and we are done.
+\end{proof}
+\begin{remark}
+    $(I'1)$ and $(I'2)$ are just axioms $(I1)$ and $(I2)$, so they are satisfied trivially. it is
+    also worth noting that the augmentation theorem implies the augmentation axiom.
+\end{remark}
+
+\begin{example}
+    Let $ B_1,B_2$ be distinct bases of a matroid $M$. Since $|B_1|=|B_2|$, we can put the elements
+    of $ B_1$ into a $1-1$ correspondence with those of  $ B_2$, that is map $e \rightarrow \pi(e)$,
+    then $\pi:B_1 \rightarrow B_2$ is $1-1$ onto  $B_2$; thus by $(B1)$, and the augmentation
+    theorem, for $e \in B_1$, take $\pi(e) \in B_2$. then $\com{(B_2 \cup
+    e)}{\pi(e)}=(\com{B_2}{\pi(e)}) \cup e$ is a base of $M$.
+\end{example} 
+
+\begin{proposition}\label{1.4.4}
+    Let $ B_1$, $ B_2$ be bases of a matroid $M$. Then for any  $e \in B_1$, there is an $f \in B_2$
+    such that $(\com{B_1}{e}) \cup f$ and $(\com{B_2}{f}) \cup e$ are bases of $M$.
+\end{proposition}
+\begin{proof}
+    By $(B1)$ and the augmentation theorem, there is an $f \in B_2$ for which $\com{(B_1 \cup
+    f)}{e}$ is a base. Note that $\com{(B_1 \cup f)}{e}=(\com{B_1}{e}) \cup f$. Similarly we get
+    that $(\com{B_2}{f}) \cup e$ is also a base of  $M$.
+\end{proof}
+\begin{corollary}
+    If $ B_1$ and $ B_2$ are bases of $M$, and  $X_1 \subseteq B_1$, then there is an $ X_2
+    \subseteq B_2$ for which $(\com{B_1}{X_1}) \cup X_2$ and $(\com{B_2}{X_2}) \cup X_1$ are bases of $M$.	
+\end{corollary}
+\begin{proof}
+    Take $ X_2$ oto be the set of all such $f$ for which $(\com{B_1}{X_1}) \cup X_2$ and 
+    $(\com{B_2}{X_2}) \cup X_1$ are bases of $M$, for $e \in B_1$. That is take the map $f$ which
+    takes  $e \rightarrow f$ by this rule. Thus we get the result by taking the image of $f$.
+\end{proof}

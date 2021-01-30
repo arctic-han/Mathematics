@@ -283,6 +283,8 @@ INPUT ./Figures/Chapter1/loopsAndParallels.png
 INPUT ./Figures/Chapter1/loopsAndParallels.png
 INPUT Chapters/Chapter1/Sections/Section4/section4.tex
 INPUT Chapters/Chapter1/Sections/Section4/section4.tex
+INPUT Chapters/Chapter1/Sections/Section5/section5.tex
+INPUT Chapters/Chapter1/Sections/Section5/section5.tex
 INPUT matroid.aux
 INPUT ./matroid.out
 INPUT ./matroid.out
