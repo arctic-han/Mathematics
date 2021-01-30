@@ -69,7 +69,7 @@ vectors of a vector space forms a matroid over that vector space.
 \begin{definition}
     Let $V$ be a finite vector space, and let $M$ be the matroid on $V$ formed by taking all
     linearly independent subsets of vectors of $V$. We call a matroid isomorphic to $M$
-    \textbf{vectorial}.
+    \textbf{vectorial} over $V$, or \textbf {representable} over $V$.
 \end{definition}
 
 \begin{proposition}\label{1.2.2}
@@ -78,6 +78,59 @@ vectors of a vector space forms a matroid over that vector space.
 \begin{proof}
     Since $\dim{V}=|B|$, where $B$ is a basis of linearly independent vectors of  $V$, it is easy to
     see that  $\rank{M}=\dim{V}$.
+\end{proof}
+
+\begin{example}
+    Consider $\F_2$ and suppose that $U_{4,2}$ is vectorial over $\F_2$ as a vector space. Since
+    $1+x$ is a base for $\F_2$ as a vector space we have $\rank{U_{4,2}}=\dim{\F_2}=2$. Then there is a base $B \in
+    \Bc(U_{4,2})$ such that $B \rightarrow \{1,x\}$, and $\cl{B}=S(U_{4,2})$, but notice that
+    $0+1+x=1+x$, hence  $\rank{\{0,1,x\}}=\rank{\{1,x\}}$, thus $\cl{\{1,x\}}=\{1,x\} \subseteq
+    \F_2$, which contradicts the isomorphism. SO $U_{4,2}$ is not vectorial over $\F_2$.
+
+    What about $\F_3$? We have that $1+x+x^2$ is a base for $\F_3$ as a vector space, and that
+    $\rank{U_{4,2}} \leq \dim{F_3}=3$, then $\cl{\{1,x,x^2\}}=\{0,1,2\}=\F_3$, and so $U{4,2}$ is a
+    vector space over $\F_3$.
+\end{example} 
+
+\begin{proposition}\label{1.2.3}
+    If $M$ is a vectorial matroid and the elements $\{x_1, \dots ,x_n\}$ form a circuit, then
+    $\{x_1, \dots ,x_n\}$ is linearly dependent when considered as vectors. 
+\end{proposition}
+\begin{proof}
+    If $M$ is vectorial, then it is isomorphic to some matroid  $M'$ over a vector space  $V$. Then
+    for a cicuit of  $M$,  $\{x_1, \dots ,x_n\} \rightarrow \{v_1, \dots ,v_n\}$ is a circuit in the
+    vector space $V$, thus  $\{v_1, \dots, v_n\}$ is linearly dependent. To complete the proof we
+    just take the map to be the identity map.
+\end{proof}
+
+\begin{example}
+    \begin{figure}
+        \centering
+        \includegraphics[scale = 0.4]{Figures/Chapter1/vamosmatroid.png}
+        \caption{The Vámos Matroid.}
+        \label{fig:1.1}
+    \end{figure}
+
+    Let $S=\{1,2,3,4,5,6,7,8\}$ represented in the following geometry of figure \ref{fig:1.1}. Take
+    $\Cc$ to be the set of all planes on  $S$ which are coplanar; notice that any plane in $\Cc$ is
+    minamal  (removing an element removes its planarity), and also notice that if $P_1$ and $ P_1$
+    are distinct planes in $\Cc$, they are coplanar, so take a point $z \in P_1 \cup P_2$, then
+    there is indeed a plane $ P_3 \subeteq \com{(P_1 \cup P_2)}{z}$ that is also coplanar. hence
+    $\Cc$ is the set of circuits of a matroid. We call this matroid the \textbf{Vámos matroid} and
+    denote it $V_8$.
+\end{example} 
+
+\begin{proposition}\label{1.2.4}
+    The Vámos matroid is not vectorial over any vector space.
+\end{proposition}
+\begin{proof}
+    Suppose that $ V_8$ is indeed vectorial on a vector space $V$. Then there is a matroid $M$ on
+    $V$ isomorphic to  $ V_8$; thus $V$ has as bases linearly independent sets of  $4$ vectors,
+    hence  $\rank{V_8}=\dim{V}=4$. Then for any $4$ elements of $V_8$ maps to a set of $4$ vectors
+    of  $V$. Then for a circuit of $V_8$, take $ \{p_1,p_2,p_3,p_4\} \rightarrow
+    \{v_1,v_2,v_3,v_4\}$ which makes $\{v_1,v_2,v_3,v_4\}$ into a circuit of $V$, hence
+    $\{v_1,v_2,v_3\}$ is a maximally independent set, and so is a base of $B$, thus we get
+    $\dim{\{v_1,v_2,v_3\}}=\dim{V}=3$, a contradiction; hence $ V_8$ cannot be vectorial.
 \end{proof}
 
 \begin{definition}
@@ -100,7 +153,7 @@ We defer the proof that the cycle is indeed a matroid for when we talk about mat
 \end{example} 
 
 We now talk about matroids arising from algebra. we give some proofs, but these matroids will be
-discussed when approrpiate.
+discussed when appropriate.
 
 \begin{definition}
     Let $F$ be a field and  $K$ be an extension of $F$. We call a subset  $\{x_1, \dots, x_k\}
@@ -109,7 +162,7 @@ discussed when approrpiate.
     {algebraically independent}.
 \end{definition}
 
-\begin{theorem}\label{1.2.3}
+\begin{theorem}\label{1.2.5}
     Let $F$ be a field,  $K$ an extension of  $F$, and let  $S \subseteq K$ be finite.  For any $X
     \subseteq S$, let  $X \in \Ic$ if and only if  $X$ is algebraically independent. Then  $\Ic$
     forms a matroid over  $S$..
@@ -151,7 +204,7 @@ discussed when approrpiate.
         affinely dependent on  $\com{X}{x}$.
 \end{definition}
 
-\begin{theorem}\label{1.2.4}
+\begin{theorem}\label{1.2.6}
     Let $S \subseteq \R^d$. Then the collection of all affinely independent subsets of  $S$ form a
     matroid on $S$.
 \end{theorem}
@@ -186,3 +239,5 @@ discussed when approrpiate.
     dependent on  $\com{Y}{y}$.
 \end{definition}
 We defer the proof of this theorem.
+
+

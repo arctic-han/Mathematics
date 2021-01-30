@@ -270,6 +270,9 @@ INPUT Chapters/Chapter1/Sections/Section2/section2.tex
 INPUT Chapters/Chapter1/Sections/Section2/section2.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
+INPUT Figures/Chapter1/vamosmatroid.png
+INPUT ./Figures/Chapter1/vamosmatroid.png
+INPUT ./Figures/Chapter1/vamosmatroid.png
 INPUT Figures/Chapter1/k3cyclemat.png
 INPUT ./Figures/Chapter1/k3cyclemat.png
 INPUT ./Figures/Chapter1/k3cyclemat.png
