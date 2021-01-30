@@ -3,3 +3,116 @@
 %----------------------------------------------------------------------------------------
 
 \section{Loops and Parallel elements.}
+
+\begin{definition}
+    We define a \textbf{loop} of a matroid to be an element $x \in S$ for which  $\{x\}$ is a
+    dependent set. We say that two elements $x,y \in S$ are parallel if  $\{x,y\}$ is dependent, and
+    they are both not loops.
+\end{definition}
+
+\begin{example}
+    Let $M$ be the cycle matroid of the graph  $G$ in figure \ref{fig:1.3} has $2$ loops which we
+    label $x_1$ and $ x_2$, and $4$ parallel elements which we label $y_1,y_2$ and $z_1,z_2$.
+
+    \begin{figure} 
+        \centering
+        \includegraphics[scale = 0.1]{Figures/Chapter1/loopsAndParallels.png}
+        \caption{The graph $G$ has $2$ loops and  $4$ parallel elements.}
+        \fig{fig:1.3}
+    \end{figure}
+\end{example} 
+
+We have the following proposition on loops.
+
+\begin{proposition}\label{1.3.1}
+    \begin{enumerate}[label=(\arabic*)]
+        \item $x$ is a loop if and only if  $x \in \cl{\emptyset}$.
+
+        \item If $x$ is a loop and $x \in A$, then  $A$ is dependent.
+
+        \item If $x$ is a loop then  $x \in \cl{A}$ for all $A \subseteq S$.
+
+        \item $x$ is a loop if and only if  $\{x\}$ is a circuit.
+
+        \item $x$ is a loop if and only if it cannot be contained in any base.
+    \end{enumerate}
+\end{proposition}
+\begin{proof}
+    \begin{enumerate}[label=(\arabic*)]
+        \item If $x$ is a loop, then  $\{x\}$ is dependent and since $\rank{\emptyset}=0$, we have
+            $\rank{\emptyset \cup \{x\}}=\rank{\emptyset}=0$, so $x \in \cl{\emptyset}$. Conversely
+            if $x \in \cl{\emptyset}$, then $\rank{\emptyset \cup \{x\}}=\rank{\emptyset}=0$, and
+            since $x \in S$, $\{x\}$ is dependent.
+
+        \item This is clear by definition and by $(1)$.
+
+        \item If $x$ is a loop and if  $A$ were independent, then that would make  $\{x\}$ 
+            independent; absurd.
+
+        \item For $A \subseteq S$, since  $x$ is a loop,  $\rank{A \cup x}=\rank{A}$, so $x \in
+            \cl{A}$.
+
+        \item This is clear by definition.
+
+        \item This follows from the contrapositive of proposition \ref{1.1.6}.
+    \end{enumerate}
+\end{proof}
+\begin{corollary}
+    A loop belongs to every flat.		
+\end{corollary}
+\begin{proof}
+    If $x$ is a loop and $F$ is an arbitrary flat, then  $x \in \cl{\emptyset} \subseteq \cl{F}$, 
+    and we also have that $x \in \cl{F}$, thus $x \in F$.
+\end{proof}
+\begin{corollary}
+    $\emptyset$ is a flat if and only if  $M$ has no loops.
+\end{corollary}
+\begin{proof}
+    If $\emptyset$ is a flat, then for every  $x \in S$,  $\rank{\emptyset \cup
+    x}=\rank{\emptyset}+1$, thus there are no elements depending on $\emptyset$, thus there are no
+    loops in $M$.
+
+    Conversely if there are no loops in  $M$, and  $\emptyset$ is not a flat, then there is some
+    element in $x \in S$ for which  $\rank{\emptyset \cup x}=\rank{\emptyset}$, thus $\{x\}$ is
+    dependent, which makes $x$ a loop; absurd.
+\end{proof}
+
+And the following proposition for parallel elements.
+
+\begin{proposition}\label{1.3.2}
+    \begin{enumerate}[label=(\arabic*)]
+        \item Distinct elements $x$ and  $y$ are parallel if and only if $\{x,y\}$ is a circuit.
+
+        \item If $x$ is parallel to  $y$ and  $y$ is parallel to  $z$, then  $x$ is parallel to
+            $z$.
+
+        \item If $x \neq y$, $x$ is parallel to  $y$ if and only if  $x \in \cl{y}$ and $y \in
+            \cl{x}$, and they are both not loops.
+
+         \item If $x \in \cl{A}$ for $A \subseteq S$, and  $x$ is parallel to  $y$, then  $y \in \cl{A}$.
+
+         \item If $A$ contains two parallel elements, then $A$ must be dependent.
+    \end{enumerate}
+\end{proposition}
+\begin{proof}
+    \begin{enumerate}[label=(\arabic*)]
+        \item If $x=y$, then  $x$ is a loop. Now if  $x \neq y$ and  $x$ and  $y$ are parallel, then
+            $\{x,y\}$ is dependent, and $\{x\}$ isn't a loop (hence it is independent), thus
+            $\{x,y\}$ is minimally dependent. On the on the other hand, if $\{x,y\}$ is a circuit,
+            then both $\{x\}$ and $\{y\}$ are independent, thus they are not loops, so $x$ and  $y$
+            are parallel.
+
+        \item If $x$ is parallel to  $y$, then  $\{x,y\}$ is dependent, and if $y$ and  $z$ are
+            parallel, then  $\{y,z\}$ is also dependent. Then by the circuit elimination axiom,
+            $\{x,y\}$ is dependent, and  $x$ and  $z$ are both not loops, hence they are parallel.
+
+        \item If  $x$ is parallel to $y$, then  $\rank{\{x,y\}}=\rank{\{y\}}$ likewise
+            $\rank{\{x,y\}=\rank{x}}$, thus $x \in \cl{\{y\}}$ and $y \in \cl{\{x\}}$; that they are
+            both not parallel follows by definition.
+
+        \item If $x$ depends on  $A$, and  $x$ is parallel to  $y$, then  $\rank{A \cup
+            y}=\rank{A}$, hence $y$ also depends on $A$.
+
+        \item This is obvious by the inheritance axiom.
+    \end{enumerate}
+\end{proof}

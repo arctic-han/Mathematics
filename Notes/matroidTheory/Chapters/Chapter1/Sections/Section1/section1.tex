@@ -64,7 +64,7 @@ We define some additional concepts, all of which can be used in the definition o
     We define the \textbf{closure operator} of a matroid to be the map $\cl:2^S \rightarrow 2^S$
     defined such that  $\cl{A}$is the set of all elements which depend on $A$; that is
         \begin{equation}
-            \cl{A}=\{x \in \com{S}{A}:\rank{A \cup x}=\rank{A}+1\}.
+            \cl{A}=\{x \in \com{S}{A}:\rank{A \cup x}=\rank{A}\}.
         \end{equation}
 \end{definition}
 
@@ -94,7 +94,8 @@ circuits, rank, and closure. We give the theorems below that establish the axiom
             \item[(C1)] If $Y \in \Cc$ and  $X \neq Y$, then  $X \not\subseteq Y$.
 
             \item[(C2)] If $ C_1,C_2 \in \Cc$ are distinct, and $z \in C_1 \cap C_2$, then there is
-                a circuit $ C_3 \in \Cc$ such that $ C_3 \subseteq \com{(C_1\cup C_2)}{z}$.
+                a circuit $ C_3 \in \Cc$ such that $ C_3 \subseteq \com{(C_1\cup C_2)}{z}$. (The
+                Circuit Elimination Axiom)
         \end{enumerate}
 \end{theorem}
 
