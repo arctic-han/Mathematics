@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1611981226 "matroid.tex" "matroid.pdf" "matroid" 1611981269
+["pdflatex"] 1611981874 "matroid.tex" "matroid.pdf" "matroid" 1611981874
   "/etc/texmf/web2c/texmf.cnf" 1604064585 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -161,7 +161,7 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1604064816 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1604064823 1156109 3d7119fb332ffed2b4ab40dce9b9b203 ""
   "Chapters/Chapter1/Sections/Section1/section1.tex" 1611917919 15291 ae9e0dd16e1659cb26dce50d480d0c13 ""
-  "Chapters/Chapter1/Sections/Section2/section2.tex" 1611981246 12253 730b03ce747ad69510536bf1935b4b06 ""
+  "Chapters/Chapter1/Sections/Section2/section2.tex" 1611981873 11503 bbc56505914d7e841a0126e2f95bba08 ""
   "Chapters/Chapter1/Sections/Section3/section3.tex" 1611876105 232 ec7bfbaecd9c30521bbb93a83cc9c457 ""
   "Chapters/Chapter1/chapter1.tex" 1611876136 423 8c5c3ccfd3e4c85c76a049c3b5967084 ""
   "Figures/Chapter1/k3cyclemat.png" 1611872366 114086 56f3b55a79844a48ce2214994dde1179 ""

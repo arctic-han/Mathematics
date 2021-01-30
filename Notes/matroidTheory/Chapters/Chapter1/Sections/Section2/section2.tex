@@ -80,18 +80,6 @@ vectors of a vector space forms a matroid over that vector space.
     see that  $\rank{M}=\dim{V}$.
 \end{proof}
 
-\begin{example}
-    Consider $\F_2$ and suppose that $U_{4,2}$ is vectorial over $\F_2$ as a vector space. Since
-    $1+x$ is a base for $\F_2$ as a vector space we have $\rank{U_{4,2}}=\dim{\F_2}=2$. Then there is a base $B \in
-    \Bc(U_{4,2})$ such that $B \rightarrow \{1,x\}$, and $\cl{B}=S(U_{4,2})$, but notice that
-    $0+1+x=1+x$, hence  $\rank{\{0,1,x\}}=\rank{\{1,x\}}$, thus $\cl{\{1,x\}}=\{1,x\} \subseteq
-    \F_2$, which contradicts the isomorphism. SO $U_{4,2}$ is not vectorial over $\F_2$.
-
-    What about $\F_3$? We have that $1+x+x^2$ is a base for $\F_3$ as a vector space, and that
-    $\rank{U_{4,2}} \leq \dim{F_3}=3$, then $\cl{\{1,x,x^2\}}=\{0,1,2\}=\F_3$, and so $U{4,2}$ is a
-    vector space over $\F_3$.
-\end{example} 
-
 \begin{proposition}\label{1.2.3}
     If $M$ is a vectorial matroid and the elements $\{x_1, \dots ,x_n\}$ form a circuit, then
     $\{x_1, \dots ,x_n\}$ is linearly dependent when considered as vectors. 
