@@ -24,21 +24,21 @@ There is one immediate example for a matroid.
 
 \begin{example}
     Let $V$ be a finite vector space and let  $\Ic$ be the collection of all linearly independent
-    subsets of vectors of  $V$. Clearly  $\emptyset \in V$, and if  $X$ is linearly independent, and
-     $Y \subseteq X$, then  $Y$ is also linearly independent; so inheretence is satisfied.
+    subsets of vectors of  $V$. Clearly  $\emptyset \in V$, and if  $U$ is linearly independent, and
+     $W \subseteq U$, then  $W$ is also linearly independent; so inheretence is satisfied.
 
-     Now let $X$ be linearly independent, then  $\Span{S}$ must also be linearly independent. Now
-     take $\beta \in \com{V}{\Span{S}}$ and for $\alpha_1, \dots, \alpha_m \in S$ take
+     Now let $U$ and  $W$ be linearly independent subspaces with  $\dim{U}<\dim{W}$ and take $w \in
+     \com{W}{U}$, then $w \notin \Span{U}$, then for vectors $ u_1, \dots, u_n \in U$, and
+     scalars $\alpha_1, \dots, \alpha_n,b$, take
         \begin{equation*}
-            c_1\alpha_1+\dots+c_2\alpha_2+b\beta=0
+            \alpha_1u_1+\dots+\alpha_nu_n+bw=0
         \end{equation*}
-    If $b \neq 0$, then
+    if $b \neq 0$, then
         \begin{equation*}
-            \beta=(-\frac{c_1}{b})\alpha_1+\dots+(-\frac{c_m}{b})\alpha_m
+            w=(-\frac{\alpha_1}{b})u_1+\dots+\alpha_nu_n
         \end{equation*}
-    putting $\beta \in \Span{S}$, a contradiction, hence $b=0$, and so  $S \cup \beta$ is also
-    linearly independent. Thus the augmentation axiom is satisfied and  $V$ is a matroid together
-    with  $\Ic$.
+    putting $w \in \Span{U}$, a contradiction. Hence $U \cup w$ is also linearly independent, and we
+    have that $\Ic$ forms a matroid on $V$.
 \end{example} 
 
 We define some additional concepts, all of which can be used in the definition of a matroid.
