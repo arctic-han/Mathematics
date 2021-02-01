@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1611518448 "Topology.tex" "Topology.pdf" "Topology" 1611518448
+["pdflatex"] 1612200871 "Topology.tex" "Topology.pdf" "Topology" 1612200871
   "/etc/texmf/web2c/texmf.cnf" 1604064585 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/eletrico/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcti1200.600pk" 1610292277 17148 edef7afd0a29be46da2c41eb397adf3b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -235,7 +235,7 @@
   "Chapters/Chapter2/Section1/section1.tex" 1609868005 10099 778574f74f8a6801ed53eaa94ccf83ef ""
   "Chapters/Chapter2/Section2/section2.tex" 1611188075 14568 911bdeabfd52b7d5f8b54ffbedfdb869 ""
   "Chapters/Chapter2/Section3/section3.tex" 1611518352 10679 60f96c07c901a71f6b74c957529013ef ""
-  "Chapters/Chapter2/Section4/section4.tex" 1611518425 227 2f32bf98d2354478377fd558d3385472 ""
+  "Chapters/Chapter2/Section4/section4.tex" 1612200869 5756 82dac3f3497ec2ce9f65bda2d3f85a2f ""
   "Chapters/Chapter2/chapter2.tex" 1611518447 661 341d4d91b7033ec0bd1429b21cac8438 ""
   "Figures/Chapter1/basesOfCircularRectangularRegions.png" 1606600743 825314 761ca474224a9dffd78304f018349b25 ""
   "Figures/Chapter1/continuousFunctions.png" 1606600743 45834 21100e69ac71c48c6913c427622a5127 ""
@@ -247,13 +247,14 @@
   "Figures/Chapter1/topologiesOn3Points.png" 1606600743 229832 a63f578d1caae278c9fd3ae4f3202793 ""
   "Figures/Chapter1/upperAndLowerBoundsOfDomains.png" 1606600743 307312 cdab10a3dd96d9cc7da9a0df695a847a ""
   "Figures/Chapter2/openBall.png" 1609868663 131832 4874185e8778271f07999d7876f94bf6 ""
+  "Figures/Chapter2/quotientOnAbc.png" 1612200357 65287 8be28592c9b8fe81bd438738024a1815 ""
   "Library/Fonts/BlackboardBold.tex" 1606600743 744 e62bfb97c3b0ebe0a2353762b95933da ""
   "Library/Fonts/MathCalligraphy.tex" 1606600743 791 fe7a518c060a9035d50e4618c12ce65f ""
-  "Topology.aux" 1611518360 8329 cccf04046f062cd6face383bcbce7909 "pdflatex"
-  "Topology.out" 1611518360 833 b866aece558b8879d21df9405b4a710f "pdflatex"
-  "Topology.tex" 1611260699 2225 80594a081efea6babd13ebd35f436618 ""
+  "Topology.aux" 1612200768 8720 142f30bdfdb8cae9b26f9c7fe8dbb17b "pdflatex"
+  "Topology.out" 1612200768 901 269db62b26de0f1fe3907d5dbf9cc1cc "pdflatex"
+  "Topology.tex" 1611518464 2225 80594a081efea6babd13ebd35f436618 ""
   (generated)
-  "Topology.out"
   "Topology.aux"
-  "Topology.log"
   "Topology.pdf"
+  "Topology.log"
+  "Topology.out"

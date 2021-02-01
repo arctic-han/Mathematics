@@ -405,6 +405,9 @@ INPUT Chapters/Chapter2/Section3/section3.tex
 INPUT Chapters/Chapter2/Section3/section3.tex
 INPUT Chapters/Chapter2/Section4/section4.tex
 INPUT Chapters/Chapter2/Section4/section4.tex
+INPUT Figures/Chapter2/quotientOnAbc.png
+INPUT ./Figures/Chapter2/quotientOnAbc.png
+INPUT ./Figures/Chapter2/quotientOnAbc.png
 INPUT Topology.aux
 INPUT ./Topology.out
 INPUT ./Topology.out
