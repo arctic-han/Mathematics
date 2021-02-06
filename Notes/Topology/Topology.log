@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.4)  6 FEB 2021 13:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.4)  6 FEB 2021 16:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -568,83 +568,71 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \sift@deathcycles=\count305
 \@vwid@loff=\dimen303
 \@vwid@roff=\dimen304
-)) (/usr/share/texlive/texmf-dist/tex/latex/svg/svg.sty
-Package: svg 2020/06/23 v2.02h (include SVG pictures)
- (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2020/07/22 v3.31 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
- (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2020/07/22 v3.31 KOMA-Script package (loading files)
-)) (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
-Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
-Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 77.
-)
-\c@svg@param@lastpage=\count306
-
-
-/usr/share/texlive/texmf-dist/tex/latex/svg/svg.sty:768: LaTeX Error: Unknown option `clean' for package `svg'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.768 \FamilyProcessOptions{SVG}
-                                
-The option `clean' was not declared in package `svg', perhaps you
-misspelled its name. Try typing  <return>  to proceed.
-
-\svg@box=\box64
-\c@svg@param@currpage=\count307
-) (/usr/share/texlive/texmf-dist/tex/latex/transparent/transparent.sty
-Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+)) (/usr/share/texlive/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
+Package: tikz-cd 2018/11/19 v0.9f Commutative diagrams with TikZ
+ (/usr/share/texlive/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowinset=\dimen305
+\pgfarrowlength=\dimen306
+\pgfarrowwidth=\dimen307
+\pgfarrowlinewidth=\dimen308
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) (./Library/Fonts/BlackboardBold.tex) (./Library/Fonts/MathCalligraphy.tex)
 
-./Topology.tex:31: LaTeX Error: Command \bbar undefined.
+./Topology.tex:30: LaTeX Error: Command \bbar undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.31 \renewcommand{\bbar}
+l.30 \renewcommand{\bbar}
                          [1]{\underline{#1}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-\c@theorem=\count308
-\c@axiom=\count309
-\c@postulate=\count310
-\c@conjecture=\count311
-\c@example=\count312
+\c@theorem=\count306
+\c@axiom=\count307
+\c@postulate=\count308
+\c@conjecture=\count309
+\c@example=\count310
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count313
-\l__pdf_internal_box=\box65
+\l__kernel_color_stack_int=\count311
+\l__pdf_internal_box=\box64
 ) (./Topology.aux
 
 LaTeX Warning: Label `1.2.4' multiply defined.
 
+
+LaTeX Warning: Label `fig_2.4' multiply defined.
+
+
+LaTeX Warning: Label `2.2.3' multiply defined.
+
 )
 \openout1 = `Topology.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -682,16 +670,16 @@ LaTeX Font Info:    ... okay on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count314
-\scratchdimen=\dimen305
-\scratchbox=\box66
-\nofMPsegments=\count315
-\nofMParguments=\count316
+\scratchcounter=\count312
+\scratchdimen=\dimen309
+\scratchbox=\box65
+\nofMPsegments=\count313
+\nofMParguments=\count314
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count317
-\MPscratchDim=\dimen306
-\MPnumerator=\count318
-\makeMPintoPDFobject=\count319
+\MPscratchCnt=\count315
+\MPscratchDim=\dimen310
+\MPnumerator=\count316
+\makeMPintoPDFobject=\count317
 \everyMPtoPDFconversion=\toks53
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -701,8 +689,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.17} (current compat level: 1.12).
 
-\AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring OFF on input line 73.
+\AtBeginShipoutBox=\box66
+Package hyperref Info: Link coloring OFF on input line 72.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -710,20 +698,20 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count320
+\c@section@level=\count318
 )
-LaTeX Info: Redefining \ref on input line 73.
-LaTeX Info: Redefining \pageref on input line 73.
-LaTeX Info: Redefining \nameref on input line 73.
+LaTeX Info: Redefining \ref on input line 72.
+LaTeX Info: Redefining \pageref on input line 72.
+LaTeX Info: Redefining \nameref on input line 72.
  (./Topology.out) (./Topology.out)
 \@outlinefile=\write4
 \openout4 = `Topology.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -734,13 +722,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 Chapter 1.
 (./Chapters/Chapter1/Section1/section1.tex
-<Figures/Chapter1/topologiesOn3Points.png, id=73, 1020.6933pt x 484.209pt>
+<Figures/Chapter1/topologiesOn3Points.png, id=81, 1020.6933pt x 484.209pt>
 File: Figures/Chapter1/topologiesOn3Points.png Graphic file (type png)
 <use Figures/Chapter1/topologiesOn3Points.png>
 Package pdftex.def Info: Figures/Chapter1/topologiesOn3Points.png  used on input line 31.
 (pdftex.def)             Requested size: 306.21036pt x 145.26381pt.
  [3 <./Figures/Chapter1/topologiesOn3Points.png>]) (./Chapters/Chapter1/Section2/section2.tex
-<Figures/Chapter1/basesOfCircularRectangularRegions.png, id=91, 630.9171pt x 474.3321pt>
+<Figures/Chapter1/basesOfCircularRectangularRegions.png, id=99, 630.9171pt x 474.3321pt>
 File: Figures/Chapter1/basesOfCircularRectangularRegions.png Graphic file (type png)
 <use Figures/Chapter1/basesOfCircularRectangularRegions.png>
 Package pdftex.def Info: Figures/Chapter1/basesOfCircularRectangularRegions.png  used on input line 56.
@@ -756,7 +744,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ) (./Chapters/Chapter1/Section3/section3.tex [6]
-<Figures/Chapter1/orderTopologyOnRxR.png, id=132, 831.3459pt x 367.1316pt>
+<Figures/Chapter1/orderTopologyOnRxR.png, id=140, 831.3459pt x 367.1316pt>
 File: Figures/Chapter1/orderTopologyOnRxR.png Graphic file (type png)
 <use Figures/Chapter1/orderTopologyOnRxR.png>
 Package pdftex.def Info: Figures/Chapter1/orderTopologyOnRxR.png  used on input line 56.
@@ -766,7 +754,7 @@ Overfull \hbox (74.97047pt too wide) in paragraph at lines 8--11
 \OT1/cmr/m/n/12 to be the topol-ogy hav-ing as ba-sis the col-lec-tion $\OMS/cmsy/m/n/12 B \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 U \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 V \OMS/cmsy/m/n/12 ^^R \OML/cmm/m/it/12 X \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 Y \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 U[]X[]V[]Y\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 . 
  []
 
-<Figures/Chapter1/interiorOfRectangle.png, id=147, 681.2652pt x 309.5565pt>
+<Figures/Chapter1/interiorOfRectangle.png, id=155, 681.2652pt x 309.5565pt>
 File: Figures/Chapter1/interiorOfRectangle.png Graphic file (type png)
 <use Figures/Chapter1/interiorOfRectangle.png>
 Package pdftex.def Info: Figures/Chapter1/interiorOfRectangle.png  used on input line 49.
@@ -777,13 +765,13 @@ Overfull \hbox (1.10599pt too wide) in paragraph at lines 66--68
  []
 
 [8]
-<Figures/Chapter1/projections.png, id=156, 306.4248pt x 284.0211pt>
+<Figures/Chapter1/projections.png, id=165, 306.4248pt x 284.0211pt>
 File: Figures/Chapter1/projections.png Graphic file (type png)
 <use Figures/Chapter1/projections.png>
 Package pdftex.def Info: Figures/Chapter1/projections.png  used on input line 79.
 (pdftex.def)             Requested size: 153.21202pt x 142.0102pt.
 ) (./Chapters/Chapter1/Section5/section5.tex [9 <./Figures/Chapter1/interiorOfRectangle.png> <./Figures/Chapter1/projections.png>] [10]
-<Figures/Chapter1/ConvexSeAndNonConvexSet.png, id=180, 1864.566pt x 884.3439pt>
+<Figures/Chapter1/ConvexSeAndNonConvexSet.png, id=188, 1864.566pt x 884.3439pt>
 File: Figures/Chapter1/ConvexSeAndNonConvexSet.png Graphic file (type png)
 <use Figures/Chapter1/ConvexSeAndNonConvexSet.png>
 Package pdftex.def Info: Figures/Chapter1/ConvexSeAndNonConvexSet.png  used on input line 101.
@@ -811,7 +799,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/Chapter1/upperAndLowerBoundsOfDomains.png, id=181, 1611.621pt x 764.3757pt>
+<Figures/Chapter1/upperAndLowerBoundsOfDomains.png, id=189, 1611.621pt x 764.3757pt>
 File: Figures/Chapter1/upperAndLowerBoundsOfDomains.png Graphic file (type png)
 <use Figures/Chapter1/upperAndLowerBoundsOfDomains.png>
 Package pdftex.def Info: Figures/Chapter1/upperAndLowerBoundsOfDomains.png  used on input line 132.
@@ -906,7 +894,7 @@ l.198 ...1]$, the same can be said for any  $x \in
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-<Figures/Chapter1/hausdorffSpace.png, id=220, 805.5696pt x 392.9079pt>
+<Figures/Chapter1/hausdorffSpace.png, id=228, 805.5696pt x 392.9079pt>
 File: Figures/Chapter1/hausdorffSpace.png Graphic file (type png)
 <use Figures/Chapter1/hausdorffSpace.png>
 Package pdftex.def Info: Figures/Chapter1/hausdorffSpace.png  used on input line 243.
@@ -994,7 +982,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/Chapter1/continuousFunctions.png, id=285, 1267.2pt x 543.51pt>
+<Figures/Chapter1/continuousFunctions.png, id=293, 1267.2pt x 543.51pt>
 File: Figures/Chapter1/continuousFunctions.png Graphic file (type png)
 <use Figures/Chapter1/continuousFunctions.png>
 Package pdftex.def Info: Figures/Chapter1/continuousFunctions.png  used on input line 236.
@@ -1031,17 +1019,26 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ) (./Chapters/Chapter2/Section2/section2.tex [23]
-<Figures/Chapter2/openBall.png, id=340, 917.1063pt x 452.6511pt>
-File: Figures/Chapter2/openBall.png Graphic file (type png)
-<use Figures/Chapter2/openBall.png>
-Package pdftex.def Info: Figures/Chapter2/openBall.png  used on input line 58.
-(pdftex.def)             Requested size: 183.418pt x 90.52861pt.
+Package epstopdf Info: Source file: <Figures/Chapter2/openBall.eps>
+(epstopdf)                    date: 2021-02-06 13:51:49
+(epstopdf)                    size: 252569 bytes
+(epstopdf)             Output file: <Figures/Chapter2/openBall-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-02-06 13:54:05
+(epstopdf)                    size: 249904 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/Chapter2/openBall-eps-converted-to.pdf Figures/Chapter2/openBall.eps>
+(epstopdf)             \includegraphics on input line 58.
+Package epstopdf Info: Output file is already uptodate.
+<Figures/Chapter2/openBall-eps-converted-to.pdf, id=348, 1138.2525pt x 713.66624pt>
+File: Figures/Chapter2/openBall-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures/Chapter2/openBall-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/Chapter2/openBall-eps-converted-to.pdf  used on input line 58.
+(pdftex.def)             Requested size: 227.64647pt x 142.73071pt.
 
 Overfull \hbox (30.93944pt too wide) in paragraph at lines 97--100
 []\OT1/cmr/m/n/12 Clearly we have that $0 \OMS/cmsy/m/n/12 ^^T []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^T \OT1/cmr/m/n/12 1$, and that $[](\OML/cmm/m/it/12 x; y\OT1/cmr/m/n/12 ) = []\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OMS/cmsy/m/n/12 g \OT1/cmr/m/n/12 = []\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y; x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OMS/cmsy/m/n/12 g \OT1/cmr/m/n/12 =
  []
 
-[24 <./Figures/Chapter2/openBall.png>]
+[24 <./Figures/Chapter2/openBall-eps-converted-to.pdf>]
 ./Chapters/Chapter2/Section2/section2.tex:117: Undefined control sequence.
 l.117     $\R^n$ to be  $\rho(x,y)=\mac
                                        \{|x_1-y_1|, \dots |x_n-y_n|\}$.
@@ -1184,9 +1181,29 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) (./Chapters/Chapter2/Section4/section4.tex [29]
-./Chapters/Chapter2/Section4/section4.tex:70: Undefined control sequence.
-l.70     \subsesubseteq
+) (./Chapters/Chapter2/Section4/section4.tex
+Package epstopdf Info: Source file: <Figures/Chapter2/squareToCylinderToTorus.eps>
+(epstopdf)                    date: 2021-02-06 14:10:35
+(epstopdf)                    size: 65248 bytes
+(epstopdf)             Output file: <Figures/Chapter2/squareToCylinderToTorus-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-02-06 14:12:16
+(epstopdf)                    size: 73833 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/Chapter2/squareToCylinderToTorus-eps-converted-to.pdf Figures/Chapter2/squareToCylinderToTorus.eps>
+(epstopdf)             \includegraphics on input line 17.
+Package epstopdf Info: Output file is already uptodate.
+<Figures/Chapter2/squareToCylinderToTorus-eps-converted-to.pdf, id=400, 1132.23pt x 713.66624pt>
+File: Figures/Chapter2/squareToCylinderToTorus-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures/Chapter2/squareToCylinderToTorus-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/Chapter2/squareToCylinderToTorus-eps-converted-to.pdf  used on input line 17.
+(pdftex.def)             Requested size: 566.11362pt x 356.83224pt.
+
+Overfull \hbox (96.3586pt too wide) in paragraph at lines 17--18
+ [][] 
+ []
+
+[29] [30 <./Figures/Chapter2/squareToCylinderToTorus-eps-converted-to.pdf>]
+./Chapters/Chapter2/Section4/section4.tex:77: Undefined control sequence.
+l.77     \subsesubseteq
                         \Tc'$, now if $p$ is open, then for $U$ open in $X$,...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1194,27 +1211,102 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/Chapter2/quotientOnAbc.png, id=399, 519.3804pt x 401.3394pt>
-File: Figures/Chapter2/quotientOnAbc.png Graphic file (type png)
-<use Figures/Chapter2/quotientOnAbc.png>
-Package pdftex.def Info: Figures/Chapter2/quotientOnAbc.png  used on input line 95.
-(pdftex.def)             Requested size: 103.87424pt x 80.26645pt.
-[30]
-Package epstopdf Info: Source file: <Figures/Chapter2/diskSphere.eps>
-(epstopdf)                    date: 2021-02-06 13:14:06
-(epstopdf)                    size: 660400 bytes
-(epstopdf)             Output file: <Figures/Chapter2/diskSphere-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-02-06 13:15:15
-(epstopdf)                    size: 613562 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/Chapter2/diskSphere-eps-converted-to.pdf Figures/Chapter2/diskSphere.eps>
-(epstopdf)             \includegraphics on input line 116.
-Package epstopdf Info: Output file is already uptodate.
-<Figures/Chapter2/diskSphere-eps-converted-to.pdf, id=408, 1433.355pt x 713.66624pt>
+
+LaTeX Warning: File `Figures/Chapter2/quotientOnAbc.png' not found on input line 102.
+
+
+./Chapters/Chapter2/Section4/section4.tex:102: Package pdftex.def Error: File `Figures/Chapter2/quotientOnAbc.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 ... 0.2]{Figures/Chapter2/quotientOnAbc.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[31]
+<Figures/Chapter2/diskSphere-eps-converted-to.pdf, id=425, 1433.355pt x 713.66624pt>
 File: Figures/Chapter2/diskSphere-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Chapter2/diskSphere-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/Chapter2/diskSphere-eps-converted-to.pdf  used on input line 116.
+Package pdftex.def Info: Figures/Chapter2/diskSphere-eps-converted-to.pdf  used on input line 152.
 (pdftex.def)             Requested size: 286.66592pt x 142.73071pt.
-)) [31 <./Figures/Chapter2/quotientOnAbc.png> <./Figures/Chapter2/diskSphere-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Figures/Chapter2/squareTorus.eps>
+(epstopdf)                    date: 2021-02-06 13:19:51
+(epstopdf)                    size: 382587 bytes
+(epstopdf)             Output file: <Figures/Chapter2/squareTorus-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-02-06 14:30:01
+(epstopdf)                    size: 372300 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/Chapter2/squareTorus-eps-converted-to.pdf Figures/Chapter2/squareTorus.eps>
+(epstopdf)             \includegraphics on input line 159.
+Package epstopdf Info: Output file is already uptodate.
+<Figures/Chapter2/squareTorus-eps-converted-to.pdf, id=426, 1433.355pt x 713.66624pt>
+File: Figures/Chapter2/squareTorus-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures/Chapter2/squareTorus-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/Chapter2/squareTorus-eps-converted-to.pdf  used on input line 159.
+(pdftex.def)             Requested size: 286.66592pt x 142.73071pt.
+
+
+./Chapters/Chapter2/Section4/section4.tex:175: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.175 ...teq A$. We also have that $p(U \cap A)=\(
+                                                  U) \cap p(A)$. Now suppose...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[32] [33 <./Figures/Chapter2/diskSphere-eps-converted-to.pdf> <./Figures/Chapter2/squareTorus-eps-converted-to.pdf>]
+
+./Chapters/Chapter2/Section4/section4.tex:211: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211     \end{tikzcd}\]
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./Chapters/Chapter2/Section4/section4.tex:241: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.241                     \end{tikzcd}\]
+                                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[34]
+Package epstopdf Info: Source file: <Figures/Chapter2/nonHomeomorphicPoints.eps>
+(epstopdf)                    date: 2021-02-06 15:29:41
+(epstopdf)                    size: 118029 bytes
+(epstopdf)             Output file: <Figures/Chapter2/nonHomeomorphicPoints-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-02-06 15:40:48
+(epstopdf)                    size: 147701 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/Chapter2/nonHomeomorphicPoints-eps-converted-to.pdf Figures/Chapter2/nonHomeomorphicPoints.eps>
+(epstopdf)             \includegraphics on input line 281.
+Package epstopdf Info: Output file is already uptodate.
+<Figures/Chapter2/nonHomeomorphicPoints-eps-converted-to.pdf, id=457, 1433.355pt x 713.66624pt>
+File: Figures/Chapter2/nonHomeomorphicPoints-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures/Chapter2/nonHomeomorphicPoints-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/Chapter2/nonHomeomorphicPoints-eps-converted-to.pdf  used on input line 281.
+(pdftex.def)             Requested size: 286.66592pt x 142.73071pt.
+ [35 <./Figures/Chapter2/nonHomeomorphicPoints-eps-converted-to.pdf>])) (./Chapters/Chapter3/chapter3.tex [36]
+Chapter 3.
+(./Chapters/Chapter3/Section1/section1.tex)) [37
+
+]
 
 ./Topology.tex:84: LaTeX Error: \begin{corollary} on input line 160 ended by \end{document}.
 
@@ -1233,9 +1325,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
 (./Topology.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
-Package rerunfilecheck Info: File `Topology.out' has not changed.
-(rerunfilecheck)             Checksum: 269DB62B26DE0F1FE3907D5DBF9CC1CC;901.
 
+
+Package rerunfilecheck Warning: File `Topology.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Topology.out':
+(rerunfilecheck)             Before: 47221A3EE761030AA3A6D16DE666C209;1010
+(rerunfilecheck)             After:  82CE9D450BE2C054B4EAF2C8CE2B7D8D;1030.
 
 LaTeX Warning: There were undefined references.
 
@@ -1249,18 +1347,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
 ### semi simple group (level 1) entered at line 160 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 30259 strings out of 482854
- 711004 string characters out of 5956882
- 1088652 words of memory out of 5000000
- 44776 multiletter control sequences out of 15000+600000
- 546234 words of font info for 70 fonts, out of 8000000 for 9000
+ 30612 strings out of 482854
+ 730370 string characters out of 5956882
+ 1074412 words of memory out of 5000000
+ 45088 multiletter control sequences out of 15000+600000
+ 546403 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 68i,10n,98p,734b,615s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/eletrico/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcti1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Topology.pdf (31 pages, 2844365 bytes).
+ 68i,16n,98p,734b,1470s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/eletrico/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcti1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on Topology.pdf (37 pages, 3538030 bytes).
 PDF statistics:
- 524 PDF objects out of 1000 (max. 8388607)
- 444 compressed objects within 5 object streams
- 205 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 594 PDF objects out of 1000 (max. 8388607)
+ 502 compressed objects within 6 object streams
+ 227 named destinations out of 1000 (max. 500000)
+ 203 words of extra memory for PDF output out of 10000 (max. 10000000)
 
