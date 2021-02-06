@@ -93,19 +93,25 @@
     \begin{figure} 
         \centering
         \includegraphics[scale = 0.2]{Figures/Chapter2/quotientOnAbc.png}
-        \caption{The quotient topologt on $A=\{a,b,c\}$ induced by $p$.}
+        \caption{The quotient topology on $A=\{a,b,c\}$ induced by $p$.}
     \end{figure}
 \end{example} 
 
 \begin{definition}
-    Let $X$ be a topological space and  $X^*$ be a partition of  $X$ into disjoint subsets whos
-    disjoint union is  $X$. Let  $p:X \rightarrow X^*$ be onto such that  $p:x \rightarrow U$ if  $x
-    \in U$. We call  $X^*$ in the quotient topology induced by $p$ the \textbf{quotient space} of $X$, or the 
+    Let $X$ be a topological space and  $X/p$ be a partition of  $X$ into disjoint subsets whos
+    disjoint union is  $X$. Let  $p:X \rightarrow X/p$ be onto such that  $p:x \rightarrow U$ if  $x
+    \in U$. We call  $X/p$ in the quotient topology induced by $p$ the \textbf{quotient space} of $X$, or the 
     \textbf{decomposition space} of $x$.
 \end{definition}
 
 We can take an equivalence relation $\sim$ on  $X$ by taking  $x \sim y$ if  $x,y \in U$ for  $U \in
-X^*$. Then the quotient space is the collection of equivalence classes of $X$; that is we can think
+X/p$. Then the quotient space is the collection of equivalence classes of $X$; that is we can think
 of obtaining $X^*$ by ``identify'' those pairs of equivalent points. Similarly, we can also describe
-the quotient space $X^*$ by noting a subset $U$ of equivalence classes where $p^{-1}(U)=\bigcup_{V
-\in U}{V}$ is the union of all equivalence classes in $U$.
+the quotient space $X/p$ by noting a subset $U$ of equivalence classes where $p^{-1}(U)=\bigcup_{V
+\in U}{V}$ is the union of all equivalence classes in $U$. We will denote the quotient space by
+$X/p$ or  $X/\sim$.
+
+\begin{figure} 
+    \centering
+    \includegraphics[scale = 0.2]{Figures/Chapter2/diskSphere.eps}
+\end{figure}

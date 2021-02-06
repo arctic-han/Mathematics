@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.10.30)  1 FEB 2021 13:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.4)  6 FEB 2021 13:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -568,30 +568,60 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \sift@deathcycles=\count305
 \@vwid@loff=\dimen303
 \@vwid@roff=\dimen304
-)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) (./Library/Fonts/BlackboardBold.tex) (./Library/Fonts/MathCalligraphy.tex)
+)) (/usr/share/texlive/texmf-dist/tex/latex/svg/svg.sty
+Package: svg 2020/06/23 v2.02h (include SVG pictures)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2020/07/22 v3.31 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2020/07/22 v3.31 KOMA-Script package (loading files)
+)) (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+\c@svg@param@lastpage=\count306
 
-./Topology.tex:29: LaTeX Error: Command \bbar undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/svg/svg.sty:768: LaTeX Error: Unknown option `clean' for package `svg'.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.29 \renewcommand{\bbar}
+l.768 \FamilyProcessOptions{SVG}
+                                
+The option `clean' was not declared in package `svg', perhaps you
+misspelled its name. Try typing  <return>  to proceed.
+
+\svg@box=\box64
+\c@svg@param@currpage=\count307
+) (/usr/share/texlive/texmf-dist/tex/latex/transparent/transparent.sty
+Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (./Library/Fonts/BlackboardBold.tex) (./Library/Fonts/MathCalligraphy.tex)
+
+./Topology.tex:31: LaTeX Error: Command \bbar undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 \renewcommand{\bbar}
                          [1]{\underline{#1}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-\c@theorem=\count306
-\c@axiom=\count307
-\c@postulate=\count308
-\c@conjecture=\count309
-\c@example=\count310
+\c@theorem=\count308
+\c@axiom=\count309
+\c@postulate=\count310
+\c@conjecture=\count311
+\c@example=\count312
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count311
-\l__pdf_internal_box=\box64
+\l__kernel_color_stack_int=\count313
+\l__pdf_internal_box=\box65
 ) (./Topology.aux
 
 LaTeX Warning: Label `1.2.4' multiply defined.
@@ -599,22 +629,22 @@ LaTeX Warning: Label `1.2.4' multiply defined.
 )
 \openout1 = `Topology.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -652,16 +682,16 @@ LaTeX Font Info:    ... okay on input line 71.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count312
+\scratchcounter=\count314
 \scratchdimen=\dimen305
-\scratchbox=\box65
-\nofMPsegments=\count313
-\nofMParguments=\count314
+\scratchbox=\box66
+\nofMPsegments=\count315
+\nofMParguments=\count316
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count315
+\MPscratchCnt=\count317
 \MPscratchDim=\dimen306
-\MPnumerator=\count316
-\makeMPintoPDFobject=\count317
+\MPnumerator=\count318
+\makeMPintoPDFobject=\count319
 \everyMPtoPDFconversion=\toks53
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -671,8 +701,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.17} (current compat level: 1.12).
 
-\AtBeginShipoutBox=\box66
-Package hyperref Info: Link coloring OFF on input line 71.
+\AtBeginShipoutBox=\box67
+Package hyperref Info: Link coloring OFF on input line 73.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -680,20 +710,20 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count318
+\c@section@level=\count320
 )
-LaTeX Info: Redefining \ref on input line 71.
-LaTeX Info: Redefining \pageref on input line 71.
-LaTeX Info: Redefining \nameref on input line 71.
+LaTeX Info: Redefining \ref on input line 73.
+LaTeX Info: Redefining \pageref on input line 73.
+LaTeX Info: Redefining \nameref on input line 73.
  (./Topology.out) (./Topology.out)
 \@outlinefile=\write4
 \openout4 = `Topology.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -1169,25 +1199,40 @@ File: Figures/Chapter2/quotientOnAbc.png Graphic file (type png)
 <use Figures/Chapter2/quotientOnAbc.png>
 Package pdftex.def Info: Figures/Chapter2/quotientOnAbc.png  used on input line 95.
 (pdftex.def)             Requested size: 103.87424pt x 80.26645pt.
-)) [30] [31 <./Figures/Chapter2/quotientOnAbc.png>]
+[30]
+Package epstopdf Info: Source file: <Figures/Chapter2/diskSphere.eps>
+(epstopdf)                    date: 2021-02-06 13:14:06
+(epstopdf)                    size: 660400 bytes
+(epstopdf)             Output file: <Figures/Chapter2/diskSphere-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-02-06 13:15:15
+(epstopdf)                    size: 613562 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/Chapter2/diskSphere-eps-converted-to.pdf Figures/Chapter2/diskSphere.eps>
+(epstopdf)             \includegraphics on input line 116.
+Package epstopdf Info: Output file is already uptodate.
+<Figures/Chapter2/diskSphere-eps-converted-to.pdf, id=408, 1433.355pt x 713.66624pt>
+File: Figures/Chapter2/diskSphere-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures/Chapter2/diskSphere-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/Chapter2/diskSphere-eps-converted-to.pdf  used on input line 116.
+(pdftex.def)             Requested size: 286.66592pt x 142.73071pt.
+)) [31 <./Figures/Chapter2/quotientOnAbc.png> <./Figures/Chapter2/diskSphere-eps-converted-to.pdf>]
 
-./Topology.tex:82: LaTeX Error: \begin{corollary} on input line 160 ended by \end{document}.
+./Topology.tex:84: LaTeX Error: \begin{corollary} on input line 160 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \end{document}
+l.84 \end{document}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
 (./Topology.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `Topology.out' has not changed.
 (rerunfilecheck)             Checksum: 269DB62B26DE0F1FE3907D5DBF9CC1CC;901.
 
@@ -1197,25 +1242,25 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 160 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 29470 strings out of 482854
- 694860 string characters out of 5956880
- 1046195 words of memory out of 5000000
- 44011 multiletter control sequences out of 15000+600000
+ 30259 strings out of 482854
+ 711004 string characters out of 5956882
+ 1088652 words of memory out of 5000000
+ 44776 multiletter control sequences out of 15000+600000
  546234 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  68i,10n,98p,734b,615s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/eletrico/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcti1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Topology.pdf (31 pages, 2232462 bytes).
+Output written on Topology.pdf (31 pages, 2844365 bytes).
 PDF statistics:
- 521 PDF objects out of 1000 (max. 8388607)
- 443 compressed objects within 5 object streams
+ 524 PDF objects out of 1000 (max. 8388607)
+ 444 compressed objects within 5 object streams
  205 named destinations out of 1000 (max. 500000)
- 172 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
