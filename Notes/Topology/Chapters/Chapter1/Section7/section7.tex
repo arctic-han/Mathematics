@@ -66,7 +66,7 @@ $f^{-1}(B)=\bigcap_{i=1}^{n}{f^{-1}(S_i)}$, thus  $S_i$ is also open in  $X$ for
 
             \item For every closed set $B \subseteq Y$,  $f^{-1}(B)$ is closed in $X$.
 
-            \item For each  $x \in X$ and each neighborhood  $V$ of  $f(x)$, tgere us a neighborhood
+            \item For each  $x \in X$ and each neighborhood  $V$ of  $f(x)$, there us a neighborhood
                 $U$ of  $x$ such that  $f(U) \subseteq V$.
         \end{enumerate}
 \end{theorem}
@@ -75,7 +75,7 @@ $f^{-1}(B)=\bigcap_{i=1}^{n}{f^{-1}(S_i)}$, thus  $S_i$ is also open in  $X$ for
     $f^{-1}(V)$ is open in $X$, and intersects  $A$ at a point  $y$. Then  $V \cap f(A)=f(y)$, thus 
     $f(x) \in \bar{f(A)}$.
 
-    Now let $B$ be closed in  $Y$, and let  $A=f^{-1}(B)$. THen we have that $F(A)=f(f^{-1(B)})
+    Now let $B$ be closed in  $Y$, and let  $A=f^{-1}(B)$. THen we have that $f(A)=f(f^{-1(B)})
     \subseteq B$, thus $x \in \bar{A}$.
 
     Now let $V$ be open in $Y$, so that  $B=\com{Y}{V}$ is closed in $Y$, and
@@ -95,10 +95,10 @@ $f^{-1}(B)=\bigcap_{i=1}^{n}{f^{-1}(S_i)}$, thus  $S_i$ is also open in  $X$ for
 
 \begin{lemma}\label{1.7.2} 
     Let $X$ and  $Y$ be topological spaces and let $f:X \rightarrow Y$ be a homeomorphism. Then
-    $F(U)$ is open if and only if $U$ is open.
+    $f(U)$ is open if and only if $U$ is open.
 \end{lemma}
 \begin{proof}
-    We have that both $f:X \rightarrow Y$ and  $f^{-1}:Y \rightarrow X$ are contiuous $1-1$ of $X$
+    We have that both $f:X \rightarrow Y$ and  $f^{-1}:Y \rightarrow X$ are continuous $1-1$ of $X$
     and  $Y$ onto each other  (respectively). Now let $U$ be open in  $X$, then $U=f^{-1}(V)$, for 
     some set  $V$ open in $Y$. Notice then, that $f(U)=f(f^{-1}(V))=V$, thus $f(U)$ is open in $Y$. 
     Conversely, let $V=f(U)$ be open in $Y$ for some open set  $U$ in  $X$, then  $U=f^{-1}(V)$, so
@@ -169,7 +169,7 @@ $f^{-1}(B)=\bigcap_{i=1}^{n}{f^{-1}(S_i)}$, thus  $S_i$ is also open in  $X$ for
         \item If $U$ us open in  $X$, then  $f^{-1}(U)=U \cap A$ which is open in the subspace
             topology of $X$.
 
-        \item If $U$ is open in  $Z$,  $g^{-1}(U)$ is open in $Y$, hence  $f^{-1(g^{-1(U)})}$ is
+        \item If $U$ is open in  $Z$,  $g^{-1}(U)$ is open in $Y$, hence  $f^{-1}g^{-1}(U)$ is
             open in $X$.
 
         \item Notice that  $f_A=\iota \circ f=f:A \rightarrow Y$ which is continuous by $(2)$
@@ -178,7 +178,7 @@ $f^{-1}(B)=\bigcap_{i=1}^{n}{f^{-1}(S_i)}$, thus  $S_i$ is also open in  $X$ for
         \item Let $f:A \rightarrow Y$ be continuous and let  $f(X) \subseteq Z \subseteq Y$. Let $B$
             be open in  $Z$, so  $B=Z \cap U$ for some  $U$ open in  $Y$. Now by hypothesis, we have
             that $f^{-1}(U) \subseteq f^{-1}(B)$, hence $f^{-1}(B)$ is open in $X$, thus  $f:X
-            \rightrightarrow Z$ is coontinuous.
+            \rightarrow Z$ is continuous.
 
         \item Let  $f$ be as in  $(5)$, and let $Y \subseteq Z$ be a subspace of  $Z$. Then the
             mapping  $h:X \rightarrow Z$ defined by $h=\iota \circ f$ is continuous.
@@ -186,13 +186,13 @@ $f^{-1}(B)=\bigcap_{i=1}^{n}{f^{-1}(S_i)}$, thus  $S_i$ is also open in  $X$ for
         \item Let  $X=\bingcup{U_{\alpha}}$ where $U_{\alpha}$ is open in $X$, and $f:U_{\alpha}
             \rightarrow Y$ is continuous for all  $\alpha$. LEt $V$ be open in  $Y$, then
             $f^{-1}(V) \cap U_{\alpha}=f^{-1}_U{\alpha}(V)$, and since $f$ is continuous on
-            $U_{\alpha]}$, then $f^{-1}(V)=\bingcup{f^{-1}_U_[\alpha](V)}$ is open in $X$.
+            $U_{\alpha}$, then $f^{-1}(V)=\bigcup{f^{-1}_{U_{\alpha}}(V)}$ is open in $X$.
     \end{enumerate}
 \end{proof}
 
 \begin{theorem}[The pasting lemma]\label{1.7.4}
     Let $X=A \cap B$ with  $A$ and  $B$ closed in  $X$, and let  $f:A \rightarrow Y$ and  $g:B
-    \rightrightarrow X$ be continuous. If  $f(x)=g(x)$ for all $x \in A \cap B$, then we can
+    \rightarrow Y$ be continuous. If  $f(x)=g(x)$ for all $x \in A \cap B$, then we can
     construct a mapping  $h:X \rightarrow Y$ defined by  $h(x)=
         \begin{cases}
             f(x) \text{, } & x \in A \\

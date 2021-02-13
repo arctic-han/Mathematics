@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1611845482 "matroid.tex" "matroid.pdf" "matroid" 1611845483
+["pdflatex"] 1612702613 "matroid.tex" "matroid.pdf" "matroid" 1612702613
   "/etc/texmf/web2c/texmf.cnf" 1604064585 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -153,14 +153,14 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1596975543 38841 5237427e4d3283e7b009b6a8b45dfdcd ""
   "/usr/share/texmf/web2c/texmf.cnf" 1596975543 38841 5237427e4d3283e7b009b6a8b45dfdcd ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1604064816 128028 f533b797fba58d231669ea19e894e23e ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1604064823 1156109 3d7119fb332ffed2b4ab40dce9b9b203 ""
-  "Chapters/Chapter1/Sections/Section1/section1.tex" 1611845454 2120 70c5b953d1f6fa72a837abe5140cd3ec ""
-  "Chapters/Chapter1/chapter1.tex" 1611845424 304 14dcac4e1fb52de1176f5ae2e816f3a0 ""
-  "matroid.aux" 1611845483 1038 707e383c4e4a1767cde1c3000167b8f0 "pdflatex"
-  "matroid.out" 1611845483 114 250baaa5296d1256bc062b793437f53d "pdflatex"
-  "matroid.tex" 1611845481 1330 f7cc1f85786f4e2cc93adbf4b654a22a ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1612491685 1156124 5f630a0d7ca2a1873686e17d03c669e1 ""
+  "Chapters/Chapter1/Sections/Section1/section1.tex" 1611845541 2120 70c5b953d1f6fa72a837abe5140cd3ec ""
+  "Chapters/Chapter1/chapter1.tex" 1611845541 304 14dcac4e1fb52de1176f5ae2e816f3a0 ""
+  "matroid.aux" 1612702613 1038 707e383c4e4a1767cde1c3000167b8f0 "pdflatex"
+  "matroid.out" 1612702613 114 250baaa5296d1256bc062b793437f53d "pdflatex"
+  "matroid.tex" 1611845541 1330 f7cc1f85786f4e2cc93adbf4b654a22a ""
   (generated)
+  "matroid.log"
+  "matroid.out"
   "matroid.pdf"
   "matroid.aux"
-  "matroid.out"
-  "matroid.log"

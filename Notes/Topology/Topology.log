@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.4)  6 FEB 2021 16:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.4)  12 FEB 2021 21:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -941,41 +941,9 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [16] [17] [18]
-./Chapters/Chapter1/Section7/section7.tex:181: Undefined control sequence.
-l.181             \rightrightarrow
-                                   Z$ is coontinuous.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 ./Chapters/Chapter1/Section7/section7.tex:186: Undefined control sequence.
 l.186         \item Let  $X=\bingcup
                                     {U_{\alpha}}$ where $U_{\alpha}$ is open...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section7/section7.tex:189: Undefined control sequence.
-l.189 ...  $U_{\alpha]}$, then $f^{-1}(V)=\bingcup
-                                                  {f^{-1}_U_[\alpha](V)}$ is...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section7/section7.tex:189: Double subscript.
-l.189 ...ha]}$, then $f^{-1}(V)=\bingcup{f^{-1}_U_
-                                                  [\alpha](V)}$ is open in $X$.
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-./Chapters/Chapter1/Section7/section7.tex:195: Undefined control sequence.
-l.195     \rightrightarrow
-                           X$ be continuous. If  $f(x)=g(x)$ for all $x \in ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1028,7 +996,7 @@ Package epstopdf Info: Source file: <Figures/Chapter2/openBall.eps>
 (epstopdf)             Command: <repstopdf --outfile=Figures/Chapter2/openBall-eps-converted-to.pdf Figures/Chapter2/openBall.eps>
 (epstopdf)             \includegraphics on input line 58.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/Chapter2/openBall-eps-converted-to.pdf, id=348, 1138.2525pt x 713.66624pt>
+<Figures/Chapter2/openBall-eps-converted-to.pdf, id=347, 1138.2525pt x 713.66624pt>
 File: Figures/Chapter2/openBall-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/Chapter2/openBall-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/Chapter2/openBall-eps-converted-to.pdf  used on input line 58.
@@ -1307,33 +1275,14 @@ Chapter 3.
 (./Chapters/Chapter3/Section1/section1.tex)) [37
 
 ]
-
-./Topology.tex:84: LaTeX Error: \begin{corollary} on input line 160 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.84 \end{document}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
-(./Topology.aux)
+ (./Topology.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+Package rerunfilecheck Info: File `Topology.out' has not changed.
+(rerunfilecheck)             Checksum: 82CE9D450BE2C054B4EAF2C8CE2B7D8D;1030.
 
-
-Package rerunfilecheck Warning: File `Topology.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Topology.out':
-(rerunfilecheck)             Before: 47221A3EE761030AA3A6D16DE666C209;1010
-(rerunfilecheck)             After:  82CE9D450BE2C054B4EAF2C8CE2B7D8D;1030.
 
 LaTeX Warning: There were undefined references.
 
@@ -1341,21 +1290,17 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 160 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 30612 strings out of 482854
- 730370 string characters out of 5956882
- 1074412 words of memory out of 5000000
- 45088 multiletter control sequences out of 15000+600000
+ 30611 strings out of 482854
+ 730349 string characters out of 5956882
+ 1074432 words of memory out of 5000000
+ 45087 multiletter control sequences out of 15000+600000
  546403 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 68i,16n,98p,734b,1470s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,16n,98p,734b,1386s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/eletrico/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcti1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Topology.pdf (37 pages, 3538030 bytes).
+Output written on Topology.pdf (37 pages, 3536463 bytes).
 PDF statistics:
  594 PDF objects out of 1000 (max. 8388607)
  502 compressed objects within 6 object streams
