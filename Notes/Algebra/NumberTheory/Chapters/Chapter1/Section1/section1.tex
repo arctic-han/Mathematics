@@ -2,68 +2,6 @@
 %	SECTION 1.1
 %----------------------------------------------------------------------------------------
 
-\section{Definitions and Examples}
+\section{Unique Factorization in $\Z$.}
 \label{section1}
 
-\begin{definition}
-    We call a nonempty set $G$ a \textbf{group} under a binary operation $\cdot$ if the following
-    hold:
-        \begin{enumerate}[label=(\arabic*)]
-            \item $a,b \in G$ implies  $a \cdot b \in G$.
-
-            \item For all $a,b,c \in G$,  $(a \cdot b) \cdot c=a \cdot (b \cdot c)$.
-
-            \item There is an element $e \in G$, called the \textbf{identity element} such that $a
-                \cdot e=e \cdot a=a$, for all  $a \in G$.
-
-            \item For all  $a \in G$, there is a corresponding element  $a^{-1}$, called the
-            \textbf{inverse element} of $a$, such that  $a \cdot a^{-1}=a^{-1} \cdot a=e$.
-        \end{enumerate}
-        We call $G$ \textbf{abelian} (or \textbf{commutative}) if $a \cdot b = b \cdot a$, for all
-        $a,b \in G$. We call  $|G|$ the \textbf{order} of $G$ and denote it  $\ord{G}$.
-\end{definition}
-
-\begin{example}
-    \begin{enumerate}[label=(\arabic*)]
-        \item Let $S$ be an  $n$ element set, and let  $S_n$ be the set of all  $1-1$ mappings of
-            $S$ onto itself  (i.e all permutations of elements of $S$). Then $S_n$ forms a group
-            over function composition $\circ$.
-
-            Indeed, whenever  $f,g \in S_n$,  $f \circ g \in S_n$, likewise,  $f \circ (g \circ
-            h)=(f \circ g) \circ h$. The identity map $i:S \rightarrow S$ defined by the rule  $i:s
-            \rightarrow s$ serves as the identity element;  $f \circ i=i \circ f=f$. Finally since
-            whenever $f \in G$,  $f$ is  $1-1$ andd onto,  $f^{-1}$ exists and is also $1-1$ and
-            onto; moreover  $f \circ f^{-1}=f^{-1} \circ f=i$, so $f^{-1}$ is the inverse of $f$. It
-            is also easy to see that  $\ord{S_n}=n!$. It is worth noting that $S_n$ is not ingeneral
-            commutative, as  $f \circ g \neq g \circ f$.
-
-        \item The integers $\Z$ form a group over  $+$  (the usual addition), but not over $\cdot$
-            (the usual multiplication). The rationals $\Q$ do form a group under  $\cdot$. The reals
-             $\R$ and the complex numbers $\C$ form abelian groups under both  $+$ and  $\cdot$.
-
-         \item Let  $G=\{-1,1\}$m then $(G,\cdot)$ forms a group of order $2$, where  $\cdot$ is the
-             usual multiplication.
-
-         \item By example  $1$, we have that  $S_3$ forms a group of order  $3!=6$. Now consider the
-             maps  $\phi:1 \rightarrow 2, 2 \rightarrow 3, 3 \rightarrow 3$ and $\psi:1 \rightarrow
-             3, 2 \rightarrow 3, 3 \rightarrow 1$. We can check that  $\phi^2=\psi^3=i$, also notice
-             that  $\phi\psi:1 \rightarrow 2, 2 \rightarrow 2, 3 \rightarrow 1$ and 
-             $\psi\phi:1 \rightarrow 1, 2 \rightarrow 3, 3 \rightarrow 2$, so $\phi\psi \neq
-             \psi\phi$. Likewise we also have  $\psi^2=\psi\psi: 1 \rightarrow 2, 2 \rightarrow 1, 3
-             \rightarrow 2$ and $\psi^{-1}\phi: 1 \rightarrow 3, 2 \rightarrow 2, 3
-             \rightarrow 1$. Indeed, in $ S_3$, $\phi\psi=\psi^{-1}\phi$; it turns out that $S_3$ is
-             a special case of a more general group.
-
-         \item  $\Z/n\Z$ forms an abelian group under  $+$  (addition $\mod{n}$), and that
-             $U(\Z/n\Z)$ forms a group under $\cdot$  (multiplication $\mod{n}$).
-
-         \item If we take $(G,\cdot)$ and $(H,*)$ to be groups, and consider their product $G \times
-             H$, define the binary operation  $\times$ by taking  $(a,b) \times (c,d)=(a \cdot c,
-             b*d)$, where $a,c \in G$ and  $b,d \in H$, then  $(g \times H, \times)$ forms a group.
-    \end{enumerate}		
-\end{example} 
-
-\begin{definition}
-    We say a group $G$ is \textbf{cyclic} if for some $g \in G$,  $G=\{g^i:i \in \Z\}$. We call $g$
-    the \textbf {generator} of $G$ and write  $G=(g)$.
-\end{definition}
