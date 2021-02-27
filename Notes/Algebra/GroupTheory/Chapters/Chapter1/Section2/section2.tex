@@ -76,6 +76,39 @@ $\ord{S_3}=6=3!=2(3)$. We would like to generalize this group structure further.
 \begin{figure}
     \centering
     \includegraphics[scale = 0.2]{Figures/Chapter1/D_14.eps}
-    \caption{The Dihedral group $D_{14}$ on $7$ points.}
+    \caption{The dihedral group $D_{14}$ on $7$ points.}
     \label{fig_1.1}
 \end{figure}
+
+\begin{definition}
+    We call the group $D_{2n}$ of symmetries of the regular $n$-gon the \textbf{dihedral group} of
+    order $2n$.		
+\end{definition}
+
+Now we see that both $\tau$ and  $\rho$ generate  $D_{2n}$, furthermore, we have the relations
+$\tau^2=\iota$ and  $\rho^n=\iota$ and  $\rho\tau=\tau\rho^{-1}$. This motivates the idea of
+``generators'' of arbitrary groups.
+
+\begin{definition}
+    Let $G$ be a group with $S \subseteq G$. We call $S$ a set of \textbf{generators} of $G$ if
+    every element in $G$ can be written as a finite product of elements of $S$ and their inverses.
+    We say that $S$ \textbf{generates} $G$ and write $G=(s)$. We call a \textbf{relation} of the
+    group any equation satisfied by the generators of $G$.
+\end{definition}
+
+\begin{example}
+    \begin{enumerate}[label=(\arabic*)]
+        \item If $G$ is any group, and  $S$ is the set of generators of  $G$ with  $|S|=1$, then
+            $G$ is a cyclic group.
+
+        \item In $(\Z,+)$, $\{1\}$ generates $\Z$, so  $\Z=\{1\}$.
+
+        \item In $D_{2n}$, we have that $\{\tau,\rho\}$ generate all of $D_{2n}$, so
+            $D_{2n}=(\tau,\rho)$. and $D_{2n}$ has the relations $\tau^2=\iota$,  $\rho^n=\iota$ and
+             $\rho\tau=\tau\rho^{-1}$.
+    \end{enumerate}		
+\end{example} 
+
+We can also write $G$ in terms of just its generators and relations as  $G=\{S:R_1, \dots, R_m\}$,
+where $R_i$ is a relation of the generators for  $1 \leq i \leq m$. Then for the dihedral group, we
+have  $D_{2n}=\{\tau,\rho:\tau^2=\rho^n=\iota, \text{ } \rho\tau=\tau\rho^{-1}\}$

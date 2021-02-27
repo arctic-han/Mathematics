@@ -87,7 +87,7 @@
 
     Now suppose that for some  $a \in G$, that  $a$ has an additional inverse element  $x$, then
     $ax=xa=e$, firthermore, since  $a^{-1}$ is the inverse of $a$, we have  $aa^{-1}=ax$, applying
-    inverses again we get $(a^{-1}a)a^{-1}=(a^{-1}a)x$, hence $a^[-1]=x$.
+    inverses again we get $(a^{-1}a)a^{-1}=(a^{-1}a)x$, hence $a^{-1}=x$.
 
     We have that $aa^{-1}=e$, and there exists a unique inverse element $(a^{-1})^{-1}$ of $a^{-1}$,
     hence $a(a^{-1}(a^{-1})^{-1})=(a^{-1})^{-1}$, hence we get that $a=(a^{-1})^{-1}$.
@@ -104,3 +104,9 @@
     We have that $x=a^{-1}b$ and $y=ba^{-1}$ are the unique solutions to the equations. Now for $u,w
     \in G$, we have that  $au=aw$ has as solution  $u=(a^{-1}a)w=w$, the same holds for $ua=wa$.
 \end{proof}
+
+\begin{definition}
+    Let $G$ be a group, for  $x \in G$, we define the \textbf{order} of $x$ to be the smallest
+    positive integer $n$ such that  $x^n=e$, and denote it $\ord{x}=n$. If no such $n$ exists, then
+    we say that $x$ has infinite order and write $\ord{x}=\infty$.
+\end{definition}
