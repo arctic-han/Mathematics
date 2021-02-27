@@ -1,0 +1,81 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 1.1
+%----------------------------------------------------------------------------------------
+
+\section{The Dihedral Group.}
+\label{section1}
+
+As we noted in a previous example, the group $S_3$ is a special case of a more broad group of
+permutations. We can recall that  $\phi^2=\psi^3=i$, and that  $\phi\psi=\psi^{-1}\phi$, and indeed
+$\ord{S_3}=6=3!=2(3)$. We would like to generalize this group structure further.
+
+\begin{theorem}\label{1.1.2}
+    Let $n \in \Z^+$ and let $D_{2n}$ be the set of all symmetries of a regular $n$-gon; that is the
+    set of all permutation of points of the $n$-gon, defined by two maps $\tau:A \rightarrow -A$
+    which is a transposition of opposite vertices, and $\rho:A \rightarrow A+1$ which is a rotation
+    of the vertices about an angle of $\frac{2\pi}{n}$. Then $D_{2n}$ forms a group under function
+    composition.
+\end{theorem}
+\begin{proof}
+    Let $S$ be a regular  $n$-gon with vertices  $0,1, \dots, n$. Notice that  $\tau,\rho \in S_n$,
+    so they are  $1-1$ maps of the  $n$-gon onto itself. By our definitions of  $\tau$ and  $\rho$,
+    we have that  $\tau:i \rightarrow n-1$ and  $\rho:i \rightarrow i+1$. Hence  $\tau\rho:i
+    \rightarrow n-i \rightarrow n-i+1$, which must coinide with some given vertex of $S$, hence
+    $\tau\rho \in D_{2n}$; moreover, $D_{2n}$ inherits associativity from function composition.
+
+    Now let $\iota:i \rightarrow i$ be the symmetry that leaves points unchange in $S$, clearly
+    $\iota$ is the identity map, and so  $\tau\rho\itoa=\iota\tau\rho=\tau\rho$.
+
+    Now how do we find the inverses? Notice that  $\tau:n-i \rightarrow i$, hence  $\tau^2:i
+    \rightarrow n-i \rightarrow i$, that is $\tau^2=\iota$, and also notice that  $\rho^n:i
+    \rightarrow i+1 \rightarrow i+2 \rightarrow \dots \rightarrow i+n=i$, so  $\rho^n=\iota$. This
+    shows that  $\tau=\tau^{-1}$ and $\rho^{n-1}=\rho^{-1}$.  Then if $y \in D_{2n}$ such that
+    $\tau\rho y=\iota$, then  $\rho y=\tau$, and  $y=\tau\rho^{n-1}$. Checking we get 
+    that $\tau\rho(\tau\rho^{n-1})=(\tau\rho^{n-1})\tau\rho=\iota$. Therefore $D_{2n}$ is a group
+    under $\circ$.
+\end{proof}
+\begin{corollary}
+    $\orrd{D_{2n}}=2n$.
+\end{corollary}
+\begin{proof}
+    We have that there are $n$ possible vertices to which  $i$ can mapped to via  $\rho$, so already
+    there are  $n$ possible  $\rho$. Now we also have that  $\tau:i \rightarrow n-1$, which means
+    that $i$ under $\tau$ can only be mapped to $n-1$. Since the elements of $D_{2n}$ are obviously
+    of the form $\tau\rho^j$, for  $1 \leq j \leq n$, we see there are  $n$ possible  $\tau\rho^j$.
+    Therefore, there are  $2n$ total symmetries of the  $n$-gon.
+\end{proof}
+\begin{remark}
+    Now since $D_{2n}$ is obviously finite, ($\ord{D_{2n}}$ need not be known), then we can simply
+    enumerate all the elements of $D_{2n}$, which are $D_{2n}=\{\iota, \tau, \rho, \rho^2, \dots.
+    \rho^{n-1}, \tau\rho, \tau\rho^2, \dots, \tau\rho^{n-1}\}$. It is also worth noting that if
+    $\tau\rho^i=\tau\rho^j$, then  $\rho^i=\rho^j$, hence  $i=j$, that is the elements of  $R_{2n}$
+    are well defined.
+\end{remark}
+\begin{corollary}
+    $\rho\tau=\tau\rho^{-1}$.		
+\end{corollary}
+\begin{proof}
+    By direct computation, notice that $\rho\tau:i \rightarrow n-1 \rightarrow n-i+1$ and
+    $\tau\rho^{-1}:i \rightarrow i-1 \rightarrow n-(i-1)=n-i+1$ (We can consider $\rho^{-1}$ also to
+    be a rotation about the angle of $-\frac{2\pi}{n}$, hence it takes any vertex $i$ to  $i-1$).
+    Hence $\rho\tau=\tau\rho^{-1}$.
+\end{proof}
+\begin{remark}
+    This also shows that $\tau\rho \neq \rho\tau$, hence $D_{2n}$ is not commutative.
+\end{remark}
+\begin{corollary}
+    For $i \in \Z^+$ with $1 \leq i \leq n$,  $\rho^i\tau=\tau\rho^{-i}$.
+\end{corollary}
+\begin{proof}
+    Bu induction, the previous corollary gives $\rho^1\tau=\tau\rho^{-1}$. Now suppose that for all
+    $1 \leq i \leq n$, that  $\rho^i\tau=\tau\rho^{-i}$, and consider $\rho^{i+1}$. If  $i+1=n$,
+    then we are done, so take $i+1<n$. Then
+    $\rho^{i+1}\tau=\rho(\rho^i\tau)=(\rho\tau)\rho^{-i}=\tau(\rho^{-1}\rho^{-i})=\tau\rho^{-i-1}$.
+\end{proof}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale = 0.2]{Figures/Chapter1/D_14.eps}
+    \caption{The Dihedral group $D_{14}$ on $7$ points.}
+    \label{fig_1.1}
+\end{figure}

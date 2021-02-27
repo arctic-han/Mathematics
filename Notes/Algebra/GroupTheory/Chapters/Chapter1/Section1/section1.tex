@@ -67,3 +67,40 @@
     We say a group $G$ is \textbf{cyclic} if for some $g \in G$,  $G=\{g^i:i \in \Z\}$. We call $g$
     the \textbf {generator} of $G$ and write  $G=(g)$.
 \end{definition}
+
+\begin{lemma}\label{1.1.1}
+    If $G$ is a group, then the following hold:
+        \begin{enumerate}[label=(\arabic*)]
+            \item The identity element is unique.
+
+            \item Inverses are unique.
+
+            \item  $(a^{-1})^{-1}=a$ for all $a \in G$.
+
+            \item  $(ab)^{-1}=b^{-1}a^{-1}$.
+        \end{enumerate}
+\end{lemma}
+\begin{proof}
+    First suppose that $G$ has an additional identity element  $f$, that is for all $a \in G$,
+    $af=fa=a$. Then we have that  (with $e$ the identity of  $G$), $ae=af$, then
+    $(a^{-1}a)e=(a^{-1}a)f$, hence $e=f$.
+
+    Now suppose that for some  $a \in G$, that  $a$ has an additional inverse element  $x$, then
+    $ax=xa=e$, firthermore, since  $a^{-1}$ is the inverse of $a$, we have  $aa^{-1}=ax$, applying
+    inverses again we get $(a^{-1}a)a^{-1}=(a^{-1}a)x$, hence $a^[-1]=x$.
+
+    We have that $aa^{-1}=e$, and there exists a unique inverse element $(a^{-1})^{-1}$ of $a^{-1}$,
+    hence $a(a^{-1}(a^{-1})^{-1})=(a^{-1})^{-1}$, hence we get that $a=(a^{-1})^{-1}$.
+
+    Finally, we have that $ab(ab)^{-1}=e$, then $(a^{-1}a)b(ab)^{-1}=a^{-1}$, and so
+    $b^{-1}b(ab)^{-1}=(ab)^{-1}=b^{-1}a^{-1}$.
+\end{proof}
+
+\begin{lemma}[The Cancelation laws]\label{1.1.2}
+    Let $G$ be a group with  $a,b \in G$. Then the equations  $ax=b$ and  $ya=b$ have unique
+    solutions. Moreover for $u,w \in G$,  $au=aw$ implies  $u=w$ and  $ua=wa$ implies  $u=w$.
+\end{lemma}
+\begin{proof}
+    We have that $x=a^{-1}b$ and $y=ba^{-1}$ are the unique solutions to the equations. Now for $u,w
+    \in G$, we have that  $au=aw$ has as solution  $u=(a^{-1}a)w=w$, the same holds for $ua=wa$.
+\end{proof}
