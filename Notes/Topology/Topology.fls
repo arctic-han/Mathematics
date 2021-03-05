@@ -434,8 +434,9 @@ INPUT ./Figures/Chapter2/squareToCylinderToTorus-eps-converted-to.pdf
 INPUT Figures/Chapter2/quotientOnABC.eps
 INPUT ./Figures/Chapter2/quotientOnABC.eps
 INPUT ./Figures/Chapter2/quotientOnABC.eps
-INPUT ./Figures/Chapter2/quotientOnABC.eps
 INPUT ./Figures/Chapter2/quotientOnABC-eps-converted-to.pdf
+INPUT ./Figures/Chapter2/quotientOnABC-eps-converted-to.pdf
+INPUT ./Figures/Chapter2/quotientOnABC.eps
 INPUT ./Figures/Chapter2/quotientOnABC-eps-converted-to.pdf
 INPUT ./Figures/Chapter2/quotientOnABC-eps-converted-to.pdf
 INPUT ./Figures/Chapter2/quotientOnABC-eps-converted-to.pdf
@@ -464,6 +465,8 @@ INPUT Chapters/Chapter3/chapter3.tex
 INPUT Chapters/Chapter3/chapter3.tex
 INPUT Chapters/Chapter3/Section1/section1.tex
 INPUT Chapters/Chapter3/Section1/section1.tex
+INPUT Chapters/Chapter3/Section2/section2.tex
+INPUT Chapters/Chapter3/Section2/section2.tex
 INPUT Topology.aux
 INPUT ./Topology.out
 INPUT ./Topology.out
